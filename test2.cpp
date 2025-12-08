@@ -20,6 +20,7 @@ void solve ()
     ll n;
     cin >> n;
     cout << findx(n);
+    cout << "test" << '\n';
 }
 
 int main ()
