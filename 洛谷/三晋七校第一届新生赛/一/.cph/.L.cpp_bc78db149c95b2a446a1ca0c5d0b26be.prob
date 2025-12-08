@@ -1,0 +1,1 @@
+{"name":"Local: L","url":"d:\\wust-acm\\一\\L.cpp","tests":[{"id":1762582895902,"input":"11\n(#((##)###)","output":"4"},{"id":1762582929661,"input":"2\n()","output":"2"},{"id":1762582934065,"input":"4\n(##","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\一\\L.cpp","group":"local","local":true}

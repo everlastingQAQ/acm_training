@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\wust-acm\\CF\\800\\A. Be Positive.cpp","tests":[{"id":1760227652667,"input":"3\n3\n-1 0 1\n4\n-1 -1 0 1\n5\n-1 -1 -1 0 0\n","output":"3\n1\n4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\800\\A. Be Positive.cpp","group":"local","local":true}

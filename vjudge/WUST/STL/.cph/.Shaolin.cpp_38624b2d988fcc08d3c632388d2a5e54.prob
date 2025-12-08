@@ -1,0 +1,1 @@
+{"name":"Local: Shaolin","url":"d:\\wust-acm\\vjudge\\WUST\\STL\\Shaolin.cpp","tests":[{"id":1762047737170,"input":"3\n2 1\n3 3\n4 2\n0\n","output":"2 1\n3 2\n4 2\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\STL\\Shaolin.cpp","group":"local","local":true}

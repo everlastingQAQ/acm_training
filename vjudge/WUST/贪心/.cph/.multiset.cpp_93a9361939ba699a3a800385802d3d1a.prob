@@ -1,0 +1,1 @@
+{"name":"Local: multiset","url":"d:\\wust-acm\\vjudge\\WUST\\贪心\\multiset.cpp","tests":[{"id":1762926745510,"input":"4\n4 5 1 4","output":""},{"id":1762926752391,"input":"6\n1 4 2 8 5 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\贪心\\multiset.cpp","group":"local","local":true}

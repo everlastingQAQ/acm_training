@@ -1,0 +1,1 @@
+{"name":"Local: Can you solve this equation","url":"d:\\wust-acm\\vjudge\\WUST\\二分\\Can you solve this equation.cpp","tests":[{"id":1762063072473,"input":"2\n100\n-4","output":"1.6152\nNo solution!"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\二分\\Can you solve this equation.cpp","group":"local","local":true}

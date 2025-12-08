@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\wust-acm\\CF\\800\\A. Race.cpp","tests":[{"id":1762337201026,"input":"3\n1 3 4\n5 3 1\n3 1 5\n","output":"YES\nYES\nNO\n"},{"id":1762338169791,"input":"1\n1 2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\800\\A. Race.cpp","group":"local","local":true}

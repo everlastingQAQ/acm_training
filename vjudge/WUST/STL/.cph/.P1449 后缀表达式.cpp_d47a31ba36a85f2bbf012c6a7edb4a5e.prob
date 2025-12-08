@@ -1,0 +1,1 @@
+{"name":"Local: P1449 后缀表达式","url":"d:\\wust-acm\\vjudge\\WUST\\STL\\P1449 后缀表达式.cpp","tests":[{"id":1761719950665,"input":"3.5.2.-*7.+@","output":"16"},{"id":1761719957626,"input":"10.28.30./*7.-@","output":"-7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\STL\\P1449 后缀表达式.cpp","group":"local","local":true}

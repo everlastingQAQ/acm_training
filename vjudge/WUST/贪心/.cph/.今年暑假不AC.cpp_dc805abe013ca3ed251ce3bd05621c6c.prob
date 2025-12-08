@@ -1,0 +1,1 @@
+{"name":"Local: 今年暑假不AC","url":"d:\\wust-acm\\vjudge\\WUST\\贪心\\今年暑假不AC.cpp","tests":[{"id":1762392740189,"input":"12\n1 3\n3 4\n0 7\n3 8\n15 19\n15 20\n10 15\n8 18\n6 12\n5 10\n4 14\n2 9\n0\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\贪心\\今年暑假不AC.cpp","group":"local","local":true}

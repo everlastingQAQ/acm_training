@@ -1,0 +1,1 @@
+{"name":"Local: 最少拦截系统","url":"d:\\wust-acm\\vjudge\\WUST\\STL\\最少拦截系统.cpp","tests":[{"id":1761786600396,"input":"8 389 207 155 300 299 170 158 65\n","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\STL\\最少拦截系统.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 7-2","url":"d:\\wust-acm\\杭州师范大学程序设计基础课程多校联赛\\2022\\第二场\\7-2.cpp","tests":[{"id":1762744240687,"input":"3\n1 2 1 2\n3 4 5 6\n10000 10007 9999 10006\n","output":"1\n5 6\n10000 10007"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\杭州师范大学程序设计基础课程多校联赛\\2022\\第二场\\7-2.cpp","group":"local","local":true}

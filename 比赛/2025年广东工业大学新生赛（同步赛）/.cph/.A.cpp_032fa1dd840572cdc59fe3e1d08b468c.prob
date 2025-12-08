@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/everlast1ng/code/比赛/2025年广东工业大学新生赛（同步赛）/A.cpp","tests":[{"id":1764480917482,"input":"5\n1 5 2 9 3","output":"1 4 8"},{"id":1764480920410,"input":"4\n2 3 4 1","output":"2 4 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlast1ng/code/比赛/2025年广东工业大学新生赛（同步赛）/A.cpp","group":"local","local":true}

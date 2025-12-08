@@ -1,0 +1,1 @@
+{"name":"Local: 语句解析","url":"d:\\wust-acm\\vjudge\\WUST\\string\\语句解析.cpp","tests":[{"id":1759989682815,"input":"a:=3;b:=4;c:=5;","output":"3 4 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\string\\语句解析.cpp","group":"local","local":true}

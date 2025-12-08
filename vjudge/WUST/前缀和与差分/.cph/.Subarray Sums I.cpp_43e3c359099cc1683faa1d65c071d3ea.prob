@@ -1,0 +1,1 @@
+{"name":"Local: Subarray Sums I","url":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\Subarray Sums I.cpp","tests":[{"id":1762520388899,"input":"5 7\n2 4 1 2 7\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\Subarray Sums I.cpp","group":"local","local":true}

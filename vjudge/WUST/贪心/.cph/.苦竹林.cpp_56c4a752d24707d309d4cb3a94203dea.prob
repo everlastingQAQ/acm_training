@@ -1,0 +1,1 @@
+{"name":"Local: 苦竹林","url":"d:\\wust-acm\\vjudge\\WUST\\贪心\\苦竹林.cpp","tests":[{"id":1762829442907,"input":"5 3\n1 2 3 4 5","output":"2"},{"id":1762829445959,"input":"6 4\n1 7 8 3 4 6","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\贪心\\苦竹林.cpp","group":"local","local":true}

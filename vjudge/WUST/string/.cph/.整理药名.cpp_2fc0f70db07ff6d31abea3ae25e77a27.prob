@@ -1,0 +1,1 @@
+{"name":"Local: 整理药名","url":"d:\\wust-acm\\vjudge\\WUST\\string\\整理药名.cpp","tests":[{"id":1760146447195,"input":"4\nAspiRin\ncisapride\n2-PENICILLIN\nCefradine-6","output":"Aspirin\nCisapride\n2-penicillin\nCefradine-6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\string\\整理药名.cpp","group":"local","local":true}

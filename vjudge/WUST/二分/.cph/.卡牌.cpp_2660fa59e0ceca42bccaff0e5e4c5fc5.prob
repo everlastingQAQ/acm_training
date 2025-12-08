@@ -1,0 +1,1 @@
+{"name":"Local: 卡牌","url":"d:\\wust-acm\\vjudge\\WUST\\二分\\卡牌.cpp","tests":[{"id":1762094272177,"input":"4 5\n1 2 3 4\n5 5 5 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\二分\\卡牌.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: addition","url":"d:\\wust-acm\\algorithm\\高精度\\addition.cpp","tests":[{"id":1760060417607,"input":"999 1","output":"1000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\algorithm\\高精度\\addition.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P1605 迷宫","url":"d:\\wust-acm\\vjudge\\WUST\\DFS\\P1605 迷宫.cpp","tests":[{"id":1763364841787,"input":"2 2 1\n1 1 2 2\n1 2\n","output":""},{"id":1763365041435,"input":"4 4 0\n3 3 3 4\n","output":"86\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\DFS\\P1605 迷宫.cpp","group":"local","local":true}

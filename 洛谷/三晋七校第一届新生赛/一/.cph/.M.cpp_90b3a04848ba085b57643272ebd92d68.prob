@@ -1,0 +1,1 @@
+{"name":"Local: M","url":"d:\\wust-acm\\一\\M.cpp","tests":[{"id":1762582492942,"input":"6\n1 10\n1 10\n1 10\n1 10\n1 10\n1 10","output":"POSSIBLE"},{"id":1762582502626,"input":"2\n2 6\n1 5","output":"NO TLE"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\一\\M.cpp","group":"local","local":true}

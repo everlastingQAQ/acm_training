@@ -1,0 +1,1 @@
+{"name":"Local: Oulipo","url":"d:\\wust-acm\\vjudge\\WUST\\string\\Oulipo.cpp","tests":[{"id":1759917207234,"input":"3\nBAPC\nBAPC\nAZA\nAZAZAZA\nVERDI\nAVERDXIVYERDIAN","output":"1\n3\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\string\\Oulipo.cpp","group":"local","local":true}

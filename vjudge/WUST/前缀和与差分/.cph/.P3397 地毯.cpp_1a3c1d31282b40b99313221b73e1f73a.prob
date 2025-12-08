@@ -1,0 +1,1 @@
+{"name":"Local: P3397 地毯","url":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\P3397 地毯.cpp","tests":[{"id":1761471508854,"input":"5 3\n2 2 3 3\n3 3 5 5\n1 2 1 4","output":"0 1 1 1 0\n0 1 1 0 0\n0 1 2 1 1\n0 0 1 1 1\n0 0 1 1 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\P3397 地毯.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\wust-acm\\CF\\800\\A. Maple and Multiplication.cpp","tests":[{"id":1760330323167,"input":"3\n1 2\n10 3\n1000 1000\n","output":"1\n2\n0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\800\\A. Maple and Multiplication.cpp","group":"local","local":true}

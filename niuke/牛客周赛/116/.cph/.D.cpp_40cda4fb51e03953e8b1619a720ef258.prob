@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"d:\\wust-acm\\niuke\\牛客周赛\\116\\D.cpp","tests":[{"id":1762082517279,"input":"2\n2\n1 3\n2 4\n2\n1 2\n3 4","output":"Yes\nNo"},{"id":1762424946896,"input":"1\n2\n1 3\n2 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\niuke\\牛客周赛\\116\\D.cpp","group":"local","local":true}

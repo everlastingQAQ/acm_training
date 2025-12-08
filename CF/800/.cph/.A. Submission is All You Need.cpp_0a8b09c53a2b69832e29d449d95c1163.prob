@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\wust-acm\\CF\\800\\A. Submission is All You Need.cpp","tests":[{"id":1760403324812,"input":"2\n3\n0 1 1\n3\n1 2 3\n","output":"3\n6\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\800\\A. Submission is All You Need.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"d:\\wust-acm\\CF\\Round 1062\\D.cpp","tests":[{"id":1761663800557,"input":"4\n1\n1\n4\n6 6 12 12\n3\n24 120 210\n4\n2 4 6 10\n","output":"2\n5\n5\n3\n"},{"id":1761664698705,"input":"1\n4\n6 6 12 12","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\Round 1062\\D.cpp","group":"local","local":true}

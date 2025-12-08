@@ -1,0 +1,1 @@
+{"name":"Local: 最高分数的学生姓名","url":"d:\\wust-acm\\vjudge\\WUST\\string\\最高分数的学生姓名.cpp","tests":[{"id":1760148255717,"input":"5\n87 lilei\n99 hanmeimei\n97 lily\n96 lucy\n77 jim","output":"hanmeimei\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\string\\最高分数的学生姓名.cpp","group":"local","local":true}

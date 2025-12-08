@@ -1,0 +1,1 @@
+{"name":"Local: B3623 枚举排列（递归实现排列型枚举）","url":"d:\\wust-acm\\vjudge\\WUST\\DFS\\B3623 枚举排列（递归实现排列型枚举）.cpp","tests":[{"id":1763264024558,"input":"3 2","output":"1 2 \r\n1 3 \r\n2 1 \r\n2 3 \r\n3 1 \r\n3 2 \r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\DFS\\B3623 枚举排列（递归实现排列型枚举）.cpp","group":"local","local":true}

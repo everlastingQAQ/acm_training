@@ -1,0 +1,1 @@
+{"name":"Local: 重复字符串","url":"d:\\wust-acm\\vjudge\\WUST\\贪心\\重复字符串.cpp","tests":[{"id":1762837784413,"input":"2\naabbaa","output":"2\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\贪心\\重复字符串.cpp","group":"local","local":true}

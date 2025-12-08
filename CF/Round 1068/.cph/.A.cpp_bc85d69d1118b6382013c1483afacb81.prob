@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/everlast1ng/code/CF/Round 1068/A.cpp","tests":[{"id":1764945461411,"input":"4\n4 1\n1001\n3 3\n000\n3 1\n001\n8 2\n01000101\n","output":"1\n3\n2\n2\n"},{"id":1764945495385,"input":"1\n2 1\n10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlast1ng/code/CF/Round 1068/A.cpp","group":"local","local":true}

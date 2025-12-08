@@ -1,0 +1,1 @@
+{"name":"Local: 数列分段 Section II","url":"d:\\wust-acm\\vjudge\\WUST\\二分\\数列分段 Section II.cpp","tests":[{"id":1761892433126,"input":"5 3\n4 2 4 5 1","output":"6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\二分\\数列分段 Section II.cpp","group":"local","local":true}

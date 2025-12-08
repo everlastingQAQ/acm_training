@@ -1,0 +1,1 @@
+{"name":"Local: 7-11","url":"d:\\wust-acm\\杭州师范大学程序设计基础课程多校联赛\\2023\\第一场\\7-11.cpp","tests":[{"id":1761118885773,"input":"2\n5 10 1 1 3 10\n5 10 1 1 3 1","output":""},{"id":1761118971096,"input":"1\n5 10 1 1 3 10","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\杭州师范大学程序设计基础课程多校联赛\\2023\\第一场\\7-11.cpp","group":"local","local":true}

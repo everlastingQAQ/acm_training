@@ -1,0 +1,1 @@
+{"name":"Local: 最小新整数","url":"d:\\wust-acm\\vjudge\\WUST\\贪心\\最小新整数.cpp","tests":[{"id":1762921822296,"input":"2\n9128456 2\n1444 3\n","output":"12456\r\n1\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\贪心\\最小新整数.cpp","group":"local","local":true}

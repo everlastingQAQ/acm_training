@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"d:\\wust-acm\\niuke\\练习赛\\B.cpp","tests":[{"id":1761910881506,"input":"1\nza","output":"a"},{"id":1761911090320,"input":"3\naz sdfgdsfgdsfaa sdfgdsfgdsfab","output":"aab"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\niuke\\练习赛\\B.cpp","group":"local","local":true}

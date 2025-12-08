@@ -1,0 +1,1 @@
+{"name":"Local: Tickets","url":"d:\\wust-acm\\vjudge\\线性dp\\Tickets.cpp","tests":[{"id":1760937800679,"input":"2\n2\n20 25\n40\n1\n8\n","output":"08:00:40 am\n08:00:08 am\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\线性dp\\Tickets.cpp","group":"local","local":true}

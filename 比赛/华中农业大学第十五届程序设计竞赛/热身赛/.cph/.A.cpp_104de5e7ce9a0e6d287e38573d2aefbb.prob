@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/everlast1ng/code/比赛/华中农业大学第十五届程序设计竞赛/热身赛/A.cpp","tests":[{"id":1765018945278,"input":"4\n1000 512\n62 15\n1000 1024\n1000 15\n3000 1024\n140 1024\n1000 1024\n1001 31","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlast1ng/code/比赛/华中农业大学第十五届程序设计竞赛/热身赛/A.cpp","group":"local","local":true}

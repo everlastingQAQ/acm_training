@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\wust-acm\\CF\\800\\A. Only One Digit.cpp","tests":[{"id":1760441474967,"input":"5\n6\n96\n78\n122\n696\n","output":"6\n6\n7\n1\n6\n"},{"id":1760441591676,"input":"1\n6","output":"6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\800\\A. Only One Digit.cpp","group":"local","local":true}

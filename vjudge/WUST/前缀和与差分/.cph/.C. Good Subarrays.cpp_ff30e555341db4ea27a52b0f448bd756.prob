@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\C. Good Subarrays.cpp","tests":[{"id":1762519066169,"input":"3\n3\n120\n5\n11011\n6\n600005","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\前缀和与差分\\C. Good Subarrays.cpp","group":"local","local":true}

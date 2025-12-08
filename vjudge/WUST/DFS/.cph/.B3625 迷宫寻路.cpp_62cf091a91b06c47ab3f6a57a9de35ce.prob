@@ -1,0 +1,1 @@
+{"name":"Local: B3625 迷宫寻路","url":"d:\\wust-acm\\vjudge\\WUST\\DFS\\B3625 迷宫寻路.cpp","tests":[{"id":1763101850313,"input":"3 5\n.##.#\n.#...\n...#.","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\DFS\\B3625 迷宫寻路.cpp","group":"local","local":true}

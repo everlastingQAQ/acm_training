@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\wust-acm\\CF\\1500\\C. Two TVs.cpp","tests":[{"id":1762929820860,"input":"3\n1 2\n2 3\n4 5\n","output":"YES\n"},{"id":1762929975171,"input":"4\n1 2\n2 3\n2 3\n1 2\n","output":"NO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\CF\\1500\\C. Two TVs.cpp","group":"local","local":true}

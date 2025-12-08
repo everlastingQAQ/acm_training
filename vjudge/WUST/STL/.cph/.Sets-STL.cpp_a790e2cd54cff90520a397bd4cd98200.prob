@@ -1,0 +1,1 @@
+{"name":"Local: Sets-STL","url":"d:\\wust-acm\\vjudge\\WUST\\STL\\Sets-STL.cpp","tests":[{"id":1761794302807,"input":"8\n1 9\n1 6\n1 10\n1 4\n3 6\n3 14\n2 6\n3 6\n","output":"Yes\nNo\nNo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\vjudge\\WUST\\STL\\Sets-STL.cpp","group":"local","local":true}

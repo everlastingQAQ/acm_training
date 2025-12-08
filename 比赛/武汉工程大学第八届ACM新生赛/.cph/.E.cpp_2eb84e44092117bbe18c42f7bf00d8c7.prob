@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"d:\\wust-acm\\武汉工程大学第八届ACM新生赛\\E.cpp","tests":[{"id":1763007170068,"input":"5\n1 2 3 4 5","output":"15\nGood job"},{"id":1763007174847,"input":"3\n50 60 70","output":"180\nStatement made by gzd"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\武汉工程大学第八届ACM新生赛\\E.cpp","group":"local","local":true}
