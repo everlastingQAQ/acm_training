@@ -15,10 +15,33 @@ string s;
 
 void solve ()
 {
-	cin >> n >> k >> s; s += ' ';
+	cin >> n >> k >> s; s = ' ' + s;
+	ll cnt = 0;
+	vector <ll> v;
+    for (int i = 1; i <= n; i++) {
+		if (s[i] == '0') {
+			cnt++;
+		}else {
+			cnt = 0;
+		}
+		// cout << cnt << ' ' << i << '\n';
+		if (cnt == k) {
+			v.push_back(i);
+			cnt = 0;
+		}
+	}
 
-    ll l = 1, r = k;
-    while ()
+	// for (auto x : v) {
+	// 	cout << x << ' ';
+	// }
+	// cout << '\n';
+
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i] - 1 << ' ';
+	}
+	for (int i = 0; i <= n - v.size(); i++) {
+		cout << n << ' ';
+	}
 }
 
 int main ()
