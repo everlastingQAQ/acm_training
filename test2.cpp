@@ -12,15 +12,7 @@ const ll mod = 1e9 + 7;
 
 void solve ()
 {
-    auto findx = [&] (ll x) -> ll {
-        if(x < 2) return 0;
-        return (int)ceil((sqrt(8.0*(x-1)+1)-1)/2.0);
-    };
-
-    ll n;
-    cin >> n;
-    cout << findx(n);
-    cout << "test" << '\n';
+    
 }
 
 int main ()
