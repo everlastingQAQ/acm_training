@@ -12,7 +12,7 @@ const double eps = 1e-5;
 const ll mod = 998244353;
     
 ll n;
-
+                
 void solve ()
 {
     cin >> n;
