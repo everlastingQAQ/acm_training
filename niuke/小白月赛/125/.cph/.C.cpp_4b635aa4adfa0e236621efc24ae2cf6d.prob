@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/everlast1ng/code/niuke/小白月赛/125/C.cpp","tests":[{"id":1765537711245,"input":"3\n15 18 80","output":"36.256504768281"},{"id":1765537714288,"input":"5\n6 26 65 68 85","output":"61.167558783055"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlast1ng/code/niuke/小白月赛/125/C.cpp","group":"local","local":true}
