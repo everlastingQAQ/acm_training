@@ -1,0 +1,1 @@
+{"name":"Local: L","url":"/home/everlast1ng/code/比赛/2025CNB/L.cpp","tests":[{"id":1765768994512,"input":"3\n1 1\n4 5\n1 4\n","output":"52125\n"},{"id":1765769045867,"input":"6\n1 1\n1 2\n1 3\n1 4\n1 5\n1 6","output":"0\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlast1ng/code/比赛/2025CNB/L.cpp","group":"local","local":true}
