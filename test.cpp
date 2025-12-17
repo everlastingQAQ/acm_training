@@ -1,29 +1,30 @@
 #include <bits/stdc++.h>
-int main(){
-	std::string s;
-	std::cin >> s;
-	int x,y = 0;
+using namespace std;
+using ll = long long;
+using ld = long double;
+using pi = pair<ld, ld>;
 
-	std::map<std::pair<int,int>,int> cnt;
-	for(int i = 0;i < s.size();i++){
-		if(s[i] == 'U'){
-			y++;
-		}else if(s[i] == 'D'){
-			y--;
-		}else if(s[i] == 'L'){
-			x--;
-		}else if(s[i] == 'R'){
-			y++;
-		}
-		if(cnt[{x,y}] == 0){
-			cnt[{x,y}]++;
-		}else{
-			std::cout << "BUG\n";
-			return 0;
-		}
-	}
-	std::cout << "OK\n";
-	// for(auto i:cnt){
-	// 		cout << i.first.first << ' ' << i.first.second << '\n';
-	// 	}
+#define fi first
+#define se second
+
+const int MAXN = 6e7;
+const double eps = 1e-12;
+const ll mod = 1e9 + 7;
+const ll MAX = 1e9;
+
+void solve ()
+{
+    
+}
+
+int main ()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
+    while (_--) {
+        solve();
+    }
+    return 0;
 }

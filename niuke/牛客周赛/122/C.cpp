@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+using ld = long double;
+using pi = pair<ll, ll>;
+
+#define fi first
+#define se second
+
+const ll MAXN = 1e7;
+const ld eps = 1e-12;
+const ll mod = 1e9 + 7;
+
+ll n;
+
+void solve ()
+{
+    cin >> n;
+    vector <ll> v(n);
+    ll sum = 0;
+    for (int i = 0; i < n; i++) {
+        cin >> v[i];
+        sum += v[i];
+    }
+    ll mx = *max_element(v.begin(), v.end());
+    ll mn = *min_element(v.begin(), v.end());
+    cout << min(mx + n * mn, sum) << '\n';
+}
+
+int main ()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
+    while (_--) {
+        solve();
+    }
+    return 0;
+}

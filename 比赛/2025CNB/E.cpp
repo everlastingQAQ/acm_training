@@ -23,29 +23,13 @@ void solve ()
     string s1 = a1.substr(0, a1.find('.'));
     string s2 = a2.substr(0, a2.find('.'));
 
-    if (s1.size() != s2.size()) {
-        cout << "ni shi dui de" << '\n';
-        return;
-    }
-    
-    int found1 = 0;
-    for (int i = 0; i < s1.size(); i++) {
-        if (s1[i] < s2[i]) {
-            found1 = 1;
-            break;
-        }else if (s1[i] > s2[i]) {
-            found1 = 2;
-            break;
-        }
-    }
-
-    if (found1 != 0) {
+    if (s1 != s2) {
         cout << "ni shi dui de" << '\n';
         return;
     }
 
-    string ss1 = a1.substr(a1.find('.') + 1, a1.size() - a1.find('.'));
-    string ss2 = a2.substr(a2.find('.') + 1, a2.size() - a2.find('.'));
+    string ss1 = a1.substr(a1.find('.') + 1);
+    string ss2 = a2.substr(a2.find('.') + 1);
 
     int found2 = 0;//normal compare
     for (int i = 0; i < min(ss1.size(), ss2.size()); i++) {
@@ -58,7 +42,7 @@ void solve ()
         }
     }
 
-    if (found2 == 0) {//防止后导0
+    if (found2 == 0) {
         if (ss1.size() < ss2.size()) {
             bool foundd = false;
             for (int i = ss1.size(); i < ss2.size(); i++) {
