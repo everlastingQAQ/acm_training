@@ -1,84 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-const int MAXN = 2e5 + 5;
-int a[MAXN];
-int vis[MAXN];
+using ld = long double;
+using pi = pair<ll, ll>;
+
+#define fi first
+#define se second
+
+const int MAXN = 6e7;
+const double eps = 1e-5;
+const ll mod = 998244353;
+    
+ll n; 
+string s;
 
 void solve ()
-{
-    int n;
-    string s;
+{   
     cin >> n >> s;
+    vector <ll> a, b;
+    for (int i = 0; i < n; i++) {
+        if (s[i] == 'a') a.push_back(i);
+        else b.push_back(i);
+    }
 
-    char c = s[n / 2];
-
-    int count = 0;
-    for (int i = 0; i < n - 1; i++) {
-        if (s[i] != s[i + 1]) {
-            count++;
+    auto found = [&] (vector <ll> v) -> ll {
+        ll pos = v.size() / 2;
+        ll ans = 0;
+        for (int i = 0; i < v.size(); i++) {
+            ans += abs(v[i] - v[pos]) - abs(pos - i);
         }
-    }
-    
-    if (count <= 2) {
-        cout << 0 << endl;
-        return;
-    }
+        return ans;
+    };
 
-    int cnt = 0;
-    bool l = true;
-    int p = 0;
-    for (int i = n / 2 - 1; i >= 0; i--) {
-        if (i - 1 >= 0 && s[i] != c && s[i - 1] == c) {
-            swap(s[i], s[i - 1]);
-            cnt++;
-            l = false;
-        }else if (i - 1 >= 0 && s[i] != c && s[i - 1] != c) {
-            if (l == false) {
-                cnt += p;
-                p = 0;
-                l = true;
-            }
-            p++;
-            i--;
-        }else {
-            continue;
-        }
-    }
-
-    l = true;
-    p = 0;
-    for (int i = n / 2 + 1; i < n; i++) {
-        if (i + 1 < n && s[i] != c && s[i + 1] == c) {
-            swap(s[i], s[i + 1]);
-            cnt++;
-            l = false;
-        }else if (i + 1 < n && s[i] != c && s[i + 1] != c) {
-            if (l == false) {
-                cnt += p;
-                p = 0;
-                l = true;
-            }
-            p++;
-            i++;
-        }else {
-            continue;
-        }
-    }
-
-    cout << cnt << endl;
+    cout << min(found(a), found(b)) << '\n';
 }
-
+ 
 int main ()
 {
     ios::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
-	int _ = 1;
-	cin >> _;
-
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
     while (_--) {
         solve();
     }
-
     return 0;
 }

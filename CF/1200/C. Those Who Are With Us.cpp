@@ -1,93 +1,58 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-const int MAXN = 1e3 + 5;
-int a[MAXN][MAXN];
-set <int> c;
-set <int> d;
-int rec[MAXN][2];
+using ld = long double;
+using pi = pair<ll, ll>;
 
-int cmp (int a1, int b1)
-{
-    return a1 > b1;
-}
+#define fi first
+#define se second
+
+const int MAXN = 6e7;
+const double eps = 1e-5;
+const ll mod = 998244353;
+    
+ll n, m;
 
 void solve ()
-{
-    int n, m;
+{   
     cin >> n >> m;
-
-    memset(a, 0, sizeof(a));
-    memset(rec, 0, sizeof(rec));
-    c.clear();
-    d.clear();
-
-    int mx = 0;
+    vector <vector <ll> > v(n + 1, vector <ll> (m + 1));
+    ll mx = LLONG_MIN;
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
-            cin >> a[i][j];
-            mx = max(mx, a[i][j]);
+            cin >> v[i][j];
+            mx = max(mx, v[i][j]);
         }
     }
 
-    int cnt = 0;
+    ll cntmx = 0;
+    vector <ll> a(n + 1), b(m + 1);
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
-            if (a[i][j] == mx) {
-                rec[cnt][0] = i;
-                rec[cnt][1] = j;
-                cnt++;
-            }
-        }
-    }
-
-
-    for (int i = 0; i < cnt; i++) {
-        c.insert(rec[i][0]);
-    }
-
-    for (int i = 0; i < cnt; i++) {
-        d.insert(rec[i][1]);
-    }
-
-    bool FOUND = false;
-    for (auto it = c.begin(); it != c.end(); it++) {
-        for (auto its = d.begin(); its != d.end(); its++) {
-            bool found = true;
-            for (int i = 0; i < cnt; i++) {
-                if (rec[i][0] != *it && rec[i][1] != *its) {
-                    found = false;
-                    break;
-                }
-            }
-            if (found) {
-                FOUND = true;
-                break;
-            }
+            if (v[i][j] == mx) cntmx++, a[i]++, b[j]++;
         } 
-        if (FOUND) {
-            break;
-        }  
     }
 
-    if (FOUND) {
-        cout << mx - 1 << endl;
-    }else {
-        cout << mx << endl;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= m; j++) {
+            if (a[i] + b[j] - (v[i][j] == mx) == cntmx) {
+                cout << mx - 1 << '\n';
+                return;
+            }
+        }
     }
-   
+
+    cout << mx << '\n';
 }
-
+ 
 int main ()
 {
     ios::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
-	int _ = 1;
-	cin >> _;
-
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
     while (_--) {
         solve();
     }
-
     return 0;
 }

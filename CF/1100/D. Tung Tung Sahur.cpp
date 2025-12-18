@@ -1,47 +1,57 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
+using ld = long double;
+using pi = pair<ll, ll>;
+
 #define fi first
 #define se second
 
-const int MAXN = 1e6 + 5;
+const int MAXN = 6e7;
 const double eps = 1e-5;
 const ll mod = 998244353;
-string s1, s2;//错误代码
+    
+string s1, s2;
 
 void solve ()
-{
+{   
     cin >> s1 >> s2;
-
-    if (s1 == s2) {
-        cout << "YES" << endl;
+    ll n = s1.size(), m = s2.size();
+    if (n > m || n * 2 < m) {
+        cout << "No" << '\n';
         return;
     }
-    
-    ll l = 0, r = 0;
 
-    while (l < s1.size()) {
-        char t = s1[l];
-        ll cnt1 = 0;
-        while (r < s2.size() && s2[r] == t && cnt1 < 2) {
-            cnt1++;
+    ll l = 0, r = 0;
+    while (r < m) {
+        ll tl = l;
+        while (l < n && s1[l] == s1[l + 1]) {
+            l++;
+        }
+        if (s2[r] != s1[l]) {
+            cout << "No" << '\n';
+            return;
+        }
+        ll tr = r;
+        while (s2[r] == s2[r + 1]) {
             r++;
         }
-        if (cnt1 == 0) {
-            cout << "NO" << endl;
+        if (r - tr + 1 < l - tl + 1 || r - tr + 1 > 2 * (l - tl + 1)) {
+            cout << "No" << '\n';
             return;
         }
         l++;
+        r++;
     }
 
-    if (r != s2.size()) {
-        cout << "NO" << endl;
+    if (s1[l] != s2[r]) {
+        cout << "No" << '\n';
     }else {
-        cout << "YES" << endl;
+        cout << "Yes" << '\n';
     }
-
+    
 }
-
+ 
 int main ()
 {
     ios::sync_with_stdio(0);
