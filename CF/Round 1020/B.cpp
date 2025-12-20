@@ -8,21 +8,19 @@ using pi = pair<ll, ll>;
 #define se second
 
 const int MAXN = 6e7;
-const double eps = 1e-12;
-const ll mod = 998244353;
- 
-ll n, k;
+const double eps = 1e-5;
+const ll mod = 1e9 + 7;
 
 void solve ()
-{
-    cin >> n >> k;
-    vector <ll> v(n + 1);
-    for (int i = 1; i <= n; i++) {
-        ll t; cin >> t;
-        if (t > k) v[i] = 1;
-        else v[i] = -1;
-    }njxcvb tfgz
-}   
+{   
+    ll n, x; cin >> n >> x;
+    for (int i = 0; i < n; i++) {
+        if (i == x) continue;
+        cout << i << ' ';
+    }
+    if (n != x) cout << x << '\n';
+    else cout << '\n';
+}
  
 int main ()
 {

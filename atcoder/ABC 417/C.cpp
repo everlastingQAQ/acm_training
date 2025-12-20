@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+using ll = long long;
+using ld = long double;
+using pi = pair<ll, ll>;
+
+#define fi first
+#define se second
+
+const int MAXN = 6e7;
+const double eps = 1e-5;
+const ll mod = 1e9 + 7;
+
+void solve ()
+{   
+    ll n; cin >> n;
+    vector <ll> v(n + 1);
+    for (int i = 1; i <= n; i++) cin >> v[i];
+
+    unordered_map <ll, ll> mp1, mp2;
+    for (int i = 1; i <= n; i++) {
+        mp1[v[i] + i]++;
+        mp2[i - v[i]]++;
+    }   
+
+    ll ans = 0;
+    for (auto [x, y] : mp1) {
+        ans += mp2[x] * y;
+    }
+
+    cout << ans << '\n';
+
+}
+
+void solvee ()
+{
+    ll n; cin >> n;
+    vector <ll> v(n + 1);
+    for (int i = 1; i <= n; i++) cin >> v[i];
+
+    unordered_map <ll, ll> mp;
+    ll ans = 0;
+    for (int i = 1; i <= n; i++) {
+        mp[-v[i] - i]++;
+        ans += mp[v[i] - i];    
+    }
+    cout << ans << '\n';
+}
+ 
+int main ()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int _ = 1;
+    //cin >> _;
+    while (_--) {
+        solvee();
+    }
+    return 0;
+}

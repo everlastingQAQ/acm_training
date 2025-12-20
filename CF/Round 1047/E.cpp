@@ -35,7 +35,9 @@ void solve ()
             v[i] = tag;
             cnt++;
         }
+        cout << v[i] << ' ';
     }
+    cout << cnt << '\n';
 
     if (k & 1) {
         cout << accumulate(v.begin(), v.end(), 0LL) << '\n';

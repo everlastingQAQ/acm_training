@@ -8,15 +8,14 @@ using pi = pair<ll, ll>;
 #define se second
 
 const int MAXN = 6e7;
-const double eps = 1e-12;
-const ll mod = 998244353;
- 
-ll n;
+const double eps = 1e-5;
+const ll mod = 1e9 + 7;
 
 void solve ()
-{
-    
-}   
+{   
+    ll n; cin >> n;
+    cout << (n & 1 ? "Yes" : "No") << '\n';
+}
  
 int main ()
 {
