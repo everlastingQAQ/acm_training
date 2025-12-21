@@ -7,12 +7,11 @@ using pi = pair<ll, ll>;
 #define fi first
 #define se second
 
-const int MAXN = 6e7;
+const int N = 6e7;
 const double eps = 1e-5;
 const ll mod = 1e9 + 7;
 
-vector <bool> vis(2e7 + 5, false);
-vector <int> v(4e3 + 510);
+bool vis[20000005];//这里如果用vector记录可能会被卡常
 
 void solve ()
 {
@@ -27,20 +26,17 @@ void solve ()
 int main ()
 {
     ios::sync_with_stdio(0);
-    cin.tie(0);
+    cin.tie(0); cout.tie(0);
     int _ = 1;
     cin >> _;
 
-    for (int i = 1; i < 4500; i++) {
-        v[i] = i * i;
-    }
-    for (int i = 1; i < 4500; i++) {
-        if (v[i] > 2e7 + 4) break;
-        for (int j = 1; j < 4500; j++) {
-            if (v[i] + v[j] > 2e7 + 4) continue;
-            vis[v[i] + v[j]] = true;
+    for (int i = 1; i < 4473; i++) {
+        if (i * i > 2e7 + 2) break;
+        for (int j = i; j < 4473; j++) {
+            if (i * i + j * j > 2e7 + 2) break;
+            vis[i * i + j * j] = true;
         }
-    }
+    }   
 
     while (_--) {
         solve();

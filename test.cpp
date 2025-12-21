@@ -13,17 +13,9 @@ const ll mod = 1e9 + 7;
 
 void solve ()
 {
-    ll n; cin >> n;
-    vector <ll> v(n);
-    for (ll &x : v) cin >> x;
-
-    vector <ll> dp(n);
-    dp[0] = v[0];
-    for (int i = 1; i < n; i++) {
-        dp[i] = max(dp[i - 1] + v[i], v[i]);
-    }   
-
-    cout << *max_element(dp.begin(), dp.end()) << '\n';
+    if("whu" < "whut") {
+        cout << 1 << '\n';
+    }
 }
 
 int main ()

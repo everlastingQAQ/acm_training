@@ -26,6 +26,7 @@ ll qpow (ll a, ll b)
 
 ll C (ll n, ll m)
 {
+    if (m < 0 || m > n) return 0;
     return f[n] * g[m] % mod * g[n - m] % mod;
 }
 

@@ -23,12 +23,23 @@ void solve ()
     vector <vector <bool> > vis(n + 1, vector <bool> (m + 1, false));
 
     ll t = n * m;
-    for (int i = 2; i < n; i += 2) {
-        for (int j = 2; j < m; j += 2) {
-            v[i][j] = t--;
-            vis[i][j] = true;
+    if (k != 0) {
+        ll cnt = 0;
+        bool found = true;
+        for (int i = 2; i < n; i += 2) {
+            for (int j = 2; j < m; j += 2) {
+                cnt++;
+                v[i][j] = t--;
+                vis[i][j] = true;
+                if (cnt == k) {
+                    found = false;
+                }
+                if (!found) break;
+            }
+            if (!found) break;
         }
     }
+    
 
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= m; j++) {
