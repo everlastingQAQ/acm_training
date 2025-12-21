@@ -36,8 +36,8 @@ void solve ()
     ll a = 0, b = 0;
     for (int i = 0; i <= min(k, m); i++) {
         a = (a + C(k, i) * C(n - k, m - i) % mod * (k - i) % mod) % mod;
-        b = (b + C(k, i) * C(n - k, m - i) % mod) % mod;
     }
+    b = C(n, m);
     ll ans = a * qpow(b, mod - 2) % mod;
     cout << ans << '\n';
 }
