@@ -26,6 +26,7 @@ ll qpow (ll a, ll b)
 
 ll C (ll n, ll m)
 {
+    if (n < m) return 0;
     return f[n] * g[m] % mod * g[n - m] % mod;
 }
 
@@ -39,22 +40,19 @@ void solve ()
         mp[x]++; 
     }    
     
-    ll cnt2 = 0, cnt3 = 0, cnt5 = 0;
+    ll cnt = 0, cnt4 = 0;
     vector <ll> a;
 
     for (auto [x, y] : mp) {
-        if (y == 2) cnt2++;
-        else if (y >= 3 && y < 5) cnt3++, a.push_back(x);
-        else if (y >= 5) cnt5++, a.push_back(x);
+        if (y == 2) cnt++;
+        else if (y >= 3 && y < 4) cnt++, a.push_back(x);
+        else if (y >= 4) cnt++, cnt4++, a.push_back(x);
     }
 
     ll ans = 0;
-    for (auto x : a) {
-        if (mp[x] < 5) {
-            ans += (cnt3 - 1) * C(cnt2 + cnt3 - 2, 2) % mod;
-        }else {
-            ans += (cnt3 - 1) * C(cnt2 + cnt3 - 1, 2) % mod;
-        }
+    for (int i = 0; i < a.size() - 1; i++) {
+        if (a[i] != a[i + 1] - 1) continue;
+        
     }
     cout << ans << '\n';
 }

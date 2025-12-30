@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/everlasting/acm_training/CF/Round 1071/C.cpp","tests":[{"id":1766503050983,"input":"3\n3\n5 7 9\n2\n2 3\n7\n11 74 5 22 52 97 82\n","output":"5\n2\n6\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/CF/Round 1071/C.cpp","group":"local","local":true}

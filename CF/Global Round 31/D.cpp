@@ -13,7 +13,36 @@ const ll mod = 1e9 + 7;
 
 void solve ()
 {
-    
+    ll n; cin >> n;
+    vector <ll> v(n + 1), d(n + 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> v[i];
+        d[i] = v[i] - v[i - 1];
+    }
+
+    ll cur = 0, pos = 1;
+    ll l = 0, r = 1e16;
+    ll ans = n - 1;
+
+    for (int i = 2; i <= n; i++) {
+        cur = d[i] - cur;
+        if (((i - pos) & 1) == 0) {
+            r = min(r, cur);
+            if (i < n - 1) l = max(l, cur - d[i + 1]);
+        }else {
+            l = max(l, -cur);
+            if (i < n - 1) r = min(r, d[i + 1] - cur);
+        }
+        if (l >= r) {
+            // cout << i << '\n';
+            ans--;
+            l = 0, r = 1e16;
+            cur = 0;
+            pos = i + 1;
+        }
+    }
+
+    cout << ans << '\n';
 }
 
 int main ()

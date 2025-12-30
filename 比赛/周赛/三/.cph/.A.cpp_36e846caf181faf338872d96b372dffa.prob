@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/everlasting/acm_training/比赛/周赛/三/A.cpp","tests":[{"id":1766574109654,"input":"3\n1 2 3\n","output":""},{"id":1766574112509,"input":"5\n2 2 2 3 3\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/比赛/周赛/三/A.cpp","group":"local","local":true}
