@@ -11,44 +11,20 @@ const int mod = 998244353;
 const double eps = 1e-10;
 
 void solve(){   
-    int n, m;
-    cin >> n >> m;
-    vector<ll> a(n);
-    for (ll & i : a) cin >> i;
-    ranges::sort(a);
-
-    if (m > n + 1) {
-        cout << "NO" << endl;
-    } else {
-        int cur = 0, mx = 1, ok = 1;
-        for (int i = 1; i < n; i ++) {
-            if (a[i] - a[i - 1] == 1) {
-                cur ++;
-            } else if(a[i] - a[i - 1] == 2 && ok) {
-                cur += 2;
-                ok = 0;
-            } else if(ok) {
-                cur ++;
-                mx = max(mx, cur);
-                cur = 0;
-                // cout << mx << ' ';
-            } else {
-                mx = max(mx, cur);
-                cur = 0;
-                ok = 1;
-                // cout << mx << endl;
-            }
+    cout << 10000 << '\n';
+    for (int j = 1; j <= 10000; j++) {
+        cout << 20 << '\n';
+        ll cnt = rand();
+        for (int i = 1; i <= 20; i++) {
+            if (cnt % 2 == 0) cout << 2;
+            else if (cnt % 5 == 0) cout << 5;
+            else if (cnt % 6 == 0) cout << 6;
+            else cout << 0;
+            cnt = rand();
         }
-        if (cur != 0) {
-            if(ok) mx = max(cur +1 , mx);
-            else mx = max(mx, cur);
-        }
-        if (mx >= m - 1) {
-            cout << "YES" << endl;
-        } else {
-            cout << "NO" << endl;
-        }
+        cout << '\n';
     }
+    
 }
 
 signed main(){
@@ -56,7 +32,7 @@ signed main(){
     cin.tie(0),cout.tie(0);
     
     int _=1;
-    cin>>_;
+    // cin>>_;
 
     while(_--){
         solve();

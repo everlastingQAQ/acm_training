@@ -8,40 +8,38 @@ using pi = pair<ll, ll>;
 #define se second
 
 const int MAXN = 6e7;
-const double eps = 1e-5;
-const ll mod = 1e9 + 7;
+const double eps = 1e-12;
+const ll mod = 998244353;
 
 void solve ()
 {
     ll n; cin >> n;
-    vector <ll> v(n + 1), a(n + 1);
-    for (int i = 1; i <= n; i++) cin >> v[i];
+    vector <ll> a(n + 1);
     for (int i = 1; i <= n; i++) cin >> a[i];
+    vector <ll> b(n + 1);
+    for (int i = 1; i <= n; i++) cin >> b[i];
+    vector <ll> c(n + 1);
+    for (int i = 1; i <= n; i++) cin >> c[i];
 
-    vector <ll> ans(n + 1);
-    vector <ll> vis(n + 1, false);
-
-    ll t = 0;
+    map <array<ll, 2> , ll> mp1;
+    map <array<ll, 2> , ll> mp2;
     for (int i = 1; i <= n; i++) {
-        ll count = 0;
-        auto dfs = [&] (ll x, ll cnt, auto self) -> void {
-            if (vis[x]) {
-                count = cnt;
-                return;
-            }
-            vis[x] = true;
-            self(v[x], cnt + 1, self);
-        };
-        dfs(v[a[i]], 0LL, dfs);
-        ans[i] = ans[i - 1] + count;
+        for (int j = 1; j <= n; j++) {
+            if (a[j] >= b[i]) mp1[{(j - i + 2 * n) % n + 1, 1}] = 1;
+            if (c[j] <= b[i]) mp2[{1, (j - i + 2 * n) % n + 1}] = 1;
+        }
     }
 
+    ll cnt1 = 0, cnt2 = 0;
     for (int i = 1; i <= n; i++) {
-        cout << ans[i] << ' ';
+        if (mp1[{i, 1}] == 0) cnt1++;
+        if (mp2[{1, i}] == 0) cnt2++;
     }
-    cout << '\n';
-}
 
+    cout << n * cnt1 * cnt2 << '\n';
+
+}   
+ 
 int main ()
 {
     ios::sync_with_stdio(0);
@@ -52,4 +50,4 @@ int main ()
         solve();
     }
     return 0;
-}   
+}
