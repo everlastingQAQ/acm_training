@@ -1,20 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
 using ld = long double;
-using pi = pair<ll, ll>;
-
+#define int long long
 #define fi first
 #define se second
 
 const int N = 1e5;
-const double eps = 1e-5;
-const ll mod = 1e9 + 7;
 
 bool vis[N];
 int primes[N], mnp[N];
 int cnt = 0;
-vector <vector<pi> > v(N);
+vector <vector<pair<int, int> > > v(N);
 
 void get_factors ()
 {

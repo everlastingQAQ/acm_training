@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> 
+#include<bits/stdc++.h>  
 #define int long long 
 using ll = long long; 
 
@@ -7,36 +7,56 @@ typedef pair<int,int> PII;
 typedef pair<int,PII> PIII; 
 const int mod = 998244353; 
 const double eps = 1e-10; 
+
+const int N = 1e5 + 10;
+int primes[N];
+bool vis[N];
+int mnt[N];
+int cnt = 1;
+vector<vector<PII>> mnf(N);
+
+void get_primes(int n) {
+    mnt[1] = 1;
+    for (int i = 2; i <= n; i ++) {
+        if (!vis[i]) {
+            primes[cnt ++] = i;
+            mnt[i]  = i;
+        }   
+
+        for (int j = 1; j < cnt && 1ll * i * primes[j] <= n; j ++) {
+            mnt[i * primes[j]] = primes[j];
+            vis[i * primes[j]] = 1;
+            if (i % primes[j] == 0) break;
+        }
+    }
+
+    mnf[1].push_back({1, 1});
+    for (int i = 2; i <= n; i ++) {
+        int t = i;
+        while (t != 1) {
+            int cn = 0;
+            int mf = mnt[t];
+            while (t % mf == 0) {
+                cn ++;
+                t /= mf;
+            }
+            mnf[i].push_back({mf, cn});
+        }
+    }
+}
+
 void solve() { 
-    int n, a, b; 
-    cin >> n >> a >> b; 
-    int gb = lcm (a, b); 
-    while (n --) { 
-        ll x = 0, y = 0, t; 
-        cin >> t; 
-        if (a == b) { 
-            x = 0, y = (t + a - 1) / a; 
-            cout << x << ' ' << y << endl; 
-        }else { 
-            y = t / gb * (gb / a); 
-            int res = t - y * b; 
-            if (res == 0) { 
-                cout << x << ' ' << y << endl; 
-                return; 
-            } 
-            int mx = (res + a - 1) / a; 
-            int pr, mnp = LLONG_MAX, mni; 
-            for (int i = 0; i <= mx; i ++) { 
-                pr = i * a + (res - i * a + b - 1) / b * b; 
-                if (pr < mnp) { 
-                    mnp = pr; mni = i; 
-                } 
-            } 
-            x += mni; 
-            y += (res - mni * a + b - 1) / b; 
-            cout << x << ' ' << y << endl; 
-        } 
-    } 
+    int n;
+    cin >> n;
+    get_primes(n);
+    for (int i = 2; i <= n; i ++) {
+        cout << i << ": ";
+        for (auto [a, b] : mnf[i])  {
+            cout << a << ' ' << b << " or ";
+        }
+        cout << endl;
+    }
+    
 } 
 
 signed main(){ 

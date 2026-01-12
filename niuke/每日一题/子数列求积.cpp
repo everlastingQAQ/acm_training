@@ -5,10 +5,7 @@ using ld = long double;
 #define fi first
 #define se second
 
-const int N = 6e7;
-const int mod = 998244353;
-
-int f[N], g[N];
+const int mod = 1e9 + 7;
 
 int qpow (int a, int b)
 {
@@ -21,34 +18,29 @@ int qpow (int a, int b)
     return res;
 }
 
-int C (int n, int m)
-{
-    return f[n] * g[m] % mod * g[n - m] % mod;
-}
-
-void init ()
-{
-    f[0] = 1, g[0] = 1;
-    for (int i = 1; i < N; i++) {
-        f[i] = f[i - 1] * i % mod;
-        g[i] = qpow(f[i], mod - 2) % mod;
-    }
-}
-
 void solve ()
 {
-    
-}
+    int n, q; cin >> n >> q;
+    vector <int> v(n + 1), s(n + 1, 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> v[i];
+        s[i] = s[i - 1] % mod * v[i] % mod;
+    }
 
-int main ()
+    while (q--) {
+        int l, r; cin >> l >> r;
+        cout << s[r] * qpow(s[l - 1], mod - 2) % mod << ' ';
+    }
+}   
+    
+signed main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     int _ = 1;
     // cin >> _;
-    init();
     while (_--) {
         solve();
     }
     return 0;
-}   
+}

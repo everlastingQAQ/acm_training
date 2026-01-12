@@ -1,24 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
 using ld = long double;
-using pi = pair<ll, ll>;
-
+#define int long long
 #define fi first
 #define se second
 
 const int MAXN = 6e7;
 const double eps = 1e-12;
-const ll mod = 998244353;
+const int mod = 998244353;
 
 void solve ()
 {
-    ll n, q; cin >> n >> q;
-    vector <ll> v(n + 1);
+    int n, q; cin >> n >> q;
+    vector <int> v(n + 1);
     for (int i = 1; i <= n; i++) cin >> v[i];
-    ll t = log2(n);
-    vector <vector <ll> > stmx(n + 1, vector <ll> (30));
-    vector <vector <ll> > stmn(n + 1, vector <ll> (30));
+    int t = log2(n);
+    vector <vector <int> > stmx(n + 1, vector <int> (30));
+    vector <vector <int> > stmn(n + 1, vector <int> (30));
     for (int i = 1; i <= n; i++) stmx[i][0] = v[i], stmn[i][0] = v[i];
     for (int j = 1; j <= t; j++) {
         for (int i = 1; i <= n - (1LL << j) + 1; i++) {
@@ -28,10 +26,10 @@ void solve ()
     }
 
     while (q--) {
-        ll l, r; cin >> l >> r;
-        ll len = log2(r - l + 1);
-        ll mx = max(stmx[l][len], stmx[r - (1LL << len) + 1][len]);
-        ll mn = min(stmn[l][len], stmn[r - (1LL << len) + 1][len]);
+        int l, r; cin >> l >> r;
+        int len = log2(r - l + 1);
+        int mx = max(stmx[l][len], stmx[r - (1LL << len) + 1][len]);
+        int mn = min(stmn[l][len], stmn[r - (1LL << len) + 1][len]);
         cout << mx - mn << '\n';
     }
 }   

@@ -11,11 +11,20 @@ const int mod = 998244353;
 
 void solve ()
 {
-    int t; cin >> t;
-    t *= (long long)1000000000;
-    int ans = sqrtl(t);
-    ans++;
-    cout << ans * ans << '\n';
+    int n, k; cin >> n >> k;
+    vector <int> a(n), b(n);
+    for (int &x : a) cin >> x, x = min(x % k, k - x % k);
+    for (int &x : b) cin >> x, x = min(x % k, k - x % k);
+
+    ranges::sort(a);
+    ranges::sort(b);
+    for (int i = 0; i < n; i++) {
+        if (a[i] != b[i]) {
+            cout << "No" << '\n';
+            return;
+        }
+    }
+    cout << "Yes" << '\n';
 }   
     
 signed main ()

@@ -1,25 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
 using ld = long double;
-using pi = pair<ll, ll>;
-
+#define int long long
 #define fi first
 #define se second
 
 const int N = 1e5;
 const double eps = 1e-5;
-const ll mod = 1e9 + 7;
+const int mod = 1e9 + 7;
 
 bool vis[N];
 int primes[N];//1-based
 int cnt = 0;
 
-void get_primes (ll n)
+void get_primes (int n)
 {
-    for (ll i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++) {
         if (!vis[i]) primes[++cnt] = i;
-        for (ll j = 1; j <= cnt && i * primes[j] <= n; j++) {
+        for (int j = 1; j <= cnt && i * primes[j] <= n; j++) {
             vis[i * primes[j]] = 1;
             if (i % primes[j] == 0) break;
         }

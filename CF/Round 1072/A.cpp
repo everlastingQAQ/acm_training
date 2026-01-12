@@ -11,11 +11,20 @@ const int mod = 998244353;
 
 void solve ()
 {
-    int t; cin >> t;
-    t *= (long long)1000000000;
-    int ans = sqrtl(t);
-    ans++;
-    cout << ans * ans << '\n';
+    int n; cin >> n;
+    if (n == 2) {
+        cout << 2 << '\n';
+        return;
+    }else if (n == 3) {
+        cout << 3 << '\n';
+        return;
+    }
+
+    if (!(n & 1)) {
+        cout << 0 << '\n';
+    }else {
+        cout << 1 << '\n';
+    }
 }   
     
 signed main ()
