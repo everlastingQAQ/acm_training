@@ -1,30 +1,40 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-const int MAXN = 1e6 + 5;
-const double eps = 1e-5;
-vector <int> p;
+using ld = long double;
+
+#define fi first
+#define se second
+#define int long long
+
+const int MAXN = 6e7;
+const double eps = 1e-12;
+const int mod = 998244353;
+
+void init() 
+{
+
+}
 
 void solve ()
 {
-    ll x, y;
-    cin >> x >> y;
-
-    for (int i = 0; (1 << x) <= x; i++) {
-        
+    int x, y; cin >> x >> y;
+    int ans = 0;
+    while ((x & y) != x) {
+        ans++;
+        x >>= 1;
     }
-}
+    cout << ans + (x != y) << '\n';
+}   
 
-int main ()
+signed main ()
 {
     ios::sync_with_stdio(0);
-	cin.tie(0); cout.tie(0);
-	int _ = 1;
-	cin >> _;
-
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
+    init();
     while (_--) {
         solve();
     }
-
     return 0;
 }

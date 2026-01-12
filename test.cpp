@@ -1,41 +1,43 @@
-#include<bits/stdc++.h>
-#define pi acos(-1)
-#define fi first 
-#define se second 
-#define int long long
-using ll = long long;
-using namespace std;
-typedef pair<int,int> PII;
-typedef pair<int,PII> PIII;
-const int mod = 998244353;
-const double eps = 1e-10;
+#include<bits/stdc++.h> 
+#define int long long 
+using ll = long long; 
 
-void solve(){   
-    cout << 10000 << '\n';
-    for (int j = 1; j <= 10000; j++) {
-        cout << 20 << '\n';
-        ll cnt = rand();
-        for (int i = 1; i <= 20; i++) {
-            if (cnt % 2 == 0) cout << 2;
-            else if (cnt % 5 == 0) cout << 5;
-            else if (cnt % 6 == 0) cout << 6;
-            else cout << 0;
-            cnt = rand();
-        }
-        cout << '\n';
-    }
-    
-}
+using namespace std; 
+typedef pair<int,int> PII; 
+typedef pair<int,PII> PIII; 
+const int mod = 998244353; 
+const double eps = 1e-10; 
+void solve() { 
+    int n, a, b; 
+    cin >> n >> a >> b; 
+    int gb = lcm (a, b); 
+    while (n --) { 
+        ll x = 0, y = 0, t; 
+        cin >> t; 
+        if (a == b) { 
+            x = 0, y = (t + a - 1) / a; 
+            cout << x << ' ' << y << endl; 
+        }else { 
+            y = t / gb * (gb / a); 
+            int res = t - y * b; 
+            if (res == 0) { 
+                cout << x << ' ' << y << endl; 
+                return; 
+            } 
+            int mx = (res + a - 1) / a; 
+            int pr, mnp = LLONG_MAX, mni; 
+            for (int i = 0; i <= mx; i ++) { 
+                pr = i * a + (res - i * a + b - 1) / b * b; 
+                if (pr < mnp) { 
+                    mnp = pr; mni = i; 
+                } 
+            } 
+            x += mni; 
+            y += (res - mni * a + b - 1) / b; 
+            cout << x << ' ' << y << endl; 
+        } 
+    } 
+} 
 
-signed main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0),cout.tie(0);
-    
-    int _=1;
-    // cin>>_;
-
-    while(_--){
-        solve();
-    }
-    return 0;
-}
+signed main(){ 
+    ios::sync_with_stdio(false); int _=1; while(_--){ solve(); } return 0; }

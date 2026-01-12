@@ -11,12 +11,12 @@ const int N = 6e7;
 const double eps = 1e-5;
 const ll mod = 1e9 + 7;
 
-ll qpow (ll a, ll b)//a的b次方
+ll qpow (ll a, ll b, ll m)//a的b次方
 {
     ll res = 1;
     while (b) {
-        if (b & 1) res = res * a % mod;
-        a = a * a % mod;
+        if (b & 1) res = res * a % m;
+        a = a * a % m;
         b >>= 1;
     }
     return res;

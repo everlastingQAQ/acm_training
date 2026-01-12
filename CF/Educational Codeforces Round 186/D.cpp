@@ -72,8 +72,8 @@ void solve ()
     }
 
     // cout << cntmx << '\n';
-    ll ans = f[cntmx] * f[n - cntmx] % mod;
-    ans = (ans * C(cntmx + t, t)) % mod;   
+    ll ans = f[cntmx + t] * f[n - cntmx - t] % mod;
+    ans = (ans * C(n - cntmx, t)) % mod;   
 
     cout << ans << '\n';
 

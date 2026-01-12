@@ -25,7 +25,7 @@ int main ()
 	str[i] = '\0';
 	
 	printf("String:%s\n", str);	
-	printf("number=%d", str);
+	printf("number=%d", num);
 	
 	return 0;
 	

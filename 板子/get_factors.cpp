@@ -27,7 +27,7 @@ void get_factors ()
         for (int j = 1; j <= cnt && i * primes[j] < N; j++) {
             vis[i * primes[j]] = 1;
             mnp[i * primes[j]] = primes[j];
-            if (i % primes[j] == 0) break;
+            if (i % primes[j] == 0) break;  
         }
     }
 
