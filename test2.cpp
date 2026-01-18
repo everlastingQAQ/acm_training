@@ -1,112 +1,78 @@
-#include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
-
-class SEG{
-    public:
-        int n;
-        vector<int> len0,len1;
-        vector<int> tag;
-
-        SEG(int n):n(n){
-            len0.assign(n<<2,0);
-            len1.assign(n<<2,0);
-            tag.assign(n<<2,0);
-        }
-
-        void up(int i){
-            len0[i] = len0[i<<1]+len0[i<<1|1];
-            len1[i] = len1[i<<1]+len1[i<<1|1];
-        }
-
-        void lazy(int i){
-            swap(len0[i],len1[i]);
-            tag[i] ^= 1;
-        }
-
-        void down(int i){
-            if(tag[i]){
-                lazy(i<<1);
-                lazy(i<<1|1);
-                tag[i] = 0;
-            }
-        }
-
-        void build(int l,int r,int i,string& a){
-            if(l==r){
-                len0[i] = (a[l]=='0');
-                len1[i] = (a[l]=='1');
-            }
-            else{
-                int mid = (l+r)>>1;
-                build(l,mid,i<<1,a);
-                build(mid+1,r,i<<1|1,a);
-                up(i);
-            }
-            tag[i] = 0;
-        }
-
-        void upd(int u,int v,int l,int r,int i){
-            if(u<=l && r<=v){
-                return lazy(i);
-            }
-            int mid = l+r>>1;
-            down(i);
-            if(u<=mid) upd(u,v,l,mid,i<<1);
-            if(v>mid) upd(u,v,mid+1,r,i<<1|1);
-            up(i);
-        }
-
-        void upd(int l,int r){
-            upd(l,r,1,n,1);
-        }
-
-        int query(int u,int v,int l,int r,int i){
-            if(u<=l && r<=v){
-                return len1[i];
-            }
-            int mid = (l+r)>>1;
-            down(i);
-            int res = 0;
-            if(u<=mid) res += query(u,v,l,mid,i<<1);
-            if(v>mid) res += query(u,v,mid+1,r,i<<1|1);
-            return res;
-        }
-
-        int query(int l,int r){
-            return query(l,r,1,n,1);
-        }
-};
-
-void solve(){
-    int n,q; cin >> n >> q;
-    string s; cin >> s;
-    s = ' ' + s;
-
-    SEG seg(n);
-    seg.build(1,n,1,s);
-    while(q--){
-        int op; cin >> op;
-        int l,r; cin >> l >> r;
-        if(op==1){
-            seg.upd(l,r);
-        }
-        else{
-            cout << seg.query(l,r) << endl;
-        }
+#include <cstdio>
+#include <cctype>
+int read()
+{
+    int ans = 0;
+    char c = getchar();
+    while (!isdigit(c))
+        c = getchar();
+    while (isdigit(c))
+    {
+        ans = (ans << 3) + (ans << 1) + c - '0';
+        c = getchar();
+    }
+    return ans;
+}
+int fa[150005], rank[150005];
+int find(int a)
+{
+    return (fa[a] == a) ? a : (fa[a] = find(fa[a]));
+}
+int query(int a, int b)
+{
+    return find(a) == find(b);
+}
+void merge(int a, int b)
+{
+    int x = find(a), y = find(b);
+    if (rank[x] >= rank[y])
+        fa[y] = x;
+    else
+        fa[x] = y;
+    if (rank[x] == rank[y] && x != y)
+        rank[x]++;
+}
+void init(int n)
+{
+    for (int i = 1; i <= n; ++i)
+    {
+        rank[i] = 1;
+        fa[i] = i;
     }
 }
-
-int main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    int _ = 1;
-    // cin >> _;
-    while(_--){
-        solve();
+int main()
+{
+    int n = read(), m = read(), ans = 0;
+    init(n * 3); //i吃i+n，被i+2n吃
+    for (int i = 0; i < m; ++i)
+    {
+        int opr, x, y;
+        scanf("%d%d%d", &opr, &x, &y);
+        if (x > n || y > n) //特判x或y不在食物链中的情况
+            ans++;
+        else if (opr == 1)
+        {
+            if (query(x, y + n) || query(x, y + 2 * n)) //如果已知x吃y，或者x被y吃，说明这是假话
+                ans++;
+            else
+            {
+                merge(x, y);                 //这是真话，则x和y是一族
+                merge(x + n, y + n);         //x的猎物和y的猎物是一族
+                merge(x + 2 * n, y + 2 * n); //x的天敌和y的天敌是一族
+            }
+        }
+        else if (opr == 2)
+        {
+            if (query(x, y) || query(x, y + 2 * n)) //如果已知x与y是一族，或者x被y吃，说明这是假话
+                ans++;
+            else
+            {
+                merge(x, y + n);         //这是真话，则x吃y
+                merge(x + n, y + 2 * n); //x的猎物吃y的猎物
+                merge(x + 2 * n, y);     //x的天敌吃y的天敌，或者说y吃x的天敌
+            }
+        }
     }
-
+    printf("%d\n", ans);
     return 0;
 }
