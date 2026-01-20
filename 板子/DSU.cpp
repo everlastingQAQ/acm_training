@@ -7,26 +7,28 @@ using ld = long double;
 
 class DSU {
     public: 
-        vector <int> fa, sz;
-        DSU (int n) {
-            if (n) init(n); 
+        vector <int> fa, rk;
+        DSU (int n = 0) {
+            init(n); 
         }
 
         void init (int n) {
             fa.resize(n + 1);
-            sz.assign(n + 1, 1);
-            for (int i = 1; i <= n; i++) fa[i] = i;
+            rk.assign(n + 1, 1);
+            ranges::iota(fa, 0LL);
         }
 
         int find (int x) {
             return x == fa[x] ? x : (fa[x] = find(fa[x]));
         }
 
-        void merge (int i, int j) {
+        bool merge (int i, int j) {
             int x = find(i), y = find(j);
-            if (sz[x] <= sz[y]) fa[x] = y;
+            if (x == y) return false;
+            if (rk[x] <= rk[y]) fa[x] = y;
             else fa[y] = x;
-            if (sz[x] == sz[y] && x != y) sz[y]++;
+            if (rk[x] == rk[y]) rk[y]++;
+            return true;
         }
 };
 

@@ -21,10 +21,6 @@ void solve ()
         }
     }
 
-    // for (int i = 1; i <= k; i++) {
-    //     cout << rec[i] << " \n"[i == k];
-    // }
-
     ranges::sort(a | views::drop(1) | views::take(n));
     ranges::sort(b | views::drop(1) | views::take(m));
     b[0] = -1e11;
@@ -35,13 +31,8 @@ void solve ()
     for (int i = 1; i <= n; i++) {
         int l = ranges::upper_bound(b | views::drop(1), a[i]) - b.begin() - 1;
         int r = ranges::upper_bound(b | views::drop(1), a[i]) - b.begin();
-        // if (l < 1) v1[i][0] = 1e11;
-        // else v1[i][0] = a[i] - b[l];
-        // if (r > n) v2[i][0] = 1e11;
-        // else v2[i][0] = b[r] - a[i];
         v1[i][0] = a[i] - b[l], v2[i][0] = b[r] - a[i];
         v1[i][1] = i, v2[i][1] = i;
-        // cout << l << ' ' << r << ' ' << i << '\n';
     }
 
     ranges::sort(v1 | views::drop(1), [] (auto a1, auto b1) { 
@@ -51,13 +42,6 @@ void solve ()
         return a1[0] < b1[0]; 
     });
 
-    // for (int i = 1; i <= n; i++) {
-    //     cout << v1[i][0] << ' ' << v1[i][1] << '\n';
-    // }
-    // for (int i = 1; i <= n; i++) {
-    //     cout << v2[i][0] << ' ' << v2[i][1] << '\n';
-    // }
-
     map <int, int> mp;
 
     int cur = 0;
@@ -65,17 +49,14 @@ void solve ()
     int ans = n;
     for (int i = 1; i <= k; i++) {
         cur += rec[i];
-        // cout << cur << '\n';
         if (cur < 0) {
             int t = -cur;
-            // cout << v1[l][0] << ' ' << t << '\n';
             while (l <= n && v1[l][0] <= t) {
                 if (mp[v1[l][1]] == 0) {
                     ans--;
                     mp[v1[l][1]] = 1;
                 }
                 l++;
-                // cout << 999 << '\n';
             }
         }else if (cur > 0) {
             while (r <= n && v2[r][0] <= cur) {

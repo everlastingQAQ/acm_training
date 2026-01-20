@@ -18,7 +18,6 @@ void solve ()
         }
     }
 
-
     vector <vector <int> > vis(n + 1, vector <int> (n + 1, 0));
 
     vector <array<int, 4> > rec;
@@ -61,7 +60,7 @@ void solve ()
             for (int j = 1; j <= n; j++) {
                 vis[i][j] = 0;
             }
-        }
+        }   
         rec.clear();
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
