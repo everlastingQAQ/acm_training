@@ -7,6 +7,39 @@ using ld = long double;
 
 const int mod = 998244353;
 
+int dp[500010][2][2];
+
+void solvee ()
+{
+    string s; cin >> s;
+    int n = s.size();
+    s = ' ' + s;
+    memset(dp, 0, sizeof dp);
+   
+    if (s[1] == '1') dp[1][0][1] = 1;
+    else if (s[1] == '0') dp[1][0][0] = 1;
+    else {
+        dp[1][0][0] = 1;
+        dp[1][0][1] = 1;
+    }
+
+    for (int i = 2; i <= n; i++) {
+        if (s[i] == '0') {
+            dp[i][0][0] = (dp[i - 1][1][0] + dp[i - 1][0][1]) % mod;
+            dp[i][1][0] = (dp[i - 1][0][0] + dp[i - 1][1][1]) % mod;
+        }else if (s[i] == '1') {
+            dp[i][0][1] = (dp[i - 1][0][0] + dp[i - 1][1][1]) % mod;
+            dp[i][1][1] = (dp[i - 1][1][0] + dp[i - 1][0][1]) % mod;
+        }else {
+            dp[i][0][0] = (dp[i - 1][1][0] + dp[i - 1][0][1]) % mod;
+            dp[i][1][0] = (dp[i - 1][0][0] + dp[i - 1][1][1]) % mod;
+            dp[i][0][1] = (dp[i - 1][0][0] + dp[i - 1][1][1]) % mod;
+            dp[i][1][1] = (dp[i - 1][1][0] + dp[i - 1][0][1]) % mod;
+        }
+    }
+    cout << (dp[n][0][0] + dp[n][0][1]) % mod << '\n';
+}
+
 int qpow (int a, int b)//a的b次方
 {
     int res = 1;
@@ -50,7 +83,7 @@ signed main ()
     int _ = 1;
     cin >> _;
     while (_--) {
-        solve();
+        solvee();
     }
     return 0;
 }

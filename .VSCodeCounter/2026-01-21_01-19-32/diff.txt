@@ -1,0 +1,272 @@
+Date : 2026-01-21 01:19:32
+Directory : /home/everlasting/acm_training
+Total : 184 files,  10791 codes, 101 comments, 873 blanks, all 11765 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |        160 |      5,704 |        101 |        822 |      6,627 |
+| Markdown |          8 |      5,093 |          0 |         52 |      5,145 |
+| JSON     |          2 |          2 |          0 |          0 |          2 |
+| PHP      |          1 |          1 |          0 |          0 |          1 |
+| C        |         13 |         -9 |          0 |         -1 |        -10 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                 |        184 |     10,791 |        101 |        873 |     11,765 |
+| . (Files)                                                                         |          2 |        -39 |         -1 |        -23 |        -63 |
+| .VSCodeCounter                                                                    |         10 |      5,095 |          0 |         52 |      5,147 |
+| .VSCodeCounter/2025-12-03_10-24-02                                                |          5 |      1,152 |          0 |         26 |      1,178 |
+| .VSCodeCounter/2026-01-07_11-17-02                                                |          5 |      3,943 |          0 |         26 |      3,969 |
+| CF                                                                                |         29 |      1,294 |          2 |        160 |      1,456 |
+| CF/1500                                                                           |          1 |         45 |          1 |          6 |         52 |
+| CF/Hello 2026                                                                     |          4 |        177 |          0 |         33 |        210 |
+| CF/Round 1018                                                                     |          2 |         85 |          0 |         15 |        100 |
+| CF/Round 1039                                                                     |          1 |         23 |          0 |          4 |         27 |
+| CF/Round 1040                                                                     |          2 |         89 |          0 |          9 |         98 |
+| CF/Round 1042                                                                     |          3 |        121 |          0 |         13 |        134 |
+| CF/Round 1072                                                                     |          5 |        247 |          0 |         29 |        276 |
+| CF/Round 1073                                                                     |          4 |        175 |          0 |         15 |        190 |
+| CF/Round 1074                                                                     |          7 |        332 |          1 |         36 |        369 |
+| CNB24                                                                             |         10 |       -298 |         -3 |        -56 |       -357 |
+| atcoder                                                                           |         27 |        661 |         15 |         97 |        773 |
+| atcoder/ABC 431                                                                   |          3 |        120 |          3 |         17 |        140 |
+| atcoder/ABC 432                                                                   |          2 |         72 |          2 |         14 |         88 |
+| atcoder/ABC 440                                                                   |          4 |        178 |          3 |         31 |        212 |
+| atcoder/ABC 441                                                                   |          5 |        226 |          5 |         33 |        264 |
+| atcoder/AtCoder Beginner Contest 431                                              |          3 |       -120 |         -3 |        -17 |       -140 |
+| atcoder/AtCoder Beginner Contest 432                                              |          2 |        -72 |         -2 |        -14 |        -88 |
+| atcoder/Educational DP Contest                                                    |          8 |        257 |          7 |         33 |        297 |
+| niuke                                                                             |         69 |      2,580 |         67 |        367 |      3,014 |
+| niuke/2025跨年场                                                                     |          6 |        127 |          9 |         18 |        154 |
+| niuke/小白月赛                                                                        |          6 |        212 |          2 |         26 |        240 |
+| niuke/小白月赛/122                                                                    |          1 |         10 |          0 |          0 |         10 |
+| niuke/小白月赛/127                                                                    |          5 |        202 |          2 |         26 |        230 |
+| niuke/技能树                                                                         |         25 |        855 |         25 |        131 |      1,011 |
+| niuke/技能树/第三章                                                                     |          6 |        214 |          5 |         37 |        256 |
+| niuke/技能树/第三章/ 二分搜索                                                               |          2 |         59 |          2 |         11 |         72 |
+| niuke/技能树/第三章/动态规划进阶                                                              |          1 |         22 |          1 |          4 |         27 |
+| niuke/技能树/第三章/搜索入门                                                                |          3 |        133 |          2 |         22 |        157 |
+| niuke/技能树/第二章                                                                     |         14 |        485 |         16 |         76 |        577 |
+| niuke/技能树/第二章/dp入门综练                                                              |          3 |         97 |          9 |         16 |        122 |
+| niuke/技能树/第二章/前缀和与差分                                                              |          2 |         78 |          2 |         11 |         91 |
+| niuke/技能树/第二章/动态规划入门                                                              |          3 |         82 |          2 |         12 |         96 |
+| niuke/技能树/第二章/动态规划入门/线性dp                                                         |          3 |         82 |          2 |         12 |         96 |
+| niuke/技能树/第二章/最大公约数和最小公倍数                                                         |          4 |        168 |          3 |         27 |        198 |
+| niuke/技能树/第二章/简单数学                                                                |          1 |         27 |          0 |          7 |         34 |
+| niuke/技能树/第二章/质数和约数                                                               |          1 |         33 |          0 |          3 |         36 |
+| niuke/技能树/第二章间章                                                                   |          5 |        156 |          4 |         18 |        178 |
+| niuke/技能树/第二章间章/几何                                                                |          1 |         33 |          0 |          2 |         35 |
+| niuke/技能树/第二章间章/构造进阶                                                              |          1 |         24 |          1 |          4 |         29 |
+| niuke/技能树/第二章间章/贪心和优先队列                                                           |          3 |         99 |          3 |         12 |        114 |
+| niuke/每日一题                                                                        |         12 |        430 |         12 |         64 |        506 |
+| niuke/牛客周赛                                                                        |         15 |        746 |         13 |         96 |        855 |
+| niuke/牛客周赛/125                                                                    |          4 |        172 |          1 |         24 |        197 |
+| niuke/牛客周赛/126                                                                    |          5 |        189 |         11 |         26 |        226 |
+| niuke/牛客周赛/127                                                                    |          6 |        385 |          1 |         46 |        432 |
+| niuke/牛客挑战赛                                                                       |          2 |         92 |          2 |         12 |        106 |
+| niuke/练习赛                                                                         |          3 |        118 |          4 |         20 |        142 |
+| niuke/练习赛/147                                                                     |          3 |        118 |          4 |         20 |        142 |
+| 实验课                                                                               |          1 |         -9 |          0 |         -1 |        -10 |
+| 板子                                                                                |         11 |        210 |          4 |         32 |        246 |
+| 比赛                                                                                |         10 |        298 |          3 |         56 |        357 |
+| 比赛/CNB24                                                                          |         10 |        298 |          3 |         56 |        357 |
+| 洛谷                                                                                |         15 |        999 |         14 |        189 |      1,202 |
+| 洛谷/并查集                                                                            |          5 |        308 |          4 |         52 |        364 |
+| 洛谷/树状数组                                                                           |         10 |        691 |         10 |        137 |        838 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                          | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/details.md      | Markdown |        981 |          0 |          6 |        987 |
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/diff-details.md | Markdown |          9 |          0 |          6 |         15 |
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/diff.md         | Markdown |         12 |          0 |          7 |         19 |
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/results.md      | Markdown |        149 |          0 |          7 |        156 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/details.md      | Markdown |      1,205 |          0 |          6 |      1,211 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/diff-details.md | Markdown |      2,177 |          0 |          6 |      2,183 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/diff.md         | Markdown |        349 |          0 |          7 |        356 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/results.json    | JSON     |          1 |          0 |          0 |          1 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/results.md      | Markdown |        211 |          0 |          7 |        218 |
+| /home/everlasting/acm_training/CF/1500/A. Boredom.cpp                             | C++      |         45 |          1 |          6 |         52 |
+| /home/everlasting/acm_training/CF/Hello 2026/A.cpp                                | C++      |         36 |          0 |          6 |         42 |
+| /home/everlasting/acm_training/CF/Hello 2026/B.cpp                                | C++      |         50 |          0 |          8 |         58 |
+| /home/everlasting/acm_training/CF/Hello 2026/C.cpp                                | C++      |         37 |          0 |          8 |         45 |
+| /home/everlasting/acm_training/CF/Hello 2026/D.cpp                                | C++      |         54 |          0 |         11 |         65 |
+| /home/everlasting/acm_training/CF/Round 1018/A.cpp                                | C++      |         42 |          0 |          6 |         48 |
+| /home/everlasting/acm_training/CF/Round 1018/B.cpp                                | C++      |         43 |          0 |          9 |         52 |
+| /home/everlasting/acm_training/CF/Round 1039/B.cpp                                | C++      |         23 |          0 |          4 |         27 |
+| /home/everlasting/acm_training/CF/Round 1040/B.cpp                                | C++      |         43 |          0 |          3 |         46 |
+| /home/everlasting/acm_training/CF/Round 1040/C.cpp                                | C++      |         46 |          0 |          6 |         52 |
+| /home/everlasting/acm_training/CF/Round 1042/C.cpp                                | C++      |         36 |          0 |          4 |         40 |
+| /home/everlasting/acm_training/CF/Round 1042/D.cpp                                | C++      |         45 |          0 |          5 |         50 |
+| /home/everlasting/acm_training/CF/Round 1042/E.cpp                                | C++      |         40 |          0 |          4 |         44 |
+| /home/everlasting/acm_training/CF/Round 1072/A.cpp                                | C++      |         36 |          0 |          4 |         40 |
+| /home/everlasting/acm_training/CF/Round 1072/B.cpp                                | C++      |         43 |          0 |          3 |         46 |
+| /home/everlasting/acm_training/CF/Round 1072/C.cpp                                | C++      |         73 |          0 |          8 |         81 |
+| /home/everlasting/acm_training/CF/Round 1072/D.cpp                                | C++      |         42 |          0 |          6 |         48 |
+| /home/everlasting/acm_training/CF/Round 1072/E.cpp                                | C++      |         53 |          0 |          8 |         61 |
+| /home/everlasting/acm_training/CF/Round 1073/A.cpp                                | C++      |         61 |          0 |          4 |         65 |
+| /home/everlasting/acm_training/CF/Round 1073/B.cpp                                | C++      |         31 |          0 |          4 |         35 |
+| /home/everlasting/acm_training/CF/Round 1073/C.cpp                                | C++      |         50 |          0 |          4 |         54 |
+| /home/everlasting/acm_training/CF/Round 1073/D.cpp                                | C++      |         33 |          0 |          3 |         36 |
+| /home/everlasting/acm_training/CF/Round 1074/A.cpp                                | C++      |         22 |          0 |          2 |         24 |
+| /home/everlasting/acm_training/CF/Round 1074/B.cpp                                | C++      |         37 |          1 |          7 |         45 |
+| /home/everlasting/acm_training/CF/Round 1074/C.cpp                                | C++      |         44 |          0 |          5 |         49 |
+| /home/everlasting/acm_training/CF/Round 1074/D.cpp                                | C++      |         44 |          0 |          5 |         49 |
+| /home/everlasting/acm_training/CF/Round 1074/E.cpp                                | C++      |         77 |          0 |          7 |         84 |
+| /home/everlasting/acm_training/CF/Round 1074/F.cpp                                | C++      |         42 |          0 |          5 |         47 |
+| /home/everlasting/acm_training/CF/Round 1074/G.cpp                                | C++      |         66 |          0 |          5 |         71 |
+| /home/everlasting/acm_training/CNB24/Hello WUSTACM.c                              | C        |         -6 |          0 |         -3 |         -9 |
+| /home/everlasting/acm_training/CNB24/亵渎上.cpp                                      | C++      |        -58 |         -1 |         -7 |        -66 |
+| /home/everlasting/acm_training/CNB24/凡安要当超级矿工.c                                   | C        |        -22 |          0 |         -8 |        -30 |
+| /home/everlasting/acm_training/CNB24/大贤至圣先师的超级难题.c                                | C        |          0 |          0 |         -1 |         -1 |
+| /home/everlasting/acm_training/CNB24/我不想上课.c                                      | C        |        -39 |          0 |         -9 |        -48 |
+| /home/everlasting/acm_training/CNB24/查询（爆了）.c                                     | C        |        -35 |          0 |         -9 |        -44 |
+| /home/everlasting/acm_training/CNB24/沁湖鱼宴.c                                       | C        |          0 |          0 |         -1 |         -1 |
+| /home/everlasting/acm_training/CNB24/沁湖鱼宴.cpp                                     | C++      |        -65 |         -1 |         -8 |        -74 |
+| /home/everlasting/acm_training/CNB24/邪恶的数字.cpp                                    | C++      |        -39 |          0 |         -4 |        -43 |
+| /home/everlasting/acm_training/CNB24/高数之挂也挂不完.cpp                                 | C++      |        -34 |         -1 |         -6 |        -41 |
+| /home/everlasting/acm_training/atcoder/ABC 431/A.cpp                              | C++      |         28 |          1 |          3 |         32 |
+| /home/everlasting/acm_training/atcoder/ABC 431/B.cpp                              | C++      |         40 |          1 |          6 |         47 |
+| /home/everlasting/acm_training/atcoder/ABC 431/C.cpp                              | C++      |         52 |          1 |          8 |         61 |
+| /home/everlasting/acm_training/atcoder/ABC 432/A.cpp                              | C++      |         28 |          1 |          6 |         35 |
+| /home/everlasting/acm_training/atcoder/ABC 432/B.cpp                              | C++      |         44 |          1 |          8 |         53 |
+| /home/everlasting/acm_training/atcoder/ABC 440/A.cpp                              | C++      |         31 |          1 |          5 |         37 |
+| /home/everlasting/acm_training/atcoder/ABC 440/B.cpp                              | C++      |         57 |          1 |         10 |         68 |
+| /home/everlasting/acm_training/atcoder/ABC 440/C.cpp                              | C++      |         45 |          0 |         10 |         55 |
+| /home/everlasting/acm_training/atcoder/ABC 440/D.cpp                              | C++      |         45 |          1 |          6 |         52 |
+| /home/everlasting/acm_training/atcoder/ABC 441/A.cpp                              | C++      |         25 |          1 |          2 |         28 |
+| /home/everlasting/acm_training/atcoder/ABC 441/B.cpp                              | C++      |         47 |          1 |          4 |         52 |
+| /home/everlasting/acm_training/atcoder/ABC 441/C.cpp                              | C++      |         36 |          1 |          5 |         42 |
+| /home/everlasting/acm_training/atcoder/ABC 441/D.cpp                              | C++      |         40 |          1 |          6 |         47 |
+| /home/everlasting/acm_training/atcoder/ABC 441/E.cpp                              | C++      |         78 |          1 |         16 |         95 |
+| /home/everlasting/acm_training/atcoder/AtCoder Beginner Contest 431/A.cpp         | C++      |        -28 |         -1 |         -3 |        -32 |
+| /home/everlasting/acm_training/atcoder/AtCoder Beginner Contest 431/B.cpp         | C++      |        -40 |         -1 |         -6 |        -47 |
+| /home/everlasting/acm_training/atcoder/AtCoder Beginner Contest 431/C.cpp         | C++      |        -52 |         -1 |         -8 |        -61 |
+| /home/everlasting/acm_training/atcoder/AtCoder Beginner Contest 432/A.cpp         | C++      |        -28 |         -1 |         -6 |        -35 |
+| /home/everlasting/acm_training/atcoder/AtCoder Beginner Contest 432/B.cpp         | C++      |        -44 |         -1 |         -8 |        -53 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/A.cpp               | C++      |         31 |          1 |          5 |         37 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/B.cpp               | C++      |         32 |          1 |          4 |         37 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/C.cpp               | C++      |         32 |          1 |          3 |         36 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/D.cpp               | C++      |         31 |          1 |          4 |         36 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/E.cpp               | C++      |         38 |          1 |          5 |         44 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/F.cpp               | C++      |         46 |          1 |          4 |         51 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/H.cpp               | C++      |         47 |          1 |          7 |         55 |
+| /home/everlasting/acm_training/atcoder/Educational DP Contest/I.cpp               | C++      |          0 |          0 |          1 |          1 |
+| /home/everlasting/acm_training/niuke/2025跨年场/A.php                                | PHP      |          1 |          0 |          0 |          1 |
+| /home/everlasting/acm_training/niuke/2025跨年场/C.cpp                                | C++      |         35 |          1 |          4 |         40 |
+| /home/everlasting/acm_training/niuke/2025跨年场/D.cpp                                | C++      |         30 |          1 |          4 |         35 |
+| /home/everlasting/acm_training/niuke/2025跨年场/E.cpp                                | C++      |         24 |          1 |          4 |         29 |
+| /home/everlasting/acm_training/niuke/2025跨年场/F.cpp                                | C++      |         22 |          3 |          3 |         28 |
+| /home/everlasting/acm_training/niuke/2025跨年场/H.cpp                                | C++      |         15 |          3 |          3 |         21 |
+| /home/everlasting/acm_training/niuke/小白月赛/122/D.cpp                               | C++      |         10 |          0 |          0 |         10 |
+| /home/everlasting/acm_training/niuke/小白月赛/127/A.cpp                               | C++      |         31 |          1 |          3 |         35 |
+| /home/everlasting/acm_training/niuke/小白月赛/127/B.cpp                               | C++      |         33 |          1 |          4 |         38 |
+| /home/everlasting/acm_training/niuke/小白月赛/127/C.cpp                               | C++      |         36 |          0 |          4 |         40 |
+| /home/everlasting/acm_training/niuke/小白月赛/127/D.cpp                               | C++      |         55 |          0 |          8 |         63 |
+| /home/everlasting/acm_training/niuke/小白月赛/127/E.cpp                               | C++      |         47 |          0 |          7 |         54 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/ 二分搜索/【模板】整数域二分.cpp                  | C++      |         27 |          1 |          3 |         31 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/ 二分搜索/不想做二分题.cpp                     | C++      |         32 |          1 |          8 |         41 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/动态规划进阶/01背包前置题.cpp                   | C++      |         22 |          1 |          4 |         27 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/搜索入门/A+B Problem.cpp                 | C++      |          0 |          0 |          1 |          1 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/搜索入门/kotori和素因子.cpp                  | C++      |         84 |          1 |         13 |         98 |
+| /home/everlasting/acm_training/niuke/技能树/第三章/搜索入门/岛屿数量.cpp                        | C++      |         49 |          1 |          8 |         58 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/dp入门综练/nico和niconiconi.cpp           | C++      |         35 |          1 |          5 |         41 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/dp入门综练/小红蹦跳蹦跳.cpp                    | C++      |         29 |          7 |          7 |         43 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/dp入门综练/最长不下降子序列.cpp                  | C++      |         33 |          1 |          4 |         38 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/前缀和与差分/abb.cpp                       | C++      |         34 |          1 |          4 |         39 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/前缀和与差分/小红的双排列删除得分.cpp                | C++      |         44 |          1 |          7 |         52 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/动态规划入门/线性dp/子数组绝对值的最大值.cpp           | C++      |         23 |          1 |          2 |         26 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/动态规划入门/线性dp/宵暗的妖怪.cpp                | C++      |         29 |          1 |          5 |         35 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/动态规划入门/线性dp/小苯的最大和.cpp               | C++      |         30 |          0 |          5 |         35 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/最大公约数和最小公倍数/一道GCD问题.cpp              | C++      |         39 |          1 |          7 |         47 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/最大公约数和最小公倍数/冰冻青蛙.cpp                 | C++      |         56 |          1 |          8 |         65 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/最大公约数和最小公倍数/小红与gcd三角形.cpp            | C++      |         34 |          0 |          5 |         39 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/最大公约数和最小公倍数/小红的数字分裂.cpp              | C++      |         39 |          1 |          7 |         47 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/简单数学/小红和小紫的取素因子游戏.cpp                | C++      |         27 |          0 |          7 |         34 |
+| /home/everlasting/acm_training/niuke/技能树/第二章/质数和约数/小红和小紫的取素因子游戏.cpp               | C++      |         33 |          0 |          3 |         36 |
+| /home/everlasting/acm_training/niuke/技能树/第二章间章/几何/【模板】点线位置关系.cpp                  | C++      |         33 |          0 |          2 |         35 |
+| /home/everlasting/acm_training/niuke/技能树/第二章间章/构造进阶/76构造.cpp                      | C++      |         24 |          1 |          4 |         29 |
+| /home/everlasting/acm_training/niuke/技能树/第二章间章/贪心和优先队列/AOE还是单体？.cpp               | C++      |         27 |          1 |          5 |         33 |
+| /home/everlasting/acm_training/niuke/技能树/第二章间章/贪心和优先队列/【模板】整数优先队列.cpp             | C++      |         36 |          1 |          2 |         39 |
+| /home/everlasting/acm_training/niuke/技能树/第二章间章/贪心和优先队列/小红的口罩.cpp                  | C++      |         36 |          1 |          5 |         42 |
+| /home/everlasting/acm_training/niuke/每日一题/many sum.cpp                            | C++      |         35 |          1 |          6 |         42 |
+| /home/everlasting/acm_training/niuke/每日一题/【模板】拓扑排序.cpp                            | C++      |         48 |          1 |          7 |         56 |
+| /home/everlasting/acm_training/niuke/每日一题/【模板】静态区间和（前缀和）.cpp                      | C++      |         18 |          0 |          4 |         22 |
+| /home/everlasting/acm_training/niuke/每日一题/乐团派对.cpp                                | C++      |         36 |          2 |          7 |         45 |
+| /home/everlasting/acm_training/niuke/每日一题/切题之路.cpp                                | C++      |         49 |          1 |          6 |         56 |
+| /home/everlasting/acm_training/niuke/每日一题/子数列求积.cpp                               | C++      |         40 |          1 |          5 |         46 |
+| /home/everlasting/acm_training/niuke/每日一题/小A取石子.cpp                               | C++      |         28 |          1 |          3 |         32 |
+| /home/everlasting/acm_training/niuke/每日一题/小红删数字.cpp                               | C++      |         38 |          1 |          7 |         46 |
+| /home/everlasting/acm_training/niuke/每日一题/小红的平滑值插值.cpp                            | C++      |         37 |          1 |          8 |         46 |
+| /home/everlasting/acm_training/niuke/每日一题/护花使者.cpp                                | C++      |         34 |          1 |          5 |         40 |
+| /home/everlasting/acm_training/niuke/每日一题/有趣的区间.cpp                               | C++      |         33 |          1 |          2 |         36 |
+| /home/everlasting/acm_training/niuke/每日一题/阅读理解.cpp                                | C++      |         34 |          1 |          4 |         39 |
+| /home/everlasting/acm_training/niuke/牛客周赛/125/A.cpp                               | C++      |         46 |          1 |          4 |         51 |
+| /home/everlasting/acm_training/niuke/牛客周赛/125/B.cpp                               | C++      |         34 |          0 |          6 |         40 |
+| /home/everlasting/acm_training/niuke/牛客周赛/125/C.cpp                               | C++      |         43 |          0 |          7 |         50 |
+| /home/everlasting/acm_training/niuke/牛客周赛/125/D.cpp                               | C++      |         49 |          0 |          7 |         56 |
+| /home/everlasting/acm_training/niuke/牛客周赛/126/A.cpp                               | C++      |         26 |          1 |          3 |         30 |
+| /home/everlasting/acm_training/niuke/牛客周赛/126/B.cpp                               | C++      |         36 |          1 |          6 |         43 |
+| /home/everlasting/acm_training/niuke/牛客周赛/126/C.cpp                               | C++      |         55 |          8 |          7 |         70 |
+| /home/everlasting/acm_training/niuke/牛客周赛/126/D.cpp                               | C++      |         44 |          1 |          7 |         52 |
+| /home/everlasting/acm_training/niuke/牛客周赛/126/E.cpp                               | C++      |         28 |          0 |          3 |         31 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/A.cpp                               | C++      |         25 |          1 |          2 |         28 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/B.cpp                               | C++      |         99 |          0 |          9 |        108 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/C.cpp                               | C++      |         58 |          0 |          9 |         67 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/D.cpp                               | C++      |         52 |          0 |          8 |         60 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/E.cpp                               | C++      |         48 |          0 |          8 |         56 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/F.cpp                               | C++      |        103 |          0 |         10 |        113 |
+| /home/everlasting/acm_training/niuke/牛客挑战赛/A.cpp                                  | C++      |         48 |          1 |          6 |         55 |
+| /home/everlasting/acm_training/niuke/牛客挑战赛/B.cpp                                  | C++      |         44 |          1 |          6 |         51 |
+| /home/everlasting/acm_training/niuke/练习赛/147/A.cpp                                | C++      |         30 |          1 |          4 |         35 |
+| /home/everlasting/acm_training/niuke/练习赛/147/B.cpp                                | C++      |         40 |          1 |          7 |         48 |
+| /home/everlasting/acm_training/niuke/练习赛/147/C.cpp                                | C++      |         48 |          2 |          9 |         59 |
+| /home/everlasting/acm_training/test.cpp                                           | C++      |        -58 |          0 |        -12 |        -70 |
+| /home/everlasting/acm_training/test2.cpp                                          | C++      |         19 |         -1 |        -11 |          7 |
+| /home/everlasting/acm_training/实验课/求1-100的和.c                                     | C        |         -9 |          0 |         -1 |        -10 |
+| /home/everlasting/acm_training/板子/BIT.cpp                                         | C++      |         77 |          1 |         18 |         96 |
+| /home/everlasting/acm_training/板子/Catalan_number.cpp                              | C++      |         26 |          1 |          2 |         29 |
+| /home/everlasting/acm_training/板子/DSU.cpp                                         | C++      |         54 |          1 |          9 |         64 |
+| /home/everlasting/acm_training/板子/Discretization.cpp                              | C++      |         29 |          0 |          4 |         33 |
+| /home/everlasting/acm_training/板子/Sparse_Table.cpp                                | C++      |         -1 |          0 |         -1 |         -2 |
+| /home/everlasting/acm_training/板子/get_C(%mod).cpp                                 | C++      |         45 |          1 |          8 |         54 |
+| /home/everlasting/acm_training/板子/get_C(Recursion).cpp                            | C++      |         30 |          1 |          5 |         36 |
+| /home/everlasting/acm_training/板子/get_C.cpp                                       | C++      |        -43 |         -1 |        -10 |        -54 |
+| /home/everlasting/acm_training/板子/get_factors.cpp                                 | C++      |         -3 |          0 |         -1 |         -4 |
+| /home/everlasting/acm_training/板子/get_primes.cpp                                  | C++      |         -1 |          0 |         -1 |         -2 |
+| /home/everlasting/acm_training/板子/qpow.cpp                                        | C++      |         -3 |          0 |         -1 |         -4 |
+| /home/everlasting/acm_training/比赛/CNB24/Hello WUSTACM.c                           | C        |          6 |          0 |          3 |          9 |
+| /home/everlasting/acm_training/比赛/CNB24/亵渎上.cpp                                   | C++      |         58 |          1 |          7 |         66 |
+| /home/everlasting/acm_training/比赛/CNB24/凡安要当超级矿工.c                                | C        |         22 |          0 |          8 |         30 |
+| /home/everlasting/acm_training/比赛/CNB24/大贤至圣先师的超级难题.c                             | C        |          0 |          0 |          1 |          1 |
+| /home/everlasting/acm_training/比赛/CNB24/我不想上课.c                                   | C        |         39 |          0 |          9 |         48 |
+| /home/everlasting/acm_training/比赛/CNB24/查询（爆了）.c                                  | C        |         35 |          0 |          9 |         44 |
+| /home/everlasting/acm_training/比赛/CNB24/沁湖鱼宴.c                                    | C        |          0 |          0 |          1 |          1 |
+| /home/everlasting/acm_training/比赛/CNB24/沁湖鱼宴.cpp                                  | C++      |         65 |          1 |          8 |         74 |
+| /home/everlasting/acm_training/比赛/CNB24/邪恶的数字.cpp                                 | C++      |         39 |          0 |          4 |         43 |
+| /home/everlasting/acm_training/比赛/CNB24/高数之挂也挂不完.cpp                              | C++      |         34 |          1 |          6 |         41 |
+| /home/everlasting/acm_training/洛谷/并查集/P1111.cpp                                   | C++      |         64 |          1 |         10 |         75 |
+| /home/everlasting/acm_training/洛谷/并查集/P1525.cpp                                   | C++      |         60 |          1 |         10 |         71 |
+| /home/everlasting/acm_training/洛谷/并查集/P1551.cpp                                   | C++      |         52 |          1 |          9 |         62 |
+| /home/everlasting/acm_training/洛谷/并查集/P2024.cpp                                   | C++      |         68 |          1 |         10 |         79 |
+| /home/everlasting/acm_training/洛谷/并查集/P3958.cpp                                   | C++      |         64 |          0 |         13 |         77 |
+| /home/everlasting/acm_training/洛谷/树状数组/LibreOJ_132.cpp                            | C++      |         93 |          1 |         19 |        113 |
+| /home/everlasting/acm_training/洛谷/树状数组/P1774.cpp                                  | C++      |         64 |          1 |         13 |         78 |
+| /home/everlasting/acm_training/洛谷/树状数组/P1908.cpp                                  | C++      |         70 |          1 |         15 |         86 |
+| /home/everlasting/acm_training/洛谷/树状数组/P2068.cpp                                  | C++      |         61 |          1 |         11 |         73 |
+| /home/everlasting/acm_training/洛谷/树状数组/P3368.cpp                                  | C++      |         68 |          1 |         13 |         82 |
+| /home/everlasting/acm_training/洛谷/树状数组/P3374.cpp                                  | C++      |         58 |          1 |         12 |         71 |
+| /home/everlasting/acm_training/洛谷/树状数组/P4378.cpp                                  | C++      |         64 |          1 |         13 |         78 |
+| /home/everlasting/acm_training/洛谷/树状数组/P4939.cpp                                  | C++      |         59 |          1 |         11 |         71 |
+| /home/everlasting/acm_training/洛谷/树状数组/P5057.cpp                                  | C++      |         89 |          1 |         18 |        108 |
+| /home/everlasting/acm_training/洛谷/树状数组/P6225.cpp                                  | C++      |         65 |          1 |         12 |         78 |
+| Total                                                                             |          |     10,791 |        101 |        873 |     11,765 |
++-----------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

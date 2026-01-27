@@ -25,9 +25,9 @@ class DSU {
         bool merge (int i, int j) {
             int x = find(i), y = find(j);
             if (x == y) return false;
-            if (rk[x] <= rk[y]) fa[x] = y;
-            else fa[y] = x;
-            if (rk[x] == rk[y]) rk[y]++;
+            if (rk[x] < rk[y]) swap(x, y);
+            fa[y] = x;
+            if (rk[x] == rk[y]) rk[x]++;
             return true;
         }
 };

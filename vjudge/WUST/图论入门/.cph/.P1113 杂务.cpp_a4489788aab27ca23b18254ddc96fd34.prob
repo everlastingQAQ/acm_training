@@ -1,0 +1,1 @@
+{"name":"Local: P1113 杂务","url":"/home/everlasting/acm_training/vjudge/WUST/图论入门/P1113 杂务.cpp","tests":[{"id":1768992980025,"input":"7\n1 5 0\n2 2 1 0\n3 3 2 0\n4 6 1 0\n5 1 2 4 0\n6 8 2 4 0\n7 4 3 5 6 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/vjudge/WUST/图论入门/P1113 杂务.cpp","group":"local","local":true}

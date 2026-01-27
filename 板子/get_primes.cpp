@@ -6,8 +6,6 @@ using ld = long double;
 #define se second
 
 const int N = 1e5;
-const double eps = 1e-5;
-const int mod = 1e9 + 7;
 
 bool vis[N];
 int primes[N];//1-based

@@ -1,66 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using ld = long double;
-using pi = pair<ll, ll>;
-
-#define fi first
-#define se second
-
-const int MAXN = 6e7;
-const double eps = 1e-5;
-const ll mod = 1e9 + 7;
+#define int long long
 
 void solve ()
 {
-    ll n, x, y; cin >> n >> x >> y;
-    string s; cin >> s;
-    vector <ll> v(n);
-    for (ll &a : v) cin >> a;
-    
-    if (accumulate(v.begin(), v.end(), 0LL) > x + y) {
-        cout << "No" << '\n';
+    int n, x, y; cin >> n >> x >> y;
+    string s; cin >> s; s = ' ' + s;
+    vector <int> p(n + 1);
+    for (int i = 1; i <= n; i++) cin >> p[i];
+
+    if (accumulate(p.begin() + 1, p.end(), 0LL) > x + y) {
+        cout << "NO" << '\n';
         return;
     }
 
-    ll mna = 0, mnb = 0;
+    if (s == ' ' + string(n, '0') || s == ' ' + string(n, '1')) {
+        if (s == ' ' + string(n, '1')) swap(x, y);
+        int xx = 0;
+        for (int i = 1; i <= n; i++) {
+            xx += p[i] / 2 + 1;
+        }
+        if (xx > x || x < y + n) cout << "NO" << '\n';
+        else cout << "YES" << '\n';
+    }else {
+        int xx = 0, yy = 0;
+        for (int i = 1; i <= n; i++) {
+            if (s[i] == '0') xx += p[i] / 2 + 1;
+            else yy += p[i] / 2 + 1;
+        }
+        if (xx <= x && yy <= y) cout << "YES" << '\n';
+        else cout << "NO" << '\n';
+    }
+}   
     
-    for (int i = 0; i < n; i++) {
-        if (s[i] == '0') {
-            mna += v[i] / 2 + 1;
-        }else {
-            mnb += v[i] / 2 + 1;
-        }
-    }
-
-    if (mna > x || mnb > y) {
-        cout << "No" << '\n';
-        return;
-    }
-
-    ll t = s[0];
-    bool found = false;
-    for (int i = 1; i < n; i++) {
-        if (s[i] != t) {
-            found = true;
-            break;
-        }
-    }
-
-    if (!found) {
-        if (s[0] == '0' && x - y < n) {
-            cout << "No" << '\n';
-            return;
-        }else if (s[1] == '1' && y - x < n) {
-            cout << "No" << '\n';
-            return;
-        }
-    }
-
-    cout << "Yes" << '\n';
-}
-
-int main ()
+signed main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
@@ -70,4 +43,4 @@ int main ()
         solve();
     }
     return 0;
-}   
+} 

@@ -1,78 +1,79 @@
-#include <cstdio>
-#include <cctype>
-int read()
-{
-    int ans = 0;
-    char c = getchar();
-    while (!isdigit(c))
-        c = getchar();
-    while (isdigit(c))
-    {
-        ans = (ans << 3) + (ans << 1) + c - '0';
-        c = getchar();
-    }
-    return ans;
-}
-int fa[150005], rank[150005];
-int find(int a)
-{
-    return (fa[a] == a) ? a : (fa[a] = find(fa[a]));
-}
-int query(int a, int b)
-{
-    return find(a) == find(b);
-}
-void merge(int a, int b)
-{
-    int x = find(a), y = find(b);
-    if (rank[x] >= rank[y])
-        fa[y] = x;
-    else
-        fa[x] = y;
-    if (rank[x] == rank[y] && x != y)
-        rank[x]++;
-}
-void init(int n)
-{
-    for (int i = 1; i <= n; ++i)
-    {
-        rank[i] = 1;
-        fa[i] = i;
-    }
-}
-int main()
-{
-    int n = read(), m = read(), ans = 0;
-    init(n * 3); //i吃i+n，被i+2n吃
-    for (int i = 0; i < m; ++i)
-    {
-        int opr, x, y;
-        scanf("%d%d%d", &opr, &x, &y);
-        if (x > n || y > n) //特判x或y不在食物链中的情况
-            ans++;
-        else if (opr == 1)
-        {
-            if (query(x, y + n) || query(x, y + 2 * n)) //如果已知x吃y，或者x被y吃，说明这是假话
-                ans++;
-            else
-            {
-                merge(x, y);                 //这是真话，则x和y是一族
-                merge(x + n, y + n);         //x的猎物和y的猎物是一族
-                merge(x + 2 * n, y + 2 * n); //x的天敌和y的天敌是一族
-            }
-        }
-        else if (opr == 2)
-        {
-            if (query(x, y) || query(x, y + 2 * n)) //如果已知x与y是一族，或者x被y吃，说明这是假话
-                ans++;
-            else
-            {
-                merge(x, y + n);         //这是真话，则x吃y
-                merge(x + n, y + 2 * n); //x的猎物吃y的猎物
-                merge(x + 2 * n, y);     //x的天敌吃y的天敌，或者说y吃x的天敌
-            }
+#include<bits/stdc++.h>
+#define int long long
+using namespace std;
+using ll = long long;
+using arr2 = array<int, 2>;
+using arr3 = array<int, 3>;
+const int N = (int)2e5 + 9;
+const int M = (int)1e5 + 9;
+const int mod = (int)1e9 + 7;
+
+void solve() {
+    int n;
+    cin >> n;
+    vector<int> a(n + 5);
+    int mx = 0, p = -1;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        if (mx < a[i]) {
+            mx = a[i];
+            p = i;
         }
     }
-    printf("%d\n", ans);
+    int b = n;
+    int p1 = 0, p2 = 0;
+    for (int i = 1; i <= n; i++) {
+        if (a[i] != b) {
+            p1 = i;
+            break;
+        }
+        b--;
+    }
+    if (b == 0) {
+        for (int i = 1; i <= n; i++) {
+            cout << a[i] << " ";
+        }
+        cout << "\n";
+        return ;
+    }
+    for (int i = 1; i <= n; i++) {
+        if (a[i] == b) {
+            p2 = i;
+            break;
+        }
+    }
+    for (int i = 1; i < p1; i++) {
+        cout << a[i] << " ";
+    }
+    for (int i = p2; i >= p1; i--) {
+        cout << a[i] << " ";
+    }
+    for (int i = p2 + 1; i <= n; i++) {
+        cout << a[i] << " ";
+    }
+    cout << "\n";
+
+    // if (p == 1) {
+        
+    //     return ;
+    // }
+    // for (int i = p; i >= 1; i--) {
+    //     cout << a[i] << " ";
+    // }
+    // for (int i = p + 1; i <= n; i++) {
+    //     cout << a[i] << " ";
+    // }
+    // cout << "\n";
+}
+
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
+    while(_--) {
+        solve();
+    }
     return 0;
 }
