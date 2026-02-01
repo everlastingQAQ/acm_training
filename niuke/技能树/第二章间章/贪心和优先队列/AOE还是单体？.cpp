@@ -1,26 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ld = long double;
 #define int long long
-#define fi first
-#define se second
 
 void solve ()
 {
     int n, x; cin >> n >> x;
-    vector <int> v(n);
-    int sum = 0;
-    for (int &t : v) cin >> t, sum += t;
-
-    if (x >= n) {
-        cout << sum << '\n';
-        return;
+    vector <int> v(n + 1);
+    for (int i = 1; i <= n; i++) cin >> v[i];
+    sort(v.begin() + 1, v.end());
+    int ans = 0;
+    int t = 0;
+    for (int i = 1; i <= min(n, n - x + 1); i++) {
+        v[i] -= t;
+        ans += v[i] * x;
+        t += v[i];
     }
-
-    
+    for (int i = max(1LL, n - x + 2); i <= n; i++) {
+        ans += max(0LL, v[i] - t);
+    }
+    cout << ans << '\n';
 }   
     
-signed main ()
+int32_t main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
@@ -30,4 +31,4 @@ signed main ()
         solve();
     }
     return 0;
-}
+} 

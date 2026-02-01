@@ -1,0 +1,1 @@
+{"name":"Local: P3905 道路重建","url":"/home/everlasting/acm_training/vjudge/WUST/最短路/P3905 道路重建.cpp","tests":[{"id":1769670566131,"input":"3\n2\n1 2 1\n2 3 2\n1\n1 2\n1 3","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/vjudge/WUST/最短路/P3905 道路重建.cpp","group":"local","local":true}

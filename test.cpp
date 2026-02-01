@@ -1,69 +1,50 @@
-#include <algorithm>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define int long long
 
-int fa[1010];  // 定义父亲
-int n, m, k;
+void solve() {
+    int n; cin >> n;
+    string s; cin >> s;
 
-struct edge {
-  int u, v, w;
-};
-
-int l;
-edge g[10010];
-
-void add(int u, int v, int w) {
-  l++;
-  g[l].u = u;
-  g[l].v = v;
-  g[l].w = w;
-}
-
-// 标准并查集
-int findroot(int x) { return fa[x] == x ? x : fa[x] = findroot(fa[x]); }
-
-void Merge(int x, int y) {
-  x = findroot(x);
-  y = findroot(y);
-  fa[x] = y;
-}
-
-bool cmp(edge A, edge B) { return A.w < B.w; }
-
-// Kruskal 算法
-void kruskal() {
-  int tot = 0;  // 存已选了的边数
-  int ans = 0;  // 存总的代价
-  for (int i = 1; i <= m; i++) {
-    int xr = findroot(g[i].u), yr = findroot(g[i].v);
-    if (xr != yr) {        // 如果父亲不一样
-      Merge(xr, yr);       // 合并
-      tot++;               // 边数增加
-      ans += g[i].w;       // 代价增加
-      if (tot == n - k) {  // 检查选的边数是否满足 k 个棉花糖
-        cout << ans << '\n';
-        return;
-      }
+    vector<int> a;
+    for (int i = 0; i < n; i++) {
+        if (s[i] == '1') a.push_back(i + 1); // 1-based
     }
-  }
-  cout << "No Answer\n";  // 无法连成
+
+    if (a.empty()) {
+        // 全 0 时，最少需要 (n+2)/3 人
+        cout << (n + 2) / 3 << '\n';
+        return;
+    }
+
+    int ans = a.size();
+    int m = a.size();
+
+    // 1. 左边：a[0]-1 个空位，最少需要 (a[0]-1)/3 人
+    // 例如 0001 (t=3) -> 1001, 增加 3/3=1 人
+    ans += (a[0] - 1) / 3;
+
+    // 2. 右边：n-a[m-1] 个空位，最少需要 (n-a[m-1])/3 人
+    // 例如 1000 (t=3) -> 1001, 增加 3/3=1 人
+    ans += (n - a[m - 1]) / 3;
+
+    // 3. 中间：a[i]-a[i-1]-1 个空位
+    for (int i = 1; i < m; i++) {
+        int t = a[i] - a[i - 1] - 1;
+        if (t >= 3) {
+            // 在中间 t 个 0 中，为了让它“饱和”，最少需要 (t-1)/3 个人？
+            // 让我们代入测试：t=5 (1000001) -> (5-1)/3 = 1。
+            // 变成 1001001，确实只需要加 1 个人！
+            // 之前的公式 (t-1)/3 其实逻辑是对的。
+            ans += (t - 1) / 3;
+        }
+    }
+    cout << ans << '\n';
 }
 
-int main() {
-  cin >> n >> m >> k;
-  if (n == k) {  // 特判边界情况
-    cout << "0\n";
+int32_t main() {
+    ios::sync_with_stdio(0); cin.tie(0);
+    int t; cin >> t;
+    while (t--) solve();
     return 0;
-  }
-  for (int i = 1; i <= n; i++) {  // 初始化
-    fa[i] = i;
-  }
-  for (int i = 1; i <= m; i++) {
-    int u, v, w;
-    cin >> u >> v >> w;
-    add(u, v, w);  // 添加边
-  }
-  sort(g + 1, g + m + 1, cmp);  // 先按边权排序
-  kruskal();
-  return 0;
 }

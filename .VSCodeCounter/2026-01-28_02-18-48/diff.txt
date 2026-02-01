@@ -1,0 +1,190 @@
+Date : 2026-01-28 02:18:48
+Directory : /home/everlasting/acm_training
+Total : 127 files,  10975 codes, 73 comments, 486 blanks, all 11534 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| CSV      |          6 |      5,870 |          0 |          0 |      5,870 |
+| C++      |        114 |      3,165 |         73 |        444 |      3,682 |
+| Markdown |          5 |      1,918 |          0 |         40 |      1,958 |
+| Python   |          1 |         21 |          0 |          2 |         23 |
+| JSON     |          1 |          1 |          0 |          0 |          1 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |        127 |     10,975 |         73 |        486 |     11,534 |
+| . (Files)                                                                                   |          4 |         79 |         12 |         18 |        109 |
+| .VSCodeCounter                                                                              |         11 |      7,743 |          0 |         26 |      7,769 |
+| .VSCodeCounter/2025-12-03_10-24-02                                                          |          2 |        976 |          0 |          0 |        976 |
+| .VSCodeCounter/2026-01-07_11-17-02                                                          |          2 |      3,368 |          0 |          0 |      3,368 |
+| .VSCodeCounter/2026-01-21_01-19-32                                                          |          7 |      3,399 |          0 |         26 |      3,425 |
+| .github                                                                                     |          1 |         46 |          0 |         14 |         60 |
+| CF                                                                                          |         23 |        771 |         11 |        101 |        883 |
+| CF/2025 April Fools Day                                                                     |          3 |         51 |          3 |          6 |         60 |
+| CF/Educational Codeforces Round 177                                                         |          1 |         27 |          1 |          6 |         34 |
+| CF/Round 1013                                                                               |          5 |        200 |          5 |         25 |        230 |
+| CF/Round 1014                                                                               |          3 |         98 |          0 |         12 |        110 |
+| CF/Round 1071                                                                               |          1 |        -20 |          0 |         -7 |        -27 |
+| CF/Round 1075                                                                               |          4 |        148 |          0 |         19 |        167 |
+| CF/Round 1076                                                                               |          6 |        267 |          2 |         40 |        309 |
+| atcoder                                                                                     |          6 |        246 |          6 |         26 |        278 |
+| atcoder/ABC 442                                                                             |          6 |        246 |          6 |         26 |        278 |
+| niuke                                                                                       |         11 |        417 |         10 |         51 |        478 |
+| niuke/每日一题                                                                                  |          1 |         18 |          1 |          2 |         21 |
+| niuke/牛客周赛                                                                                  |          7 |        294 |          6 |         37 |        337 |
+| niuke/牛客周赛/127                                                                              |          1 |         29 |          0 |          4 |         33 |
+| niuke/牛客周赛/128                                                                              |          6 |        265 |          6 |         33 |        304 |
+| niuke/练习赛                                                                                   |          3 |        105 |          3 |         12 |        120 |
+| niuke/练习赛/148                                                                               |          3 |        105 |          3 |         12 |        120 |
+| vjudge                                                                                      |         69 |      1,613 |         33 |        240 |      1,886 |
+| vjudge/WUST                                                                                 |         69 |      1,613 |         33 |        240 |      1,886 |
+| vjudge/WUST/DFS                                                                             |         16 |       -855 |        -14 |       -133 |     -1,002 |
+| vjudge/WUST/前缀和与差分                                                                          |          1 |         28 |          1 |          2 |         31 |
+| vjudge/WUST/图论入门                                                                            |          6 |        159 |          3 |         18 |        180 |
+| vjudge/WUST/并查集                                                                             |          8 |        449 |          8 |         65 |        522 |
+| vjudge/WUST/拓扑排序                                                                            |          6 |        269 |          4 |         35 |        308 |
+| vjudge/WUST/搜索                                                                              |         19 |      1,023 |         21 |        168 |      1,212 |
+| vjudge/WUST/最小生成树                                                                           |          7 |        429 |          7 |         70 |        506 |
+| vjudge/WUST/枚举和模拟                                                                           |          2 |         83 |          1 |         11 |         95 |
+| vjudge/WUST/贪心                                                                              |          4 |         28 |          2 |          4 |         34 |
+| 板子                                                                                          |          2 |         60 |          1 |         10 |         71 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                    | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/diff.csv                  | CSV      |          2 |          0 |          0 |          2 |
+| /home/everlasting/acm_training/.VSCodeCounter/2025-12-03_10-24-02/results.csv               | CSV      |        974 |          0 |          0 |        974 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/diff.csv                  | CSV      |      2,170 |          0 |          0 |      2,170 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-07_11-17-02/results.csv               | CSV      |      1,198 |          0 |          0 |      1,198 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/details.md                | Markdown |      1,347 |          0 |          6 |      1,353 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/diff-details.md           | Markdown |        193 |          0 |          6 |        199 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/diff.csv                  | CSV      |        186 |          0 |          0 |        186 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/diff.md                   | Markdown |         78 |          0 |          7 |         85 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/results.csv               | CSV      |      1,340 |          0 |          0 |      1,340 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/results.json              | JSON     |          1 |          0 |          0 |          1 |
+| /home/everlasting/acm_training/.VSCodeCounter/2026-01-21_01-19-32/results.md                | Markdown |        254 |          0 |          7 |        261 |
+| /home/everlasting/acm_training/.github/copilot-instructions.md                              | Markdown |         46 |          0 |         14 |         60 |
+| /home/everlasting/acm_training/CF/2025 April Fools Day/A.cpp                                | C++      |         17 |          1 |          2 |         20 |
+| /home/everlasting/acm_training/CF/2025 April Fools Day/B.cpp                                | C++      |         17 |          1 |          2 |         20 |
+| /home/everlasting/acm_training/CF/2025 April Fools Day/C.cpp                                | C++      |         17 |          1 |          2 |         20 |
+| /home/everlasting/acm_training/CF/Educational Codeforces Round 177/D.cpp                    | C++      |         27 |          1 |          6 |         34 |
+| /home/everlasting/acm_training/CF/Round 1013/A.cpp                                          | C++      |         33 |          0 |          3 |         36 |
+| /home/everlasting/acm_training/CF/Round 1013/B.cpp                                          | C++      |         39 |          0 |          5 |         44 |
+| /home/everlasting/acm_training/CF/Round 1013/C.cpp                                          | C++      |         36 |          0 |          4 |         40 |
+| /home/everlasting/acm_training/CF/Round 1013/D.cpp                                          | C++      |         34 |          3 |          7 |         44 |
+| /home/everlasting/acm_training/CF/Round 1013/E.cpp                                          | C++      |         58 |          2 |          6 |         66 |
+| /home/everlasting/acm_training/CF/Round 1014/A.cpp                                          | C++      |         23 |          0 |          2 |         25 |
+| /home/everlasting/acm_training/CF/Round 1014/B.cpp                                          | C++      |         42 |          0 |          4 |         46 |
+| /home/everlasting/acm_training/CF/Round 1014/C.cpp                                          | C++      |         33 |          0 |          6 |         39 |
+| /home/everlasting/acm_training/CF/Round 1071/E.cpp                                          | C++      |        -20 |          0 |         -7 |        -27 |
+| /home/everlasting/acm_training/CF/Round 1075/A.cpp                                          | C++      |         32 |          0 |          5 |         37 |
+| /home/everlasting/acm_training/CF/Round 1075/B.cpp                                          | C++      |         45 |          0 |          7 |         52 |
+| /home/everlasting/acm_training/CF/Round 1075/C1.cpp                                         | C++      |         35 |          0 |          2 |         37 |
+| /home/everlasting/acm_training/CF/Round 1075/C2.cpp                                         | C++      |         36 |          0 |          5 |         41 |
+| /home/everlasting/acm_training/CF/Round 1076/A.cpp                                          | C++      |         36 |          0 |          4 |         40 |
+| /home/everlasting/acm_training/CF/Round 1076/B.cpp                                          | C++      |         49 |          1 |          7 |         57 |
+| /home/everlasting/acm_training/CF/Round 1076/C.cpp                                          | C++      |         36 |          0 |          5 |         41 |
+| /home/everlasting/acm_training/CF/Round 1076/D.cpp                                          | C++      |         36 |          1 |          5 |         42 |
+| /home/everlasting/acm_training/CF/Round 1076/E.cpp                                          | C++      |         43 |          0 |          7 |         50 |
+| /home/everlasting/acm_training/CF/Round 1076/F.cpp                                          | C++      |         67 |          0 |         12 |         79 |
+| /home/everlasting/acm_training/atcoder/ABC 442/A.cpp                                        | C++      |         22 |          1 |          2 |         25 |
+| /home/everlasting/acm_training/atcoder/ABC 442/B.cpp                                        | C++      |         34 |          1 |          2 |         37 |
+| /home/everlasting/acm_training/atcoder/ABC 442/C.cpp                                        | C++      |         28 |          1 |          3 |         32 |
+| /home/everlasting/acm_training/atcoder/ABC 442/D.cpp                                        | C++      |         35 |          1 |          2 |         38 |
+| /home/everlasting/acm_training/atcoder/ABC 442/E.cpp                                        | C++      |         81 |          1 |         10 |         92 |
+| /home/everlasting/acm_training/atcoder/ABC 442/F.cpp                                        | C++      |         46 |          1 |          7 |         54 |
+| /home/everlasting/acm_training/he.py                                                        | Python   |         21 |          0 |          2 |         23 |
+| /home/everlasting/acm_training/hello.cpp                                                    | C++      |         13 |          0 |          3 |         16 |
+| /home/everlasting/acm_training/niuke/每日一题/二进制不同位数.cpp                                       | C++      |         18 |          1 |          2 |         21 |
+| /home/everlasting/acm_training/niuke/牛客周赛/127/E.cpp                                         | C++      |         29 |          0 |          4 |         33 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/A.cpp                                         | C++      |         22 |          1 |          2 |         25 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/B.cpp                                         | C++      |         40 |          1 |          3 |         44 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/C.cpp                                         | C++      |         43 |          1 |          6 |         50 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/D.cpp                                         | C++      |         42 |          0 |          7 |         49 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/E.cpp                                         | C++      |         46 |          2 |          6 |         54 |
+| /home/everlasting/acm_training/niuke/牛客周赛/128/F.cpp                                         | C++      |         72 |          1 |          9 |         82 |
+| /home/everlasting/acm_training/niuke/练习赛/148/A.cpp                                          | C++      |         18 |          1 |          2 |         21 |
+| /home/everlasting/acm_training/niuke/练习赛/148/B.cpp                                          | C++      |         43 |          1 |          5 |         49 |
+| /home/everlasting/acm_training/niuke/练习赛/148/C.cpp                                          | C++      |         44 |          1 |          5 |         50 |
+| /home/everlasting/acm_training/test.cpp                                                     | C++      |         58 |          2 |          9 |         69 |
+| /home/everlasting/acm_training/test2.cpp                                                    | C++      |        -13 |         10 |          4 |          1 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/B3623 枚举排列（递归实现排列型枚举）.cpp                    | C++      |        -45 |         -1 |         -7 |        -53 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/B3625 迷宫寻路.cpp                               | C++      |        -51 |         -1 |        -10 |        -62 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/Lake Counting S.cpp                          | C++      |        -56 |         -1 |         -9 |        -66 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1019 [NOIP 2000 提高组] 单词接龙（疑似错题）.cpp         | C++      |        -34 |         -1 |         -6 |        -41 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1036 [NOIP 2002 普及组] 选数.cpp                 | C++      |        -56 |         -1 |        -12 |        -69 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1101 单词方阵.cpp                               | C++      |        -76 |         -1 |         -9 |        -86 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1219 [USACO1.5] 八皇后 Checker Challenge.cpp   | C++      |        -61 |         -1 |         -8 |        -70 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1605 迷宫.cpp                                 | C++      |        -53 |         -1 |         -7 |        -61 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P1706 全排列问题.cpp                              | C++      |        -48 |         -1 |         -6 |        -55 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P2404 自然数的拆分问题.cpp                           | C++      |        -56 |         -1 |         -8 |        -65 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P7012 [CERC2013] Draughts.cpp                | C++      |        -63 |          0 |        -10 |        -73 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/P9872 [EC Final 2021] DFS Order.cpp          | C++      |        -51 |          0 |         -9 |        -60 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/奇怪的电梯.cpp                                    | C++      |        -56 |         -1 |        -10 |        -67 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/排列2.cpp                                      | C++      |        -66 |         -1 |         -8 |        -75 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/数的划分.cpp                                     | C++      |        -39 |         -1 |         -7 |        -47 |
+| /home/everlasting/acm_training/vjudge/WUST/DFS/猫粮规划.cpp                                     | C++      |        -44 |         -1 |         -7 |        -52 |
+| /home/everlasting/acm_training/vjudge/WUST/前缀和与差分/Subarray Sums II.cpp                      | C++      |         28 |          1 |          2 |         31 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/P1113 杂务.cpp                                | C++      |         31 |          1 |          2 |         34 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/P1588 [USACO07OPEN] Catch That Cow S.cpp    | C++      |         34 |          0 |          4 |         38 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/P2853 [USACO06DEC] Cow Picnic S.cpp         | C++      |         46 |          1 |          7 |         54 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/P5318 【深基18.例3】查找文献.cpp                     | C++      |         54 |          1 |         10 |         65 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/图的遍历.cpp                                    | C++      |         37 |          1 |          7 |         45 |
+| /home/everlasting/acm_training/vjudge/WUST/图论入门/最长路.cpp                                     | C++      |        -43 |         -1 |        -12 |        -56 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/Gleaming the Cubes.cpp                       | C++      |         30 |          1 |          5 |         36 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/How Many Answers Are Wrong.cpp               | C++      |         58 |          1 |          8 |         67 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/P1196 [NOI2002] 银河英雄传说.cpp                   | C++      |         60 |          1 |         11 |         72 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/P1546 [USACO3.1] 最短网络 Agri-Net.cpp           | C++      |         56 |          1 |         10 |         67 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/P2814 家谱.cpp                                 | C++      |         47 |          1 |          5 |         53 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/P3367 【模板】并查集.cpp                            | C++      |         58 |          1 |          7 |         66 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/小希的迷宫.cpp                                    | C++      |         85 |          1 |         13 |         99 |
+| /home/everlasting/acm_training/vjudge/WUST/并查集/畅通工程.cpp                                     | C++      |         55 |          1 |          6 |         62 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/P1137 旅行计划.cpp                              | C++      |         44 |          1 |          5 |         50 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/P3243 [HNOI2015] 菜肴制作.cpp                   | C++      |         44 |          0 |          5 |         49 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/P4017 最大食物链计数.cpp                           | C++      |         52 |          1 |          8 |         61 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/P4089 [USACO17DEC] The Bovine Shuffle S.cpp | C++      |         40 |          1 |          6 |         47 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/确定比赛名次.cpp                                  | C++      |         45 |          1 |          4 |         50 |
+| /home/everlasting/acm_training/vjudge/WUST/拓扑排序/逃生.cpp                                      | C++      |         44 |          0 |          7 |         51 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/B3623 枚举排列（递归实现排列型枚举）.cpp                     | C++      |         45 |          1 |          7 |         53 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/B3625 迷宫寻路.cpp                                | C++      |         51 |          1 |         10 |         62 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/C. Cycle In Maze.cpp                          | C++      |         70 |          2 |         16 |         88 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/Lake Counting S.cpp                           | C++      |         56 |          1 |          9 |         66 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1019 [NOIP 2000 提高组] 单词接龙（疑似错题）.cpp          | C++      |         34 |          1 |          6 |         41 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1036 [NOIP 2002 普及组] 选数.cpp                  | C++      |         56 |          1 |         12 |         69 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1101 单词方阵.cpp                                | C++      |         76 |          1 |          9 |         86 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1219 [USACO1.5] 八皇后 Checker Challenge.cpp    | C++      |         61 |          1 |          8 |         70 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1605 迷宫.cpp                                  | C++      |         53 |          1 |          7 |         61 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P1706 全排列问题.cpp                               | C++      |         48 |          1 |          6 |         55 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P2404 自然数的拆分问题.cpp                            | C++      |         56 |          1 |          8 |         65 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P7012 [CERC2013] Draughts.cpp                 | C++      |         63 |          0 |         10 |         73 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/P9872 [EC Final 2021] DFS Order.cpp           | C++      |         51 |          0 |          9 |         60 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/Prime Path.cpp                                | C++      |         37 |          0 |          6 |         43 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/Tempter of the Bone.cpp                       | C++      |         61 |          5 |         13 |         79 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/奇怪的电梯.cpp                                     | C++      |         56 |          1 |         10 |         67 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/排列2.cpp                                       | C++      |         66 |          1 |          8 |         75 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/数的划分.cpp                                      | C++      |         39 |          1 |          7 |         47 |
+| /home/everlasting/acm_training/vjudge/WUST/搜索/猫粮规划.cpp                                      | C++      |         44 |          1 |          7 |         52 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P1194 买礼物.cpp                              | C++      |         61 |          1 |          8 |         70 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P1195 口袋的天空.cpp                            | C++      |         63 |          1 |         11 |         75 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P1396 营救.cpp                               | C++      |         56 |          1 |         11 |         68 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P1550 [USACO08OCT] Watering Hole G.cpp     | C++      |         62 |          1 |          9 |         72 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P2700 逐个击破.cpp                             | C++      |         68 |          1 |         11 |         80 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/P3366 【模板】最小生成树.cpp                        | C++      |         60 |          1 |         11 |         72 |
+| /home/everlasting/acm_training/vjudge/WUST/最小生成树/还是畅通工程.cpp                                 | C++      |         59 |          1 |          9 |         69 |
+| /home/everlasting/acm_training/vjudge/WUST/枚举和模拟/Summer Earnings.cpp                        | C++      |         46 |          1 |          6 |         53 |
+| /home/everlasting/acm_training/vjudge/WUST/枚举和模拟/Zigzags.cpp                                | C++      |         37 |          0 |          5 |         42 |
+| /home/everlasting/acm_training/vjudge/WUST/贪心/P2512 [HAOI2008] 糖果传递.cpp                     | C++      |         16 |          1 |          3 |         20 |
+| /home/everlasting/acm_training/vjudge/WUST/贪心/P4445 [AHOI2018初中组] 报名签到.cpp                  | C++      |         24 |          1 |          4 |         29 |
+| /home/everlasting/acm_training/vjudge/WUST/贪心/P5143 攀爬者.cpp                                 | C++      |         27 |          1 |          4 |         32 |
+| /home/everlasting/acm_training/vjudge/WUST/贪心/糖果传递.cpp                                      | C++      |        -39 |         -1 |         -7 |        -47 |
+| /home/everlasting/acm_training/板子/WDSU.cpp                                                  | C++      |         62 |          1 |         10 |         73 |
+| /home/everlasting/acm_training/板子/get_primes.cpp                                            | C++      |         -2 |          0 |          0 |         -2 |
+| Total                                                                                       |          |     10,975 |         73 |        486 |     11,534 |
++---------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
