@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"/home/everlasting/acm_training/niuke/2026寒假/Round 2/A.cpp","tests":[{"id":1770268649755,"input":"4\n1 1 1\n1 1 2\n1 1 3\n2025 114514 1000000000","output":"YES\nYES\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/niuke/2026寒假/Round 2/A.cpp","group":"local","local":true}

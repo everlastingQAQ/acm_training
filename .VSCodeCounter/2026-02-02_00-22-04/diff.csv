@@ -1,0 +1,78 @@
+"filename", "language", "C++", "JSON", "CSV", "Markdown", "comment", "blank", "total"
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/details.md", "Markdown", 0, 0, 0, 1434, 0, 6, 1440
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/diff-details.md", "Markdown", 0, 0, 0, 136, 0, 6, 142
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/diff.csv", "CSV", 0, 0, 129, 0, 0, 0, 129
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/diff.md", "Markdown", 0, 0, 0, 53, 0, 7, 60
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/results.csv", "CSV", 0, 0, 1427, 0, 0, 0, 1427
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/results.json", "JSON", 0, 1, 0, 0, 0, 0, 1
+"/home/everlasting/acm_training/.VSCodeCounter/2026-01-28_02-18-48/results.md", "Markdown", 0, 0, 0, 268, 0, 7, 275
+"/home/everlasting/acm_training/CF/Round 1012/A.cpp", "C++", 24, 0, 0, 0, 0, 2, 26
+"/home/everlasting/acm_training/CF/Round 1012/B.cpp", "C++", 44, 0, 0, 0, 1, 5, 50
+"/home/everlasting/acm_training/CF/Round 1012/C.cpp", "C++", 17, 0, 0, 0, 0, 3, 20
+"/home/everlasting/acm_training/CF/Round 1012/D.cpp", "C++", 17, 0, 0, 0, 0, 3, 20
+"/home/everlasting/acm_training/CF/Round 1015/A.cpp", "C++", 26, 0, 0, 0, 0, 2, 28
+"/home/everlasting/acm_training/CF/Round 1015/B.cpp", "C++", 30, 0, 0, 0, 0, 4, 34
+"/home/everlasting/acm_training/CF/Round 1015/C.cpp", "C++", 84, 0, 0, 0, 10, 12, 106
+"/home/everlasting/acm_training/CF/Round 1015/D.cpp", "C++", 17, 0, 0, 0, 0, 3, 20
+"/home/everlasting/acm_training/CF/Round 1037/D.cpp", "C++", 30, 0, 0, 0, 0, 4, 34
+"/home/everlasting/acm_training/CF/Round 1037/E.cpp", "C++", 48, 0, 0, 0, 0, 8, 56
+"/home/everlasting/acm_training/CF/Round 1039/B.cpp", "C++", 20, 0, 0, 0, 0, -1, 19
+"/home/everlasting/acm_training/CF/Round 1049/C.cpp", "C++", -29, 0, 0, 0, 0, -3, -32
+"/home/everlasting/acm_training/CF/Round 1070/D.cpp", "C++", 11, 0, 0, 0, 0, 1, 12
+"/home/everlasting/acm_training/CF/Round 1077/A.cpp", "C++", 38, 0, 0, 0, 0, 3, 41
+"/home/everlasting/acm_training/CF/Round 1077/B.cpp", "C++", 41, 0, 0, 0, 3, 7, 51
+"/home/everlasting/acm_training/CF/Round 1077/C.cpp", "C++", 40, 0, 0, 0, 0, 7, 47
+"/home/everlasting/acm_training/CF/Round 1077/D.cpp", "C++", 69, 0, 0, 0, 0, 5, 74
+"/home/everlasting/acm_training/atcoder/ABC 416/B.cpp", "C++", 31, 0, 0, 0, 1, 2, 34
+"/home/everlasting/acm_training/atcoder/ABC 443/A.cpp", "C++", 18, 0, 0, 0, 1, 2, 21
+"/home/everlasting/acm_training/atcoder/ABC 443/B.cpp", "C++", 25, 0, 0, 0, 1, 2, 28
+"/home/everlasting/acm_training/atcoder/ABC 443/C.cpp", "C++", 39, 0, 0, 0, 1, 7, 47
+"/home/everlasting/acm_training/atcoder/ABC 443/D.cpp", "C++", 34, 0, 0, 0, 0, 8, 42
+"/home/everlasting/acm_training/atcoder/ABC 443/E.cpp", "C++", 61, 0, 0, 0, 1, 7, 69
+"/home/everlasting/acm_training/atcoder/ABC 443/F.cpp", "C++", 17, 0, 0, 0, 0, 3, 20
+"/home/everlasting/acm_training/atcoder/Educational DP Contest/I.cpp", "C++", 33, 0, 0, 0, 1, 4, 38
+"/home/everlasting/acm_training/niuke/小白月赛/128/A.cpp", "C++", 28, 0, 0, 0, 0, 3, 31
+"/home/everlasting/acm_training/niuke/小白月赛/128/B.cpp", "C++", 63, 0, 0, 0, 0, 7, 70
+"/home/everlasting/acm_training/niuke/小白月赛/128/C.cpp", "C++", 31, 0, 0, 0, 0, 2, 33
+"/home/everlasting/acm_training/niuke/小白月赛/128/D.cpp", "C++", 37, 0, 0, 0, 0, 2, 39
+"/home/everlasting/acm_training/niuke/小白月赛/128/E.cpp", "C++", 51, 0, 0, 0, 0, 6, 57
+"/home/everlasting/acm_training/niuke/小白月赛/128/F.cpp", "C++", 75, 0, 0, 0, 0, 11, 86
+"/home/everlasting/acm_training/niuke/技能树/第二章间章/贪心和优先队列/AOE还是单体？.cpp", "C++", 4, 0, 0, 0, 0, -3, 1
+"/home/everlasting/acm_training/niuke/每日一题/小红的gcd.cpp", "C++", 23, 0, 0, 0, 1, 3, 27
+"/home/everlasting/acm_training/niuke/每日一题/小红的好排列.cpp", "C++", 52, 0, 0, 0, 1, 9, 62
+"/home/everlasting/acm_training/niuke/每日一题/小苯的最短路.cpp", "C++", 28, 0, 0, 0, 0, 2, 30
+"/home/everlasting/acm_training/niuke/每日一题/游游的二进制树.cpp", "C++", 37, 0, 0, 0, 1, 8, 46
+"/home/everlasting/acm_training/niuke/每日一题/特殊的科学计数法.cpp", "C++", 29, 0, 0, 0, 1, 5, 35
+"/home/everlasting/acm_training/niuke/每日一题/计数.cpp", "C++", 63, 0, 0, 0, 1, 9, 73
+"/home/everlasting/acm_training/niuke/每日一题/躲藏.cpp", "C++", 29, 0, 0, 0, 5, 4, 38
+"/home/everlasting/acm_training/niuke/每日一题/邮递员送信.cpp", "C++", 54, 0, 0, 0, 1, 10, 65
+"/home/everlasting/acm_training/niuke/每日一题/音符.cpp", "C++", 27, 0, 0, 0, 1, 2, 30
+"/home/everlasting/acm_training/niuke/牛客周赛/129/A.cpp", "C++", 24, 0, 0, 0, 1, 2, 27
+"/home/everlasting/acm_training/niuke/牛客周赛/129/B.cpp", "C++", 26, 0, 0, 0, 1, 2, 29
+"/home/everlasting/acm_training/niuke/牛客周赛/129/C.cpp", "C++", 37, 0, 0, 0, 2, 5, 44
+"/home/everlasting/acm_training/niuke/牛客周赛/129/D.cpp", "C++", 24, 0, 0, 0, 1, 2, 27
+"/home/everlasting/acm_training/niuke/牛客周赛/129/E.cpp", "C++", 50, 0, 0, 0, 1, 7, 58
+"/home/everlasting/acm_training/niuke/牛客周赛/129/F.cpp", "C++", 51, 0, 0, 0, 1, 7, 59
+"/home/everlasting/acm_training/test.cpp", "C++", -26, 0, 0, 0, 8, -1, -19
+"/home/everlasting/acm_training/vjudge/WUST/dp/Common Subsequence.cpp", "C++", 28, 0, 0, 0, 4, 5, 37
+"/home/everlasting/acm_training/vjudge/WUST/dp/Monkey and Banana.cpp", "C++", 43, 0, 0, 0, 4, 3, 50
+"/home/everlasting/acm_training/vjudge/WUST/dp/P1439 两个排列的最长公共子序列.cpp", "C++", 36, 0, 0, 0, 1, 5, 42
+"/home/everlasting/acm_training/vjudge/WUST/前缀和与差分/Static Range Quer.cpp", "C++", 23, 0, 0, 0, 1, 2, 26
+"/home/everlasting/acm_training/vjudge/WUST/并查集/P1536 村村通.cpp", "C++", 52, 0, 0, 0, 5, 7, 64
+"/home/everlasting/acm_training/vjudge/WUST/最短路/B3611 【模板】传递闭包.cpp", "C++", 36, 0, 0, 0, 1, 4, 41
+"/home/everlasting/acm_training/vjudge/WUST/最短路/B3647 【模板】Floyd.cpp", "C++", 35, 0, 0, 0, 1, 4, 40
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P1119 灾后重建.cpp", "C++", 44, 0, 0, 0, 1, 4, 49
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P1744 采购特价商品.cpp", "C++", 22, 0, 0, 0, 1, 3, 26
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P1807 最长路.cpp", "C++", 40, 0, 0, 0, 1, 6, 47
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P2419 [USACO08JAN] Cow Contest S.cpp", "C++", 39, 0, 0, 0, 1, 4, 44
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P2888 [USACO07NOV] Cow Hurdles S.cpp", "C++", 36, 0, 0, 0, 1, 4, 41
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P2910 [USACO08OPEN] Clear And Present Danger S.cpp", "C++", 38, 0, 0, 0, 1, 6, 45
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P3371 【模板】单源最短路径（弱化版）.cpp", "C++", 43, 0, 0, 0, 1, 7, 51
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P3385 【模板】负环.cpp", "C++", 48, 0, 0, 0, 0, 6, 54
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P3905 道路重建.cpp", "C++", 63, 0, 0, 0, 1, 7, 71
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P4779 【模板】单源最短路径（标准版）.cpp", "C++", 39, 0, 0, 0, 1, 6, 46
+"/home/everlasting/acm_training/vjudge/WUST/最短路/P6464 [传智杯 #2 决赛] 传送门.cpp", "C++", 52, 0, 0, 0, 1, 5, 58
+"/home/everlasting/acm_training/vjudge/WUST/最短路/旅行.cpp", "C++", 24, 0, 0, 0, 0, 3, 27
+"/home/everlasting/acm_training/vjudge/WUST/枚举和模拟/B. Batch Sort.cpp", "C++", 47, 0, 0, 0, 1, 4, 52
+"/home/everlasting/acm_training/vjudge/WUST/枚举和模拟/C1. Sheikh.cpp", "C++", 47, 0, 0, 0, 0, 7, 54
+"Total", "-", 2437, 1, 1556, 1891, 75, 332, 6292

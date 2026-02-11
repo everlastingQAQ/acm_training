@@ -1,0 +1,1 @@
+{"name":"Local: 小美的数组操作","url":"/home/everlasting/acm_training/niuke/每日一题/小美的数组操作.cpp","tests":[{"id":1770077947320,"input":"3\n1 4 4","output":""},{"id":1770077960376,"input":"3\n1 5 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/niuke/每日一题/小美的数组操作.cpp","group":"local","local":true}

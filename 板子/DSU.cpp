@@ -7,7 +7,7 @@ using ld = long double;
 
 class DSU {
     public: 
-        vector <int> fa, rk;
+        vector <int> fa, rk, sz;
         DSU (int n = 0) {
             init(n); 
         }
@@ -15,6 +15,7 @@ class DSU {
         void init (int n) {
             fa.resize(n + 1);
             rk.assign(n + 1, 1);
+            sz.assign(n + 1, 1);
             ranges::iota(fa, 0LL);
         }
 
@@ -27,8 +28,13 @@ class DSU {
             if (x == y) return false;
             if (rk[x] < rk[y]) swap(x, y);
             fa[y] = x;
+            sz[x] += sz[y]; 
             if (rk[x] == rk[y]) rk[x]++;
             return true;
+        }
+
+        int size (int x) {
+            return sz[find(x)];
         }
 };
 

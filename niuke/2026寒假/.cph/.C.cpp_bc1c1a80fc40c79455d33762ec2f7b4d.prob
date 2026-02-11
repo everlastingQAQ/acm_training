@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/everlasting/acm_training/niuke/2026寒假/C.cpp","tests":[{"id":1770097973887,"input":"2\n3\n5 1 5\n4\n1 1 1 1","output":"15\n4"},{"id":1770098968629,"input":"1\n4\n5 1 4 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/niuke/2026寒假/C.cpp","group":"local","local":true}

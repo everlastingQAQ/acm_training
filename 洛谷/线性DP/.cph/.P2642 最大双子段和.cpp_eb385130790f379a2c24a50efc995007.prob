@@ -1,0 +1,1 @@
+{"name":"Local: P2642 最大双子段和","url":"/home/everlasting/acm_training/洛谷/线性DP/P2642 最大双子段和.cpp","tests":[{"id":1770396463155,"input":"5\n83 223 -13 1331 -935","output":""},{"id":1770396494990,"input":"3\n83 223 -13","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/洛谷/线性DP/P2642 最大双子段和.cpp","group":"local","local":true}

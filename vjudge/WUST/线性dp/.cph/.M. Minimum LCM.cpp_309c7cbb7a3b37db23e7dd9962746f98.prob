@@ -1,0 +1,1 @@
+{"name":"Local: M","url":"/home/everlasting/acm_training/vjudge/WUST/线性dp/M. Minimum LCM.cpp","tests":[{"id":1770040829547,"input":"4\n2\n9\n5\n10","output":""},{"id":1770040891919,"input":"1\n45","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/vjudge/WUST/线性dp/M. Minimum LCM.cpp","group":"local","local":true}

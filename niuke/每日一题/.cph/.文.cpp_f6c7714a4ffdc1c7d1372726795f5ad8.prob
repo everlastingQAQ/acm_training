@@ -1,0 +1,1 @@
+{"name":"Local: 文","url":"/home/everlasting/acm_training/niuke/每日一题/文.cpp","tests":[{"id":1770480442466,"input":"5 3\nADBBC\nspiderman\nADBAC\nniconico\nBDXBC\nekstieks\nACBBC","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/everlasting/acm_training/niuke/每日一题/文.cpp","group":"local","local":true}
