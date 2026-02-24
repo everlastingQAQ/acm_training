@@ -2,33 +2,19 @@
 using namespace std;
 using i64 = long long;
 
-struct custom_hash {
-    static uint64_t splitmix64(uint64_t x) {
-        x += 0x9e3779b97f4a7c15;
-        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
-        x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
-        return x ^ (x >> 31);
-    }
-    size_t operator()(uint64_t x) const {
-        static const uint64_t FIXED_RANDOM =
-            chrono::steady_clock::now().time_since_epoch().count();
-        return splitmix64(x + FIXED_RANDOM);
-    }
-};
+int vis[1000000 + 1];
 
 void solve ()
 {
     i64 a, b, k;
     cin >> a >> b >> k;
+    memset(vis, 0, sizeof vis);
 
     i64 ans = 0;
     queue <array <i64, 2> > q;
     q.push({a, 0LL});
-    unordered_map<i64, int, custom_hash> mp;
-    mp.reserve(1e6 * 2);
-    mp.max_load_factor(0.7);
-    mp[a] = true;
-
+    vis[a] = true;
+    
     while (q.size()) {
         auto [t, cnt] = q.front();
         q.pop();
@@ -37,10 +23,9 @@ void solve ()
             return;
         }
         
-        
-        if (t + k <= 1e6 && !mp[t + k]) {
+        if (t + k <= 1e6 && !vis[t + k]) {
             q.push({t + k, cnt + 1});
-            mp[t + k] = true;
+            vis[t + k] = true;
         }
 
         if (t % 10 != 0) {
@@ -50,9 +35,9 @@ void solve ()
                 t /= 10;
             }
 
-            if (cur <= 1e6 && !mp[cur]) {
+            if (cur <= 1e6 && !vis[cur]) {
                 q.push({cur, cnt + 1});
-                mp[cur] = true;
+                vis[cur] = true;
             }
         }
     }
