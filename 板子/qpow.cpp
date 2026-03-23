@@ -1,15 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ld = long double;
-#define int long long
-#define fi first
-#define se second
+using i64 = long long;
 
 const int mod = 1e9 + 7;
 
-int qpow (int a, int b)//a的b次方
+i64 qpow (i64 a, i64 b)
 {
-    int res = 1;
+    i64 res = 1;
     while (b) {
         if (b & 1) res = res * a % mod;
         a = a * a % mod;

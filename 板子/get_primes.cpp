@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ld = long double;
-#define int long long
-#define fi first
-#define se second
+using i64 = long long;
 
 const int N = 1e5;
 

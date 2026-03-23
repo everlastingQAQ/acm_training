@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\atcoder\\ABC 446\\C.cpp","tests":[{"id":1773148396580,"input":"3\n3 1\n7 2 3\n1 3 2\n3 2\n7 2 3\n1 3 2\n2 1\n2 1\n1 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\atcoder\\ABC 446\\C.cpp","group":"local","local":true}

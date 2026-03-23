@@ -1,61 +1,73 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using ld = long double;
-using pi = pair<ll, ll>;
-
-#define fi first
-#define se second
-
-const int MAXN = 6e7;
-const double eps = 1e-5;
-const ll mod = 1e9 + 7;
-
-ll qpow (ll a, ll b)
-{
-    ll res = 1;
-    while (b) {
-        if (b & 1) res = res * a;
-        a = a * a;
-        b >>= 1;
-    }
-    return res;
-}
+using i64 = long long;
 
 void solve ()
 {
-    ll n, k; cin >> n >> k;
-    vector <ll> a;
-    map <ll, ll> mp;
-    for (int i = 0; i <= 33; i++) {
-        if ((n >> i) & 1) a.push_back(i), mp[i] = 1;
-    }
-    ll mxpos = a[a.size() - 1];
+    i64 n, k;
+    cin >> n >> k;
 
-    ll t;
-    if (k & 1) t = k;
-    else t = k - 1;
-
-    ll temp = 0;
-    ll tt = 1;
-    for (int i = 0; i <= mxpos; i++) {
-        if (mp[i]) {
-            temp += tt;
+    if (k & 1) {
+        for (int i = 1; i <= k; i++) {
+            cout << n << " \n"[i == k];
         }
-        tt *= 2;
-    }   
-
-    vector <ll> ans(k);
-    for (int i = 0; i < t; i++) {
-        ans[i] += temp;
+        return;
     }
 
-    for (auto x : ans) {
-        cout << x << ' ';
+    vector <i64> vis(k + 1, 0);
+    queue <int> q;
+    for (int i = 1; i <= k; i++) {
+        q.push(i);
     }
-    cout << '\n'; 
-}
+    vector <i64> ans(k + 1);
+    int cnt = 0;
+    bool ok = false;
 
+    for (int i = 30; i >= 0; i--) {
+        if (n >> i & 1) {
+            for (int j = 1; j <= k; j++) {
+                ans[j] |= (1LL << i);
+            }
+            if (!ok) {
+                int t = q.front();
+                q.pop();
+                if (q.empty()) {
+                    ok = true;
+                    for (int i = 1; i <= k; i++) {
+                        q.push(i);
+                    }
+                }
+                ans[t] ^= (1LL << i);
+                vis[t] = true;
+                cnt++;
+            }else {
+                if (q.empty()) {
+                    for (int i = 1; i <= k; i++) {
+                        q.push(i);
+                    }
+                }
+                for (int i = 1; i <= k; i++) {
+                    q.push(i);
+                }
+                int t = q.front();
+                q.pop();
+                ans[t] ^= (1LL << i);
+            }
+        }else {
+            for (int j = 1; j <= cnt - 1; j++) {
+                ans[j] |= (1LL << i);
+            }
+            if (!(cnt & 1)) {
+                ans[cnt] |= (1LL << i);
+            }
+        }
+    }
+
+    for (int i = 1; i <= k; i++) {
+        cout << ans[i] << " \n"[i == k];
+    }
+}   
+    
 int main ()
 {
     ios::sync_with_stdio(0);
@@ -66,4 +78,4 @@ int main ()
         solve();
     }
     return 0;
-}   
+} 

@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\CF\\Round 1033\\C.cpp","tests":[{"id":1773119508325,"input":"7\n5 4\n5 5\n5 6 \n5 7\n5 8\n5 9\n5 10","output":""},{"id":1773119798054,"input":"2\n1 2\n4 6\n\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\Round 1033\\C.cpp","group":"local","local":true}

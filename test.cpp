@@ -1,79 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
-using i64 = long long;
 
-struct custom_hash {
-    static uint64_t splitmix64(uint64_t x) {
-        x += 0x9e3779b97f4a7c15;
-        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
-        x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
-        return x ^ (x >> 31);
-    }
-    size_t operator()(uint64_t x) const {
-        static const uint64_t FIXED_RANDOM =
-            chrono::steady_clock::now().time_since_epoch().count();
-        return splitmix64(x + FIXED_RANDOM);
-    }
-};
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
 
-void solve ()
-{
-    i64 a, b, k;
-    cin >> a >> b >> k;
+    int n;
+    cin >> n;
 
-    i64 ans = 0;
-    queue <array <i64, 2> > q;
-    q.push({a, 0LL});
-    unordered_map<i64, int, custom_hash> mp;
-    mp.reserve(1e6 * 2);
-    mp.max_load_factor(0.7);
-    mp[a] = true;
+    vector<long long> dp(n + 1, 0);
+    dp[0] = 1;  // 凑出 0 的方案数设为 1，作为转移起点
 
-    while (q.size()) {
-        auto [t, cnt] = q.front();
-        q.pop();
-        if (t == b) {
-            cout << cnt << '\n';
-            return;
-        }
-        
-        
-        if (t + k <= 1e6 && !mp[t + k]) {
-            q.push({t + k, cnt + 1});
-            mp[t + k] = true;
-        }
-
-        if (t % 10 != 0) {
-            i64 cur = 0;
-            while (t != 0) {
-                cur = cur * 10 + t % 10;
-                t /= 10;
-            }
-
-            if (cur <= 1e6 && !mp[cur]) {
-                q.push({cur, cnt + 1});
-                mp[cur] = true;
-            }
+    for (int i = 1; i <= n; i++) {
+        for (int j = i; j <= n; j++) {
+            dp[j] += dp[j - i];
         }
     }
 
-    cout << -1 << '\n';
-}   
-    
-int main ()
-{
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    int _ = 1;
-    cin >> _;
-    while (_--) {
-        solve();
+    // 打表输出 1~n 的答案
+    for (int i = 1; i <= n; i++) {
+        cout << "p(" << i << ") = " << dp[i] << '\n';
     }
+
     return 0;
-} 
-
-/*
-  /\_/\
- (= ._.)
- / >  \>
-*/
+}

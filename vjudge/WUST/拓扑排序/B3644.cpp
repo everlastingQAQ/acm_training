@@ -1,20 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using ld = long double;
-
-const int MAXN = 6e7;
-const double eps = 1e-12;
-const ll mod = 998244353;
+using i64 = long long;
 
 void solve ()
 {
-    ll n; cin >> n;
-    vector <vector <ll> > e(n + 1);
-    vector <ll> ind(n + 1, 0);
+    i64 n; cin >> n;
+    vector <vector <i64> > e(n + 1);
+    vector <i64> ind(n + 1, 0);
 
     for (int i = 1; i <= n; i++) {
-        ll t;
+        i64 t;
         while (cin >> t) {
             if (t == 0) break;
             e[i].push_back(t);
@@ -22,19 +17,18 @@ void solve ()
         }
     }
 
-    queue <ll> q;
+    queue <i64> q;
     for (int i = 1; i <= n; i++) {
         if (ind[i] == 0) q.push(i);
     }
 
-    vector <ll> ans(n + 1);
-    ll pos = 1;
+    vector <i64> ans(n + 1);
+    i64 pos = 1;
     while (!q.empty()) {
-        ll u = q.front();
+        i64 u = q.front();
         q.pop();
         ans[pos++] = u;
-
-        for (ll v : e[u]) {
+        for (i64 v : e[u]) {
             if (--ind[v] == 0) q.push(v);
         }
     }

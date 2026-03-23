@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\acm_training\\niuke\\练习赛\\149\\A.cpp","tests":[{"id":1773399521196,"input":"3\n4\n1 2 1 4\n5\n1 1 1 1 1\n6\n10 12 10 11 15 11","output":"2\n10\n6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\niuke\\练习赛\\149\\A.cpp","group":"local","local":true}

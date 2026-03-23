@@ -1,18 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
+using i64 = long long;
 
 void solve ()
 {   
     int n, m, s; cin >> n >> m >> s;
-    vector <vector <array<int, 2> > > e(n + 1);
+    vector <vector <array<i64, 2> > > e(n + 1);
     for (int i = 1; i <= m; i++) {
         int u, v, w; cin >> u >> v >> w;
         e[u].push_back({v, w});
     }
 
-    vector <int> dis(n + 1, 1e14);
-    priority_queue <array<int, 2>, vector <array<int, 2> > , greater<array<int, 2> > > pq;
+    vector <i64> dis(n + 1, 1e14);
+    priority_queue <array<i64, 2>, vector <array<i64, 2> > , greater<array<i64, 2> > > pq;
 
     pq.push({0, s}), dis[s] = 0;
 

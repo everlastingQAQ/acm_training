@@ -5,7 +5,7 @@ using ld = long double;
 #define fi first
 #define se second
 
-const int N = 1e5;
+const int N = 1e6 + 1;
 
 bool vis[N];
 int primes[N], mnp[N];
@@ -43,15 +43,18 @@ void get_factors ()
 
 void solve ()
 {
-    
+    for (auto [x, y] : v[677]) {
+        cout << x << ' ' << y << '\n'; 
+    }
 }
 
-int main ()
+signed main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     int _ = 1;
     // cin >> _;
+    get_factors();
     while (_--) {
         solve();
     }

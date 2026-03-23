@@ -1,0 +1,1 @@
+{"name":"Local: 不点两面(hard version)","url":"d:\\acm_training\\niuke\\每日一题\\不点两面(hard version).cpp","tests":[{"id":1772763333082,"input":"10 5\n1 4\n1 10\n1 4\n2 4\n2 4","output":"2\n2\n2\n2\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\niuke\\每日一题\\不点两面(hard version).cpp","group":"local","local":true}

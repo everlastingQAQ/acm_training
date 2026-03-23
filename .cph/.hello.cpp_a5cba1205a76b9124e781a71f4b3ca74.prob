@@ -1,0 +1,1 @@
+{"name":"Local: hello","url":"d:\\acm_training\\hello.cpp","tests":[{"id":1773312643659,"input":"5 5 3 2","output":""},{"id":1773312691970,"input":"7 5 5 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\hello.cpp","group":"local","local":true}

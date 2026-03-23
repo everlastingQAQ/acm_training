@@ -8,15 +8,28 @@ struct point {
 
 void solve ()
 {
+    int n;
+    cin >> n;
     point p, q;
     cin >> p.x >> p.y >> q.x >> q.y;
-    vector <i64> v(n + 1);
+    double sum = 0;
+    vector <double> v(n + 1);
+    v[0] = sqrtl((p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y));
     for (int i = 1; i <= n; i++) {
         cin >> v[i];
-    
-    
+        sum += v[i];
     }
 
+    sum += 1.0 * sqrtl((p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y));
+
+    for (int i = 0; i <= n; i++) {
+        if (v[i] > sum - v[i]) {
+            cout << "No\n";
+            return;
+        }
+    }
+
+    cout << "Yes\n";
 }   
     
 int main ()
@@ -30,15 +43,3 @@ int main ()
     }
     return 0;
 } 
-
-/*
-  /\_/\
- (= ._.)
- / >  \>
-*/
-
-// 13 17 19 23 29 31 
-"?
-}2w31
-}"?"?
-"

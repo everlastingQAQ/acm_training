@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\CF\\Global Round 31\\C.cpp","tests":[{"id":1772676868150,"input":"4\n5 4\n4 3\n8 2\n1 1\n","output":"1 4 5 5\n4 4 4\n0 8\n1\n"},{"id":1772676993545,"input":"1\n30 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\Global Round 31\\C.cpp","group":"local","local":true}

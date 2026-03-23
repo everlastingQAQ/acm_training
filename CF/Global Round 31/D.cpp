@@ -1,50 +1,51 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
-using ld = long double;
-using pi = pair<ll, ll>;
-
-#define fi first
-#define se second
-
-const int MAXN = 6e7;
-const double eps = 1e-5;
-const ll mod = 1e9 + 7;
+using i64 = long long;
 
 void solve ()
 {
-    ll n; cin >> n;
-    vector <ll> v(n + 1), d(n + 1);
+    int n;
+    cin >> n;
+    vector <i64> v(n + 1);
     for (int i = 1; i <= n; i++) {
         cin >> v[i];
-        d[i] = v[i] - v[i - 1];
+    }
+    
+    if (n <= 3) {
+        cout << n - 1 << '\n';
+        return;
     }
 
-    ll cur = 0, pos = 1;
-    ll l = 0, r = 1e16;
-    ll ans = n - 1;
+    int ans = 2;
+    i64 l = 0, r = 0;
+    if (v[3] - v[2] > v[2] - v[1]) {
+        l = v[3] - v[2] - (v[2] - v[1]);
+        r = v[3] - v[2];
+    }else {
+        l = 0;
+        r = v[3] - v[2];
+    }
 
-    for (int i = 2; i <= n; i++) {
-        cur = d[i] - cur;
-        if (((i - pos) & 1) == 0) {
-            r = min(r, cur);
-            if (i < n - 1) l = max(l, cur - d[i + 1]);
+    for (int i = 4; i <= n; i++) {
+        i64 d = v[i] - v[i - 1];
+        if (d <= l) {
+            l = max(0LL, v[i] - v[i - 1] - (v[i - 1] - v[i - 2]));
+            r = v[i] - v[i - 1];
+        }else if (d > l && d < r) {
+            ans++;
+            r = d - l;
+            l = 0;
         }else {
-            l = max(l, -cur);
-            if (i < n - 1) r = min(r, d[i + 1] - cur);
-        }
-        if (l >= r) {
-            // cout << i << '\n';
-            ans--;
-            l = 0, r = 1e16;
-            cur = 0;
-            pos = i + 1;
+            ans++;
+            i64 ll = l, rr = r;
+            l = d - rr;
+            r = d - ll;
         }
     }
 
     cout << ans << '\n';
-}
-
+}   
+    
 int main ()
 {
     ios::sync_with_stdio(0);
@@ -55,4 +56,4 @@ int main ()
         solve();
     }
     return 0;
-}   
+} 

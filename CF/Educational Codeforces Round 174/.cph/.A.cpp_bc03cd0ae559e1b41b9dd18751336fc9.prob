@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\acm_training\\CF\\Educational Codeforces Round 174\\A.cpp","tests":[{"id":1772609662140,"input":"3\n10\n0 1 0 0 0 0 1 1\n3\n1\n10\n0 1 0 1 1 0 0 1","output":"YES\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\Educational Codeforces Round 174\\A.cpp","group":"local","local":true}

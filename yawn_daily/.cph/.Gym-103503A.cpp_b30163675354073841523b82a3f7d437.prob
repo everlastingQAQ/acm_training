@@ -1,0 +1,1 @@
+{"name":"Local: Gym-103503A","url":"d:\\acm_training\\yawn_daily\\Gym-103503A.cpp","tests":[{"id":1773207954063,"input":"3 17\n6 1 3\n","output":""},{"id":1773208157365,"input":"5 28\n6 8 1 5 9\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\yawn_daily\\Gym-103503A.cpp","group":"local","local":true}

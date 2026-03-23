@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\niuke\\小白月赛\\129\\C.cpp","tests":[{"id":1772189274419,"input":"5\n2 1 5 7 3","output":""},{"id":1772191062395,"input":"4\n1 4 2 3","output":""},{"id":1772191071226,"input":"2\n6 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\niuke\\小白月赛\\129\\C.cpp","group":"local","local":true}

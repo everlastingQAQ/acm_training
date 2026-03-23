@@ -8,6 +8,7 @@ using ld = long double;
 class DSU {
     public: 
         vector <int> fa, rk, sz;
+        int comps; //联通块数
         DSU (int n = 0) {
             init(n); 
         }
@@ -17,6 +18,7 @@ class DSU {
             rk.assign(n + 1, 1);
             sz.assign(n + 1, 1);
             ranges::iota(fa, 0LL);
+            comps = n;
         }
 
         int find (int x) {
@@ -30,6 +32,7 @@ class DSU {
             fa[y] = x;
             sz[x] += sz[y]; 
             if (rk[x] == rk[y]) rk[x]++;
+            comps--;
             return true;
         }
 

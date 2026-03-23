@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+using i64 = long long;
+
+void solve ()
+{
+    string s;
+    cin >> s;
+    cout << "Of";
+    bool ok = true;
+    for (auto c : s) {
+        if (ok) c = tolower(c);
+        ok = false;
+        cout << c;
+    }
+} 
+    
+int main ()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int _ = 1;
+    // cin >> _;
+    while (_--) {
+        solve();
+    }
+    return 0;
+} 

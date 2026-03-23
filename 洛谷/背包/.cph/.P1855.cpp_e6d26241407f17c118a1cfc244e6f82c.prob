@@ -1,0 +1,1 @@
+{"name":"Local: P1855","url":"d:\\acm_training\\洛谷\\背包\\P1855.cpp","tests":[{"id":1773322104507,"input":"6 10 10\n1 1\n2 3 \n3 2\n2 5\n5 2\n4 3","output":"4"},{"id":1773322134101,"input":"6 10 10\n4 2\n1 3\n1 2\n3 3\n1 3\n2 2\n","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\洛谷\\背包\\P1855.cpp","group":"local","local":true}
