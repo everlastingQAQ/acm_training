@@ -1,0 +1,1 @@
+{"name":"Local: Edit Distance","url":"d:\\acm_training\\ichooooooo\\dp\\Edit Distance.cpp","tests":[{"id":1775813677676,"input":"LOVE\nMOVIE","output":""},{"id":1775813820079,"input":"NEABJPJOI\nRFMQRJKJKIA","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\ichooooooo\\dp\\Edit Distance.cpp","group":"local","local":true}

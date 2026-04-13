@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\比赛\\华中农业大学第十五届校赛\\C.cpp","tests":[{"id":1775405413177,"input":"1\n2 2\n11 2\n3 7","output":""},{"id":1775405425543,"input":"1\n2 1\n14\n100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\比赛\\华中农业大学第十五届校赛\\C.cpp","group":"local","local":true}

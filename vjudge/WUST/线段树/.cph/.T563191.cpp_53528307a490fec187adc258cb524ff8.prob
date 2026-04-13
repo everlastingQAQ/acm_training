@@ -1,0 +1,1 @@
+{"name":"Local: T563191","url":"d:\\acm_training\\vjudge\\WUST\\线段树\\T563191.cpp","tests":[{"id":1775785070316,"input":"6\n-7 -6 0 6 5 -3\n7\n5 -5\n6 0\n2 7\n2 -8\n2 2\n1 7\n5 -6\n","output":"11\n6\n6\n13\n6\n8\n15\n15\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\线段树\\T563191.cpp","group":"local","local":true}

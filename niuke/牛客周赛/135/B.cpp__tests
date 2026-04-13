@@ -1,1 +1,0 @@
-[{"test": "5 10\n3 4 2 8 1\n", "correct_answers": ["Takahashi"]}, {"test": "6 5\n2 4 3 1 5 3\n", "correct_answers": ["Aoki"]}, {"test": "8 15\n5 3 4 6 2 7 1 2\n", "correct_answers": ["Draw"]}]

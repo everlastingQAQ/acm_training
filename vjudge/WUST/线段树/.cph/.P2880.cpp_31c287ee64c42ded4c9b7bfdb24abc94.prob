@@ -1,0 +1,1 @@
+{"name":"Local: P2880","url":"d:\\acm_training\\vjudge\\WUST\\线段树\\P2880.cpp","tests":[{"id":1775711793010,"input":"6 3\n1\n7\n3\n4\n2\n5\n1 5\n4 6\n2 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\线段树\\P2880.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 2072C","url":"d:\\acm_training\\CF\\1200\\2072C.cpp","tests":[{"id":1775195168267,"input":"9\n1 69\n7 7\n5 7\n7 3\n8 7\n3 52\n9 11\n6 15\n2 3\n","output":""},{"id":1775196197864,"input":"1\n3 52","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\1200\\2072C.cpp","group":"local","local":true}
