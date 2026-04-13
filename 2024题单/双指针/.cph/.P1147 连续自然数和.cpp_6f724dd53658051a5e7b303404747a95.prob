@@ -1,1 +1,0 @@
-{"name":"Local: P1147 连续自然数和","url":"d:\\wust-acm\\2024题单\\双指针\\P1147 连续自然数和.cpp","tests":[{"id":1762826151822,"input":"10000","output":"18 142 \n297 328 \n388 412 \n1998 2002\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\wust-acm\\2024题单\\双指针\\P1147 连续自然数和.cpp","group":"local","local":true}
