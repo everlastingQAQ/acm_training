@@ -1,0 +1,1 @@
+{"name":"Local: 34D","url":"d:\\acm_training\\CF\\1600\\34D.cpp","tests":[{"id":1776328244815,"input":"3 2 3\n2 2\n","output":""},{"id":1776328245821,"input":"6 2 4\n6 1 2 4 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\1600\\34D.cpp","group":"local","local":true}

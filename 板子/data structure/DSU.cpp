@@ -4,7 +4,7 @@ using i64 = long long;
 
 struct DSU {
     vector<int> fa, rk, sz;
-    int comps;//连通块数
+    int comps;
 
     DSU(int n = 0) {
         init(n);

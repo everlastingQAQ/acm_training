@@ -1,0 +1,1 @@
+{"name":"Local: P2016","url":"d:\\acm_training\\vjudge\\WUST\\树形dp\\P2016.cpp","tests":[{"id":1776068688624,"input":"4\n0 1 1\n1 2 2 3\n2 0\n3 0\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\树形dp\\P2016.cpp","group":"local","local":true}

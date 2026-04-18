@@ -2,64 +2,45 @@
 using namespace std;
 #define int long long
 
-void solve1() {
-    int n, s;
-    cin >> n >> s;
-    s--;
-    vector<int> b(n + 5,0);
-    for (int i = 1; i <= n - 1; i++) {
-        b[i] = (s & 1);
-        s >>= 1;
-    }
-    for (int i = 1; i < n; i++) {
-        int u, v;
-        cin >> u >> v;
-        int mx = max(u, v);
-        int mn = min(u, v);
-        if (b[u] == b[v]) cout << mx << " " << mn << endl;
-        else cout << mn << " " << mx << endl;
-    }
-}
-
-void solve2 ()
+void solve ()
 {
     int n;
-    cin >> n;
-
-    vector <vector <int> > e(n + 1);
-    vector <set <int> > st(n + 1);
-    for (int i = 1; i < n; i++) {
-        int u, v;
-        cin >> u >> v;
-        e[u].push_back(v);
-        e[v].push_back(u);
-        if (u > v) {
-            st[u].insert(v);
-        }
-    }
-
-    vector <int> a(n + 1, 0);
-    auto dfs = [&] (auto self, int fa, int u, int op) -> void {
-        if (!st[u].count(fa) && !st[fa].count(u)) {
-            op ^= 1;
-            a[u] = op;
-        }else {
-            a[u] = op;
-        }
-        for (auto v : e[u]) {
-            if (v == fa) continue;
-            self(self, u, v, op);
-        }
-    };
-    dfs(dfs, 0, n, 0);
-
-    int ans = 0;
+    string s;
+    cin >> n >> s;
     for (int i = 1; i <= n; i++) {
-        if (!a[i]) {
-            ans += (1LL << (i - 1));
+        int op;
+        cin >> op;
+        if (op == 1) {
+            string s1;
+            cin >> s1;
+            if (s.find(s1) != string::npos) {
+                cout << s.find(s1) << '\n';
+            }else {
+                cout << -1 << '\n';
+            }
+        }else if (op == 2) {
+            string s2, s3;
+            cin >> s2 >> s3;
+            if (s.find(s2) != string::npos) {
+                s.replace(s.find(s2), s2.size(), s3);
+            }
+            cout << s << '\n';
+        }else {
+            char c1, c2;
+            string s4;
+            cin >> c1 >> c2 >> s4;
+            string t = s;
+            for (int i = 0; i < s.size() - 1; i++) {
+                t = t + s[i];
+                if (s[i] == c1 && s[i + 1] == c2) {
+                    t = t + s4;
+                }
+            }
+            if (!s.empty()) t = t + s.back();
+            s = t;
+            cout << s << '\n';
         }
     }
-    cout << ans + 1 << endl;
 } 
 
 int32_t main ()
@@ -67,11 +48,9 @@ int32_t main ()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     int _ = 1;
-    int q;
-    cin >> _ >> q;
+    cin >> _;
     while (_--) {
-        if (q == 1) solve1();
-        else solve2();
+        solve();
     }
     return 0;
 } 

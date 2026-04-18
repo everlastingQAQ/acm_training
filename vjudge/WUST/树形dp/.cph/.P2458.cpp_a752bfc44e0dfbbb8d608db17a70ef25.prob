@@ -1,0 +1,1 @@
+{"name":"Local: P2458","url":"d:\\acm_training\\vjudge\\WUST\\树形dp\\P2458.cpp","tests":[{"id":1776073074887,"input":"6\n1 30 3 2 3 4\n2 16 2 5 6\n3 5 0\n4 4 0\n5 11 0\n6 5 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\树形dp\\P2458.cpp","group":"local","local":true}

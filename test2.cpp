@@ -1,101 +1,57 @@
 #include <bits/stdc++.h>
 using namespace std;
-using ll = long long;
 using i64 = long long;
-const int M = 1e5 + 5;
-
-int a[M];
-struct ty {
-    int l, r;
-    ll sum, f;
-}tr[4 * M];
-#define ls(x) (tr[x].l)
-#define rs(x) (tr[x].r)
-#define f(x) (tr[x].f)
-#define sum(x) (tr[x].sum)
-void pushup(int x) {
-    sum(x) = sum(ls(x)) + sum(rs(x));
-}
-void pushdown(int x, int l, int r) {
-    if (!f(x)) return ;
-    int v = f(x);
-    f(x) = 0;
-    int mid = l + (r - l) / 2; 
-    sum(ls(x)) += v * (mid - l + 1);
-    sum(rs(x)) += v * (r - mid);
-    f(ls(x)) += v;
-    f(rs(x)) += v;
-}
-void build(int x, int l, int r) {
-    if (l == r) {
-        sum(x) = a[l];
-        return ;
-    }
-    ls(x) = x << 1;
-    rs(x) = x << 1 | 1;
-    int mid = l + (r - l) / 2;
-    build(ls(x), l, mid);
-    build(rs(x), mid + 1, r);
-    pushup(x);
-}
-void add(int x, int l, int r, int al, int ar, ll val) {
-    if (al <= l && ar >= r) {
-        f(x) += val;
-        sum(x) += val * (r - l + 1);
-        return ;
-    }
-    pushdown(x, l, r);
-    int mid = l + (r - l) / 2;
-    if (al <= mid) add(ls(x), l, mid, al, ar, val);
-    if (ar > mid) add(rs(x), mid + 1, r, al, ar, val);
-    pushup(x);
-} 
-ll ask(int x, int l, int r, int al ,int ar) {
-    if (al <= l && ar >= r) {
-        return sum(x);
-    }
-    ll res = 0;
-    pushdown(x, l, r);
-    int mid = l + (r - l) / 2;
-    if (al <= mid) res += ask(ls(x), l, mid, al, ar);
-    if (ar > mid) res += ask(rs(x), mid + 1, r, al, ar);
-    return res;
-}
 
 void solve ()
 {
-    int n, q;
-    cin >> n >> q;
-    SegTree seg(n);
+    int n;
+    cin >> n;
+    string s;
+    cin >> s;
     for (int i = 1; i <= n; i++) {
-        cin >> seg.a[i];
-    }
-    seg.build(1, 1, n);
-
-    while (q--) {
         int op;
         cin >> op;
         if (op == 1) {
-            int p;
-            i64 k;
-            cin >> p >> k;
-            seg.modify(1, p, k);
+            string s1;
+            cin >> s1;
+            if (s.find(s1) != string::npos) {
+                cout << s.find(s1) << '\n';
+            }else {
+                cout << -1 << '\n';
+            }
+        }else if (op == 2) {
+            string s2, s3;
+            cin >> s2 >> s3;
+            if (s.find(s2) != string::npos) {
+                s.replace(s.find(s2), s2.size(), s3);
+            }
+            cout << s << '\n';
         }else {
-            int l, r;
-            cin >> l >> r;
-            cout << seg.query(1, l, r) << '\n';
+            char c1, c2;
+            string s4;
+            cin >> c1 >> c2 >> s4;
+            string t;
+            for (int i = 0; i < s.size() - 1; i++) {
+                t = t + s[i];
+                if (s[i] == c1 && s[i + 1] == c2) {
+                    t = t + s4;
+                }
+            }
+            if (!s.empty()) t = t + s.back();
+            s = t;
+            cout << s << '\n';
         }
     }
-} 
+}
 
 int main ()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    ios::sync_with_stdio(0);
+    cin.tie(0);
     int _ = 1;
     // cin >> _;
     while (_--) {
         solve();
     }
     return 0;
-} 
+}

@@ -18,7 +18,6 @@ struct graph {
     void init (int _n, int m) {
         n = _n;
         head.assign(n + 1, -1);
-        e.clear();
         e.reserve(m);
     }
 
