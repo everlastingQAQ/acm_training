@@ -2,7 +2,7 @@
 using namespace std;
 using i64 = long long;
 
-const int mod = 1e9 + 7;
+const int mod = 998244353;
 
 i64 qpow (i64 a, i64 b)
 {
@@ -18,14 +18,14 @@ i64 qpow (i64 a, i64 b)
 void solve ()
 {
     
-}
+}   
 
 int main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     int _ = 1;
-    // cin >> _;
+    cin >> _;
     while (_--) {
         solve();
     }

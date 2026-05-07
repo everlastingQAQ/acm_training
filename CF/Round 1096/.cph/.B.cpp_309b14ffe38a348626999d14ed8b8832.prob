@@ -1,0 +1,1 @@
+{"name":"Local: B","url":"d:\\acm_training\\CF\\Round 1096\\B.cpp","tests":[{"id":1777971352603,"input":"6\n2\n()\n2\n)(\n3\n(((\n6\n())(()\n4\n(()(\n5\n)()()\n","output":"YES\nYES\nNO\nYES\nNO\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\Round 1096\\B.cpp","group":"local","local":true}

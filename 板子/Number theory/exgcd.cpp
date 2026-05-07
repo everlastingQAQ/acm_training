@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
+using i64 = long long;
 
-int exgcd (int a, int b, int &x, int &y)
+i64 exgcd (i64 a, i64 b, i64 &x, i64 &y)
 {
     if (b == 0) {
         x = 1;

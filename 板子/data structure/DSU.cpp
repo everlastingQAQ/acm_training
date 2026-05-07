@@ -14,7 +14,7 @@ struct DSU {
         fa.resize(n + 1);
         rk.assign(n + 1, 1);
         sz.assign(n + 1, 1);
-        ranges::iota(fa, 0);
+        iota(fa.begin(), fa.end(), 0);
         comps = n;
     }
 

@@ -1,0 +1,1 @@
+{"name":"Local: abc322_f","url":"d:\\acm_training\\vjudge\\WUST\\线段树\\abc322_f.cpp","tests":[{"id":1776933610566,"input":"7 6\n1101110\n2 1 7\n2 2 4\n1 3 6\n2 5 6\n1 4 7\n2 1 7\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\线段树\\abc322_f.cpp","group":"local","local":true}

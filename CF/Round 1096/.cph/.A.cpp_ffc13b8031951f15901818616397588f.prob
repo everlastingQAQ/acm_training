@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\acm_training\\CF\\Round 1096\\A.cpp","tests":[{"id":1777971153307,"input":"6\n1 1\n1 2\n4 6\n5 9\n7 2\n10 10\n","output":"NO\nYES\nYES\nNO\nYES\nYES\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\Round 1096\\A.cpp","group":"local","local":true}

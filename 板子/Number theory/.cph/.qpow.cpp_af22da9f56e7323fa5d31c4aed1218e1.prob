@@ -1,0 +1,1 @@
+{"name":"Local: qpow","url":"d:\\acm_training\\板子\\Number theory\\qpow.cpp","tests":[{"id":1777441639122,"input":"3 2\n2 1 3\n1 1 1","output":"499122179\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\板子\\Number theory\\qpow.cpp","group":"local","local":true}

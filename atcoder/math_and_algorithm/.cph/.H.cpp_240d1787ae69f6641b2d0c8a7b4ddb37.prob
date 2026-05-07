@@ -1,0 +1,1 @@
+{"name":"Local: H","url":"d:\\acm_training\\atcoder\\math_and_algorithm\\H.cpp","tests":[{"id":1777984922803,"input":"3 4\n","output":"6\r\n"},{"id":1777984926756,"input":"869 120","output":"7140\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\atcoder\\math_and_algorithm\\H.cpp","group":"local","local":true}

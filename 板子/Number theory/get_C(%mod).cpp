@@ -25,10 +25,13 @@ i64 C (i64 n, i64 m)
 
 void init ()
 {
-    f[0] = 1, g[0] = 1;
+    f[0] = 1;
     for (int i = 1; i < N; i++) {
         f[i] = f[i - 1] * i % mod;
-        g[i] = qpow(f[i], mod - 2) % mod;
+    }
+    g[N - 1] = qpow(f[N - 1], mod - 2);
+    for (int i = N - 2; i >= 0; i--) {
+        g[i] = g[i + 1] * (i + 1) % mod;
     }
 }
 

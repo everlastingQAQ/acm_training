@@ -1,1 +1,1 @@
-{"name":"Local: sbcz","url":"d:\\acm_training\\sbcz.cpp","tests":[{"id":1773461200245,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\sbcz.cpp","group":"local","local":true}
+{"name":"Local: sbcz","url":"d:\\acm_training\\sbcz.cpp","tests":[{"id":1776921022546,"input":"1\n6\n1 2 2 2 2 3\n1 2\n2 3\n3 4\n1 5\n5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\sbcz.cpp","group":"local","local":true}

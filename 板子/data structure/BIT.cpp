@@ -6,10 +6,7 @@ struct BIT {
     int n;
     vector <i64> bit;
 
-    BIT (int n = 0) {init(n);}
-
-    void init (int m) {
-        n = m;
+    BIT (int n = 0) : n(n) {
         bit.assign(n + 1, 0);
     }
 

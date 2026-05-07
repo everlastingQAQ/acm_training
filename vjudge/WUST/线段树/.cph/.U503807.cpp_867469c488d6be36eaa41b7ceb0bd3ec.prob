@@ -1,0 +1,1 @@
+{"name":"Local: U503807","url":"d:\\acm_training\\vjudge\\WUST\\线段树\\U503807.cpp","tests":[{"id":1777001616489,"input":"10 8 100\n2 1 10 1\n3 3 5\n1 7 10 9\n3 5 8\n1 2 4 2\n2 1 9 4\n2 2 2 8\n3 1 10 ","output":"3\n20\n88\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\vjudge\\WUST\\线段树\\U503807.cpp","group":"local","local":true}

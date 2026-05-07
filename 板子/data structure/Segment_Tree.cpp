@@ -12,8 +12,7 @@ struct SegTree {
     vector <i64> a;
     vector <node> tr;
 
-    SegTree (int _n = 0) {
-        n = _n;
+    SegTree (int n = 0) : n(n){
         a.assign(n + 1, 1);
         tr.assign(4 * n + 10, {0, 0, 0, 0});
     }
