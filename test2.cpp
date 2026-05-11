@@ -1,32 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
 using i64 = long long;
+
+// using i64 = long long;
+
+const int mod = 998244353;
+
+i64 qpow (i64 a, i64 b)
+{
+    i64 res = 1;
+    while (b) {
+        if (b & 1) res = res * a % mod;
+        a = a * a % mod;
+        b >>= 1;
+    }
+    return res;
+}
+int inv (int x) {
+    return qpow (x, mod - 2);
+}
 
 void solve ()
 {
-    int n = 20;
-    vector <vector <int> > v(n + 1, vector <int> (n + 1));
-    for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= n; j++) {
-            v[i][j] = (i ^ j) * (i | j) * (i & j);
-            // cout << i << ' ' << j << ' ' << x << '\n';
-        }
-    }
-
-    for (int i = 0; i <= n; i++) {
-        for (int j = 0; j <= n; j++) {
-            printf("%3d ", v[i][j]);
-
-            // if(v[i][j] == 0)
-            // {
-            //     cout << i << " " << j << endl;
-            // }
-        }
-        cout << '\n';
-    }
+    cout << 7 * inv (3) % mod << '\n';
 }
 
-int main ()
+signed main ()
 {
     // ios::sync_with_stdio(0);
     cin.tie(0);

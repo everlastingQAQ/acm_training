@@ -1,1 +1,1 @@
-{"name":"Local: shoper","url":"d:\\acm_training\\shoper.cpp","tests":[{"id":1777898429207,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\shoper.cpp","group":"local","local":true}
+{"name":"Local: shoper","url":"d:\\acm_training\\shoper.cpp","tests":[{"id":1777898429207,"input":"8\n2 1\n1 1\n1 2\n2 2\n1 1\n1 3\n2 3\n3 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\shoper.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"d:\\acm_training\\niuke\\小白月赛\\132\\A.cpp","tests":[{"id":1778245263975,"input":"5\n100 -200 300 100 50","output":"0 1 4 0 0 0 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\niuke\\小白月赛\\132\\A.cpp","group":"local","local":true}

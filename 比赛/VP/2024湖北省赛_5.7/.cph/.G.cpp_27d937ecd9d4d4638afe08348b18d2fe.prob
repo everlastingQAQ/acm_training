@@ -1,0 +1,1 @@
+{"name":"Local: G","url":"d:\\acm_training\\比赛\\VP\\2024湖北省赛_5.7\\G.cpp","tests":[{"id":1778138471791,"input":"8\n2 1\n1 1\n1 2\n2 2\n1 1\n1 3\n2 3\n3 1\n","output":"0 0\r\n0 0\r\n0 1\r\n0 0\r\n0 0\r\n0 0\r\n0 0\r\n3 0\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\比赛\\VP\\2024湖北省赛_5.7\\G.cpp","group":"local","local":true}
