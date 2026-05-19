@@ -4,25 +4,23 @@ using namespace std;
 
 void solve ()
 {
-    // int n = 100;
-    // for (int i = 1; i <= n + 500; i++) {
-    //     cout << 11 * i << ' ';
-    // }
-    // cout << '\n';
-    // for (int i = 1; i <= n; i++) {
-    //     cout << 111 * i << ' ';
-    // }
-    cout << (int)1e9 / 11;
+    int n;
+    cin >> n;
+    if (n % 4 == 0 || n == 1) {
+        cout << n + 1 << '\n';
+    }else {
+        cout << n << '\n';
+    }
 }   
-
+    
 int32_t main ()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
     int _ = 1;
-    // cin >> _;
+    cin >> _;
     while (_--) {
         solve();
     }
     return 0;
-}   
+} 

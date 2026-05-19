@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"d:\\acm_training\\比赛\\2026\\wust周赛\\Round 6\\E.cpp","tests":[{"id":1779052614916,"input":"2\n8\nqcayqcjj\n8\nqcjjqcay","output":"qcjj\r\nqcay\r\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\比赛\\2026\\wust周赛\\Round 6\\E.cpp","group":"local","local":true}

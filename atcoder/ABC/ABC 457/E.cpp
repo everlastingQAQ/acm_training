@@ -4,7 +4,25 @@ using namespace std;
 
 void solve ()
 {
-    
+    int n, m;
+    cin >> n >> m;
+    vector <array <int, 2> > v(m + 1);
+    vector <set <int> > st1(n + 1), st2(n + 1);
+    for (int i = 1; i <= m; i++) {
+        cin >> v[i][0] >> v[i][1];
+        st1[v[i][0]].insert(v[i][1]);
+        st2[v[i][1]].insert(v[i][0]);
+    }
+
+    sort(v.begin() + 1, v.end());
+
+    int q;
+    cin >> q;
+    while (q--) {
+        int l, r;
+        cin >> l >> r;
+        
+    }
 }   
 
 int32_t main ()

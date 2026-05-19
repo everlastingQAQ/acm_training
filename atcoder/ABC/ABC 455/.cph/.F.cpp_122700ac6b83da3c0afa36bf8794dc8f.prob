@@ -1,0 +1,1 @@
+{"name":"Local: F","url":"d:\\acm_training\\atcoder\\ABC\\ABC 455\\F.cpp","tests":[{"id":1778740181177,"input":"5 4\n1 3 22\n3 4 13\n5 5 455\n1 5 1000000000\n","output":"1452\n455\n0\n21421644\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\atcoder\\ABC\\ABC 455\\F.cpp","group":"local","local":true}

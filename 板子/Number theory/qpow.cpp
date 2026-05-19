@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-using i64 = long long;
+#define int long long
 
 const int mod = 998244353;
 
-i64 qpow (i64 a, i64 b)
+int qpow (int a, int b)
 {
-    i64 res = 1;
+    int res = 1;
     while (b) {
         if (b & 1) res = res * a % mod;
         a = a * a % mod;

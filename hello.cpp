@@ -1,41 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
 
 void solve ()
 {
-    int n;
-    cin >> n;
-    bool ok = false;
-    vector <int> v(n + 1);
-    int mx = -1e18;
-    int mn = 1e18;
-    int sum = 0;
-    bool ok1 = false, ok2 = false;
+    int n, m, p;
+    cin >> n >> m >> p;
+    int mx = -1;
+    int x, y, z;
     for (int i = 1; i <= n; i++) {
-        cin >> v[i];
-        if (v[i] < 0) ok1 = true;
-        if (v[i] >= 0) ok2 = true;
-        mn = min(mn, v[i]);
-        mx = max(mx, v[i]);
-        sum += llabs(v[i]);
+        for (int j = 1; j <= m; j++) {
+            for (int k = 1; k <= p; k++) {
+                int t;
+                cin >> t;
+                if (t > mx) {
+                    mx = t;
+                    x = i;
+                    y = j;
+                    z = k;
+                }
+            }
+        }
     }
-
-    if (n == 1) {
-        cout << v[1] << '\n';
-        return; 
-    }
-
-    if (ok1 && ok2) {
-        cout << sum << '\n';
-    }
-    else if (!ok1 && ok2) {
-        cout << sum - mn - mn << '\n';
-    }
-    else if (ok1 && !ok2) {
-        cout << sum + mx + mx << '\n';
-    }
-
+    int l1 = max(x - 1, n - x), l2 = max(y - 1, m - y), l3 = max(z - 1, p - z);
+    int cur = sqrtl(l1 * l1 + l2 * l2 + l3 * l3);
+    if (cur * cur != l1 * l1 + l2 * l2 + l3 * l3) cur++;
+    cout << cur << '\n';
 }   
 
 int32_t main ()
@@ -43,7 +32,7 @@ int32_t main ()
     ios::sync_with_stdio(0);
     cin.tie(0);
     int _ = 1;
-    // cin >> _;
+    cin >> _;
     while (_--) {
         solve();
     }
