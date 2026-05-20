@@ -1,0 +1,1 @@
+{"name":"Local: 2217","url":"d:\\acm_training\\CSES\\Sorting and Searching\\2217.cpp","tests":[{"id":1779245200016,"input":"5 3\n4 2 1 5 3\n2 3\n1 5\n2 3\n","output":"2\n3\n4\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CSES\\Sorting and Searching\\2217.cpp","group":"local","local":true}

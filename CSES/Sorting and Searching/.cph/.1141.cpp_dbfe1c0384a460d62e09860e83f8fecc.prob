@@ -1,0 +1,1 @@
+{"name":"Local: 1141","url":"d:\\acm_training\\CSES\\Sorting and Searching\\1141.cpp","tests":[{"id":1779246390812,"input":"8\n1 2 1 3 2 7 4 2\n","output":""},{"id":1779246579872,"input":"10\n2 2 1 1 2 1 2 1 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CSES\\Sorting and Searching\\1141.cpp","group":"local","local":true}
