@@ -1,0 +1,1 @@
+{"name":"Local: J","url":"d:\\acm_training\\QOJ\\2015\\Regional\\Changchun\\J.cpp","tests":[{"id":1779328656245,"input":"2\n3\n1 2 3\n3\n100 200 300","output":""},{"id":1779329152583,"input":"1\n4\n18 7 74 168","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\QOJ\\2015\\Regional\\Changchun\\J.cpp","group":"local","local":true}

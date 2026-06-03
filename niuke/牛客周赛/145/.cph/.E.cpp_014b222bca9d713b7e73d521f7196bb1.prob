@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"d:\\acm_training\\niuke\\牛客周赛\\145\\E.cpp","tests":[{"id":1779630524126,"input":"3 3\n1 2 0\n2 3 1\n3 1 2","output":""},{"id":1779630530788,"input":"3 3\n1 2 0\n2 3 0\n3 1 0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\niuke\\牛客周赛\\145\\E.cpp","group":"local","local":true}

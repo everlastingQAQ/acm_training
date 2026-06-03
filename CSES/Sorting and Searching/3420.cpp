@@ -1,28 +1,32 @@
 #include <bits/stdc++.h>
 #include <bits/extc++.h>
 using namespace std;
+using namespace __gnu_pbds;
 #define int long long
+template <typename T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
 
 void solve ()
 {
-    int n;
+    int n, k;
+    // cin >> n >> k;
     cin >> n;
+    k = 1;
     vector <int> v(n + 1);
     for (int i = 1; i <= n; i++) {
         cin >> v[i];
     }
-    map <int, int> mp;
-    int l = 0;
-    int ans = 0;
+    ordered_set <int> st;
     for (int i = 1; i <= n; i++) {
-        if (mp[v[i]]) {
-            l = max(l, mp[v[i]]);
-        }
-        ans += i - l;
-        mp[v[i]] = i;
+        st.insert(i);
     }
-    cout << ans << '\n';
-    
+    int pos = 0;
+    for (int i = n; i >= 1; i--) {
+        pos = (pos + k) % i;
+        auto it = st.find_by_order(pos);
+        cout << *it << ' ';
+        st.erase(it);
+    }
 }   
 
 int32_t main ()

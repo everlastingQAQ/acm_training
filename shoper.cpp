@@ -1,198 +1,141 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define int long long
 
-char *p1, *p2, buf[100000];
-#define gc() (p1 == p2 && (p2 = (p1 = buf) + fread(buf, 1, 100000, stdin), p1 == p2) ? EOF : *p1++)
+struct SegTree {
+    struct node {
+        int l, r;
+        int s, mx;
+    };
 
-int read()
-{
-    int x = 0, f = 1;
-    char ch = gc();
+    int n;
+    vector <int> a;
+    vector <node> tr;
 
-    while (ch < '0' || ch > '9') {
-        if (ch == '-') f = -1;
-        ch = gc();
+    SegTree (int n = 0) : n(n) {
+        a.assign(n + 1, n + 1);
+        tr.assign(4 * n + 10, {});
     }
 
-    while ('0' <= ch && ch <= '9') {
-        x = (x << 3) + (x << 1) + (ch ^ 48);
-        ch = gc();
+    void push_up (int p) {
+        tr[p].s = tr[p << 1].s + tr[p << 1 | 1].s;
+        tr[p].mx = max(tr[p << 1].mx, tr[p << 1 | 1].mx);
     }
 
-    return x * f;
-}
-
-int s[20][20];
-
-int dx[] = {0, 0, 1, -1};
-int dy[] = {1, -1, 0, 0};
-
-int fa[400], rk[400], sz[400];
-
-struct DSU
-{
-    int comps;
-    DSU(int n = 0)
-    {
-        init(n);
+    void build (int p, int l, int r) {
+        tr[p] = {l, r, 0, 0};
+        if (l == r) {
+            tr[p].s = a[l];
+            tr[p].mx = a[l];
+            return;
+        }
+        int mid = l + ((r - l) >> 1);
+        build(p << 1, l, mid);
+        build(p << 1 | 1, mid + 1, r);
+        push_up(p);
     }
 
-    void init(int n)
-    {
+    void modify (int p, int x, int t) {
+        if (tr[p].l == tr[p].r) {
+            tr[p].s = t;
+            a[tr[p].l] = t;
+            tr[p].mx = t;
+            return;
+        }
+        int mid = tr[p].l + ((tr[p].r - tr[p].l) >> 1);
+        if (x <= mid) modify(p << 1, x, t);
+        else modify(p << 1 | 1, x, t);
+        push_up(p);
+    } 
 
-    }
-    
-    int find(int x)
-    {
-        return x == fa[x] ? x : (fa[x] = find(fa[x]));
-    }
-    bool uni(int i, int j)
-    {
-        int x = find(i), y = find(j);
-        if (x == y)
-            return false;
-        if (rk[x] < rk[y])
-            swap(x, y);
-        fa[y] = x;
-        sz[x] += sz[y];
-        if (rk[x] == rk[y])
-            rk[x]++;
-        comps--;
-        return true;
-    }
-    int size(int x)
-    {
-        return sz[find(x)];
+    int query (int p, int l, int r) {
+        if (l > r) return -1;
+        if (l <= tr[p].l && tr[p].r <= r) {
+            return tr[p].mx;
+        }
+        int res = -1;
+        int mid = tr[p].l + ((tr[p].r - tr[p].l) >> 1);
+        if (l <= mid) res = max(res, query(p << 1, l, r));
+        if (mid < r) res = max(res, query(p << 1 | 1, l, r));
+        return res;
     }
 };
 
-int id(int x, int y)
+void solve ()
 {
-    return (x * 19 + y);
-}
-
-int remove_dead(int tar)
-{
-    DSU dsu(400);
-    for (int i = 1; i <= 400; i++)
-    {
-        fa[i] = i;
-        rk[i] = 1;
-        sz[i] = 1;
+    int n, r;
+    cin >> n >> r;
+    vector <int> a(n + 1), c(n + 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+    for (int i = 1; i <= n; i++) {
+        cin >> c[i];
+    }
+    vector <int> pre(n + 1);
+    set <int> st;
+    st.insert(0);
+    for (int i = 1; i <= n; i++) {
+        pre[i] = (pre[i - 1] + a[i]) % r;
+        st.insert(pre[i]);
     }
 
-    for (int i = 1; i <= 19; i++)
-    {
-        for (int j = 1; j <= 19; j++)
-        {
-            if (!s[i][j])
-                continue;
+    vector <int> nxt(n + 1, n + 1);
+    for (int i = 1; i <= n; i++) {
+        if (pre[i] == 0) {
+            nxt[0] = i;
+            break;
+        }
+    }
 
-            for (int k = 0; k < 4; k++)
-            {
-                int xx = i + dx[k];
-                int yy = j + dy[k];
-
-                if (xx < 1 || xx > 19 || yy < 1 || yy > 19)
-                    continue;
-
-                if (s[xx][yy] == s[i][j])
-                {
-                    dsu.uni(id(i, j), id(xx, yy));
-                }
+    if (st.size() == r) {
+        vector <int> v(r + 2, n + 1);
+        int lft = r;
+        SegTree seg(r);
+        seg.build(1, 0, r - 1);
+        for (int i = n - 1; i >= 1; i--) {
+            seg.modify(1, pre[i + 1], i + 1);
+            if (v[pre[i + 1]] == n + 1) {
+                lft--;
+            }
+            v[pre[i + 1]] = i + 1;
+            if ((v[pre[i]] == n + 1 && lft == 1) || lft == 0) {
+                int lmx = seg.query(1, 0, pre[i] - 1);
+                int rmx = seg.query(1, pre[i] + 1, r - 1);
+                nxt[i] = max(lmx, rmx);
             }
         }
     }
 
-    bool qi[400] = {0};
+    vector <int> dp(n + 1, 1e18);
+    dp[0] = 0;
+    using arr2 = array <int, 2>;
+    priority_queue <arr2, vector <arr2>, greater<arr2> > pq;
 
-    for (int i = 1; i <= 19; i++)
-    {
-        for (int j = 1; j <= 19; j++)
-        {
-            if (!s[i][j])
-                continue;
+    pq.push({0, nxt[0]});
 
-            int root = dsu.find(id(i, j));
-
-            for (int k = 0; k < 4; k++)
-            {
-                int xx = i + dx[k];
-                int yy = j + dy[k];
-
-                if (xx < 1 || xx > 19 || yy < 1 || yy > 19)
-                    continue;
-
-                if (!s[xx][yy])
-                {
-                    qi[root] = true;
-                }
-            }
+    for (int i = 1; i <= n; i++) {
+        while (!pq.empty() && pq.top()[1] <= i) {
+            pq.pop();
         }
-    }
-
-    int count = 0;
-
-    for (int i = 1; i <= 19; i++)
-    {
-        for (int j = 1; j <= 19; j++)
-        {
-            if (s[i][j] != tar)
-                continue;
-
-            int root = dsu.find(id(i, j));
-
-            if (!qi[root])
-            {
-                count++;
-                s[i][j] = 0;
-            }
+        dp[i] = dp[i - 1] + c[i];
+        
+        if (!pq.empty()) {
+            dp[i] = min(dp[i], pq.top()[0]);
         }
+        pq.push({dp[i - 1] + c[i], nxt[i]});
     }
-
-    return count;
-}
-
-void solve()
+    cout << dp[n] << '\n';
+}   
+    
+int32_t main ()
 {
-    int n = read();
-
-    for (int q = 1; q <= n; q++)
-    {
-        int x = read();
-        int y = read();
-
-        s[x][y] = (1 + q % 2);
-
-        int a = 0, b = 0;
-
-        if (q % 2 == 1)
-        {
-            a += remove_dead(1);
-            b += remove_dead(2);
-        }
-        else
-        {
-            b += remove_dead(2);
-            a += remove_dead(1);
-        }
-
-        printf("%d %d\n", b, a);
-    }
-}
-
-signed main()
-{
-    // ios::sync_with_stdio(false);
-    // cin.tie(nullptr), cout.tie(nullptr);
-
-    // int t = 1;
-    // while (t--)
-    // {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int _ = 1;
+    cin >> _;
+    while (_--) {
         solve();
-    // }
-
+    }
     return 0;
-}
-
-////
+} 
