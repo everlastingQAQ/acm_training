@@ -6,18 +6,18 @@ void solve ()
 {
     int n;
     cin >> n;
-    for (int i = 0; i <= 11; i++) {
-        if (i == 10) continue;
-        if (n >= i && (n - i) % 12 == 0) {
-            cout << i << ' ' << n - i << '\n';
+    vector <int> v(n + 1);
+    for (int i = 1; i <= n; i++) {
+        cin >> v[i];
+    }
+    sort(v.begin() + 1, v.end(), greater<>());
+    for (int i = 3; i <= n; i++) {
+        if (v[i] != v[i - 2] % v[i - 1]) {
+            cout << -1 << '\n';
             return;
         }
     }
-    if (n >= 22 && n % 12 == 10) {
-        cout << 22 << ' ' << n - 22 << '\n';
-        return;
-    } 
-    cout << -1 << '\n';
+    cout << v[1] << ' ' << v[2] << '\n';
 }   
     
 int32_t main ()

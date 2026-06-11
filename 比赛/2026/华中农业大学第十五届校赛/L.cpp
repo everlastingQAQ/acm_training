@@ -17,7 +17,7 @@ void solve ()
 	
 	vector <array <int, 2> > ans;
 	ans.reserve(cnt + 1);
-
+	
 	vector <int> v1(m + 1, 1);//u
 	vector <int> v2(m + 1, n);//d
 	vector <int> v3(n + 1, 1);//l
