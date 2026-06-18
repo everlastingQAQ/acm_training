@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"d:\\acm_training\\CF\\contest\\Educational Codeforces Round 169\\C.cpp","tests":[{"id":1781403955366,"input":"4\n2 5\n1 10\n3 0\n10 15 12\n4 6\n3 1 2 4\n2 4\n6 9\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\CF\\contest\\Educational Codeforces Round 169\\C.cpp","group":"local","local":true}

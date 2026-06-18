@@ -1,0 +1,1 @@
+{"name":"Local: J","url":"d:\\acm_training\\比赛\\2026\\wust选拔赛\\Round 1\\J.cpp","tests":[{"id":1781522085464,"input":"4\nDAAABDCA\nAB\nABCDEEDCBA\nDDDDAAADDABECD","output":"11088\r\n10010\r\n31000\r\n15886"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\acm_training\\比赛\\2026\\wust选拔赛\\Round 1\\J.cpp","group":"local","local":true}

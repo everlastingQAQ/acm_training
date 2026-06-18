@@ -2,14 +2,6 @@
 using namespace std;
 #define int long long
 
-const int N = 3e5;
-
-using arr3 = array <int, 3>;
-using arr2 = array <int, 2>;
-arr3 v[N];
-arr2 a[N];
-int res[N];
-
 struct DSU {
     vector <int> fa, rk, sz;
     int comps;
@@ -54,51 +46,41 @@ struct DSU {
 
 void solve ()
 {
-    int n, m, q;
-    cin >> n >> m >> q;
-    
-    for (int i = 1; i <= m; i++) {
-        cin >> v[i][1] >> v[i][2] >> v[i][0];
-    }
-    sort(v + 1, v + m + 1);
-
-    for (int i = 1; i <= q; i++) {
-        cin >> a[i][0];
-        a[i][1] = i;
-    }
-    sort(a + 1, a + q + 1);
-
-    DSU dsu(n);
-    int idx = 1;
-
-    auto cal = [] (int x) -> int {
-        int c = x * (x - 1) / 2;
-        return c;
-    };
-
-    int ans = 0;
-    for (int i = 1; i <= q; i++) {
-        while (idx <= m && v[idx][0] <= a[i][0]) {
-            int fa1 = dsu.find(v[idx][1]);
-            int fa2 = dsu.find(v[idx][2]);
-            if (fa1 == fa2) {
-                idx++;
-                continue;
+    int n, m;
+    cin >> n >> m;
+    vector <int> a(n + 1), b(n + 1);
+    DSU dsua(n), dsub(n);
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        if (i != 1) {
+            if ((a[i] % 2) == (a[i - 1] % 2)) {
+                dsua.merge(i, i - 1);
             }
-            ans -= cal(dsu.sz[fa1]);
-            ans -= cal(dsu.sz[fa2]);
-            dsu.merge(fa1, fa2);
-            int fa = dsu.find(v[idx][1]);
-            ans += cal(dsu.sz[fa]);
-            idx++;
         }
-        res[a[i][1]] = ans;
     }
 
-    for (int i = 1; i <= q; i++) {
-        cout << res[i] << ' ';
+    for (int i = 1; i <= n; i++) {
+        cin >> b[i];
+        if (i != 1) {
+            if ((b[i] % 2) == (b[i - 1] % 2)) {
+                dsub.merge(i, i - 1);
+            }
+        }
     }
-    cout << '\n';
+
+    while (m--) {
+        int ra, ca, rb, cb;
+        cin >> ra >> ca >> rb >> cb;
+        int faal = dsua.find(ra);
+        int faar = dsua.find(rb);
+        int fabl = dsub.find(ca);
+        int fabr = dsub.find(cb);
+        if (faal == faar && fabl == fabr) {
+            cout << "YES\n";
+        }else {
+            cout << "NO\n";
+        }
+    }
 }
 
 int32_t main ()

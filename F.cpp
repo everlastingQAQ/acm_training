@@ -6,29 +6,11 @@ void solve ()
 {
 	int n;
 	cin >> n;
-	vector <vector <int> > e(n + 1);
-	vector <int> ind(n + 1);
-	for (int i = 1; i < n; i++) {
-		int u, v;
-		cin >> u >> v;
-		ind[u]++;
-		ind[v]++;
-		e[u].push_back(v);
-		e[v].push_back(u);
+	for (int i = 1; i <= n; i++){
+		int sum;
+		cin >> sum;
 	}
-	int x;
-	cin >> x;
-
-	if (ind[x] == 1) {
-		cout << "xiaonian wins!";
-		return;
-	}else {
-		if (n & 1) {
-			cout << "coldtree wins!";
-		}else {
-			cout << "xiaonian wins!";
-		}
-	}
+	cout << sum << '\n';
 } 
 
 int main ()
